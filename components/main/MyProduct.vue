@@ -26,7 +26,7 @@
             :href="item.url"
             target="_blank"
             rel="noopener"
-            data-aos="flip-left"
+            data-aos="fade-up"
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
             data-aos-anchor-placement="top-center"
