@@ -13,6 +13,7 @@
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
     "aos": "^2.3.4",
     "nuxt": "^2.0.0"
   },

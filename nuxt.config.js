@@ -1,6 +1,7 @@
 require("dotenv").config();
 const { G_ANALYTICS } = process.env;
 
+const siteTitle = "K -- Back-end Developer";
 const description =
   "旅行／お酒好きバックエンドエンジニア『K』のポートフォリオサイトです。";
 
@@ -26,7 +27,7 @@ export default {
       {
         hid: "og:site_name",
         property: "og:site_name",
-        content: "『K』 | Back-end Developer"
+        content: siteTitle
       },
       {
         hid: "og:type",
@@ -41,7 +42,7 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "K -- Back-end Developer"
+        content: siteTitle
       },
       {
         hid: "og:description",
@@ -78,9 +79,28 @@ export default {
       }
     ]
   ],
-  modules: ["@nuxtjs/dotenv"],
+  modules: ["@nuxtjs/dotenv", ["@nuxtjs/pwa", { icon: false }]],
   vuetify: {
     customVariables: ["~/assets/css/vuetify/variables.scss"]
+  },
+  pwa: {
+    manifest: {
+      lang: "ja",
+      name: siteTitle,
+      short_name: siteTitle,
+      description,
+      background_color: "#69F0AE",
+      display: "browser" // ホームに追加ダイアログ非表示
+    },
+    workbox: {
+      runtimeCaching: [
+        // googleフォント
+        {
+          urlPattern: "^https://fonts.(?:googleapis|gstatic).com/(.*)",
+          handler: "cacheFirst"
+        }
+      ]
+    }
   },
   build: {
     extractCSS: true,
