@@ -91,7 +91,7 @@ export default {
         image: "product-qtv.jpg",
         description:
           "Qiitaの人気の記事・ユーザー・書籍を見つけられるWebサービスです。" +
-          "Pythonでデータ集計を行い、フロントエンドはVue.jsによるSPAで構築しています。",
+          "Pythonでデータ集計を行い、フロントエンドはVue.jsによるSPAで構築しています 😄",
         stackIcons: [
           { icon: "mdi-vuejs", color: "#41B883" },
           { icon: "mdi-vuetify", color: "#42A5F5" },
@@ -120,7 +120,7 @@ export default {
         url: "https://k-urtica.github.io/",
         image: "product-portfolio.jpg",
         description:
-          "現在閲覧されている、私のポートフォリオサイトです。" +
+          "現在閲覧されている、私のポートフォリオサイトです🤔 " +
           "Nuxt.js・Vuetifyで構築し、静的生成した資産をGitHub Pagesでホスティングして公開しています。",
         stackIcons: [
           { icon: "mdi-nuxt", color: "#41B883" },
@@ -135,6 +135,33 @@ export default {
           {
             title: "Others",
             stacks: "GitHub Pages"
+          }
+        ]
+      },
+      {
+        title: "NUXT-NEWS-APP",
+        url: "https://nuxt-news-app.now.sh/",
+        image: "product-nuxt-news-app.jpg",
+        description:
+          "NuxtとNews APIを利用した国内・海外の様々なニュースソースからホットなニュースを集めたニュースサイトです。" +
+          "Zeit NowにSPAでホスティングしています。",
+        stackIcons: [
+          { icon: "mdi-nuxt", color: "#41B883" },
+          { icon: "mdi-vuetify", color: "#42A5F5" },
+          { icon: "mdi-nodejs", color: "#6cc24a" }
+        ],
+        stackDetail: [
+          {
+            title: "Front-end",
+            stacks: "Nuxt.js / Vuetify"
+          },
+          {
+            title: "Serverless-Functions",
+            stacks: "Node.js"
+          },
+          {
+            title: "Others",
+            stacks: "Zeit Now"
           }
         ]
       }
