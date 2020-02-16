@@ -36,12 +36,12 @@ export default {
       {
         hid: "og:url",
         property: "og:url",
-        content: "https://kiysi.github.io/"
+        content: "https://k-urtica.github.io/"
       },
       {
         hid: "og:title",
         property: "og:title",
-        content: "『K』 | Back-end Developer"
+        content: "K -- Back-end Developer"
       },
       {
         hid: "og:description",
@@ -51,7 +51,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://kiysi.github.io/img/k-portfolio-ogp.jpg"
+        content: "https://k-urtica.github.io/img/ogp-image.jpg"
       },
       // twitter
       {
