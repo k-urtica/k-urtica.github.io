@@ -3,7 +3,7 @@
     id="product"
     class="mt-5 mb-10 px-4"
     fluid
-    style="overflow-x: hidden;"
+    style="over-flow-y: hidden;"
   >
     <h2 class="display-2 mt-9 mb-3 font-weight-bold blue--text">Product</h2>
     <v-divider class="mb-9" />
@@ -21,13 +21,13 @@
             class="mx-auto"
             max-width="400"
             color="grey lighten-3"
-            elevation="11"
+            elevation="10"
             tile
             :href="item.url"
             target="_blank"
             rel="noopener"
-            data-aos="flip-right"
-            data-aos-duration="1000"
+            data-aos="flip-left"
+            data-aos-duration="800"
             data-aos-easing="ease-in-out"
             data-aos-anchor-placement="top-center"
           >
@@ -88,7 +88,7 @@ export default {
       {
         title: "QT Visualizer",
         url: "https://qtvisualizer.com/",
-        image: "product-qtv.png",
+        image: "product-qtv.jpg",
         description:
           "Qiitaの人気の記事・ユーザー・書籍を見つけられるWebサービスです。" +
           "Pythonでデータ集計を行い、フロントエンドはVue.jsによるSPAで構築しています。",
@@ -118,7 +118,7 @@ export default {
       {
         title: "ポートフォリオページ",
         url: "https://k-urtica.github.io/",
-        image: "product-portfolio.png",
+        image: "product-portfolio.jpg",
         description:
           "現在閲覧されている、私のポートフォリオサイトです。" +
           "Nuxt.js・Vuetifyで構築し、静的生成した資産をGitHub Pagesでホスティングして公開しています。",
