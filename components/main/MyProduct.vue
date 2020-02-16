@@ -29,7 +29,7 @@
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="center-bottom"
           >
             <v-img
               :src="require('@/assets/img/product/' + item.image)"
