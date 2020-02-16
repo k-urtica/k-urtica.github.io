@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - "lts/*"
+
+cache:
+  directories:
+    - "node_modules"
+
+branches:
+  only:
+    - develop
+
+install:
+  - yarn install
+  - yarn generate
+
+script:
+  - echo "Skipping tests"
+
+deploy:
+  provider: pages
+  keep_history: false
+  skip-cleanup: true
+  github-token: $GITHUB_ACCESS_TOKEN
+  target-branch: master
+  local-dir: dist
+  on:
+    branch: develop
