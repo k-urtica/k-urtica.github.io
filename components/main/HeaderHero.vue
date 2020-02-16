@@ -26,8 +26,9 @@
           </v-col>
         </v-row>
         <v-btn
-          class="btn-scroll mt-auto mx-auto mb-10"
+          class="btn-scroll mt-auto mx-auto mb-11"
           icon
+          large
           @click="$vuetify.goTo('#profile', options)"
           ><v-icon large color="white">mdi-chevron-double-down</v-icon></v-btn
         >
