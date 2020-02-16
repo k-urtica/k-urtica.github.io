@@ -83,6 +83,7 @@ export default {
     customVariables: ["~/assets/css/vuetify/variables.scss"]
   },
   build: {
+    extractCSS: true,
     extend(config, ctx) {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
