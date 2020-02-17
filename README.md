@@ -5,3 +5,10 @@
 ## ⭐️ URL
 
 [https://k-urtica.github.io/](https://k-urtica.github.io/)
+
+## 👀 Author
+
+👤 **K**
+
+- Twitter: [@k_urtica](https://twitter.com/k_urtica)
+- Github: [@k-urtica](https://github.com/k-urtica)
