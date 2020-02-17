@@ -20,15 +20,15 @@
           <v-card
             class="mx-auto"
             max-width="400"
-            color="grey lighten-3"
+            color="grey lighten-4"
             elevation="10"
             tile
             :href="item.url"
             target="_blank"
             rel="noopener"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-easing="ease-in-out"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-out"
             data-aos-anchor-placement="center-bottom"
           >
             <v-img
