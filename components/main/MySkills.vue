@@ -32,13 +32,7 @@
           rounded
           :color="skill.color"
           height="15"
-        >
-          <template v-slot="{ value }">
-            <span class="font-weight-bold body-2 grey--text text--darken-3">
-              {{ value }}%
-            </span>
-          </template>
-        </v-progress-linear>
+        />
       </v-col>
     </v-row>
   </v-container>
