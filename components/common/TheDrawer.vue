@@ -130,7 +130,7 @@ export default {
       {
         title: "MyBlog",
         icon: "mdi-post-outline",
-        link: "https://knote.life/"
+        link: "https://knote.dev/"
       }
     ],
     options: {
