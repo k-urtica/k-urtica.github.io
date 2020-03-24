@@ -64,7 +64,15 @@ export default {
         content: "@k_urtica"
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href:
+          "https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
+      }
+    ]
   },
   loading: { color: "#fff" },
   css: [],
@@ -81,7 +89,10 @@ export default {
   ],
   modules: ["@nuxtjs/dotenv", ["@nuxtjs/pwa", { icon: false }]],
   vuetify: {
-    customVariables: ["~/assets/css/vuetify/variables.scss"]
+    customVariables: ["~/assets/css/vuetify/variables.scss"],
+    defaultAssets: {
+      icons: false
+    }
   },
   pwa: {
     manifest: {
