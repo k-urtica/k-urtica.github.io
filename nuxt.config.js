@@ -78,7 +78,6 @@ export default {
   css: [],
   plugins: [{ src: "~/plugins/aos", mode: "client" }],
   buildModules: [
-    "@nuxtjs/eslint-module",
     "@nuxtjs/vuetify",
     [
       "@nuxtjs/google-analytics",
@@ -114,17 +113,7 @@ export default {
     }
   },
   build: {
-    extractCSS: true,
-    extend(config, ctx) {
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
-        });
-      }
-    }
+    extractCSS: true
   },
   env: {
     G_ANALYTICS
