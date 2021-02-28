@@ -1,7 +1,7 @@
 <template>
   <v-navigation-drawer
     app
-    mobile-break-point="1080"
+    mobile-breakpoint="1080"
     floating
     :src="getImageUrl('')"
     :mini-variant.sync="mini"

@@ -2,9 +2,9 @@
   <v-app>
     <the-drawer />
 
-    <v-content>
+    <v-main>
       <nuxt />
-    </v-content>
+    </v-main>
 
     <the-footer />
   </v-app>
