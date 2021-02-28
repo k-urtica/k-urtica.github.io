@@ -7,17 +7,15 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "export": "nuxt export",
-    "serve": "nuxt serve",
     "start": "nuxt start",
-    "generate": "nuxt build && nuxt export",
+    "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "aos": "^3.0.0-beta.6",
-    "nuxt": "^2.13.0"
+    "nuxt": "^2.15.2"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",

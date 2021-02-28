@@ -6,7 +6,6 @@ const description =
   "旅行／お酒好きバックエンドエンジニア『K』のポートフォリオサイトです。";
 
 export default {
-  mode: "universal",
   target: "static",
   head: {
     htmlAttrs: {
