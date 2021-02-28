@@ -7,7 +7,7 @@
     :mini-variant.sync="mini"
     mini-variant-width="65"
   >
-    <template v-slot:img="attrs">
+    <template #img="attrs">
       <v-img
         v-bind="attrs"
         height="100%"
@@ -48,7 +48,7 @@
       </v-list-item-group>
     </v-list>
 
-    <template v-slot:append>
+    <template #append>
       <div align="center" class="mb-3">
         <v-menu
           top
@@ -57,12 +57,12 @@
           :close-on-content-click="false"
           max-width="300"
         >
-          <template v-slot:activator="{ on }">
+          <template #activator="{ on }">
             <v-btn class="mx-auto" small icon color="grey" v-on="on">
               <v-icon>mdi-settings-outline</v-icon>
             </v-btn>
           </template>
-          <v-card elevation="5" color="blue-grey" style="opacity: 0.85;">
+          <v-card elevation="5" color="blue-grey" style="opacity: 0.85">
             <v-container>
               <p class="font-weight-bold text-center white--text mb-0">
                 Images
@@ -113,37 +113,37 @@ export default {
       {
         title: "Product",
         icon: "mdi-desktop-mac-dashboard",
-        to: "#product"
-      }
+        to: "#product",
+      },
     ],
     buttomLink: [
       {
         title: "Twitter",
         icon: "mdi-twitter-box",
-        link: "https://twitter.com/k_urtica"
+        link: "https://twitter.com/k_urtica",
       },
       {
         title: "GitHub",
         icon: "mdi-github-box",
-        link: "https://github.com/k-urtica"
+        link: "https://github.com/k-urtica",
       },
       {
         title: "MyBlog",
         icon: "mdi-post-outline",
-        link: "https://knote.dev/"
-      }
+        link: "https://knote.dev/",
+      },
     ],
     options: {
-      duration: 720
+      duration: 720,
     },
     imageList: [
       "drawer-back-01",
       "drawer-back-02",
       "drawer-back-03",
-      "drawer-back-04"
+      "drawer-back-04",
     ],
     currentImage: "drawer-back-01",
-    offset: true
+    offset: true,
   }),
   methods: {
     setImage(img) {
@@ -155,8 +155,8 @@ export default {
         return images("./" + this.currentImage + ".jpg");
       }
       return images("./" + img + ".jpg");
-    }
-  }
+    },
+  },
 };
 </script>
 

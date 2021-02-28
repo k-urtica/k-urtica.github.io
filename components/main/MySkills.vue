@@ -3,11 +3,9 @@
     id="skills"
     class="mt-5 mb-10 px-4"
     fluid
-    style="overflow-x: hidden;"
+    style="overflow-x: hidden"
   >
-    <h2 class="display-2 mt-9 mb-3 font-weight-bold blue--text">
-      Skills
-    </h2>
+    <h2 class="display-2 mt-9 mb-3 font-weight-bold blue--text">Skills</h2>
     <v-divider class="mb-9" />
 
     <p class="text-center title">TECHNICAL</p>
@@ -48,7 +46,7 @@ export default {
         name: "JavaScript",
         exp: 65,
         icon: "mdi-language-javascript",
-        color: "#F0DB4F"
+        color: "#F0DB4F",
       },
       { name: "Vue.js", exp: 75, icon: "mdi-vuejs", color: "#41B883" },
       { name: "Nuxt.js", exp: 80, icon: "mdi-nuxt", color: "#41B883" },
@@ -57,46 +55,46 @@ export default {
         name: "HTML",
         exp: 70,
         icon: "mdi-language-html5",
-        color: "#E44D26"
+        color: "#E44D26",
       },
       { name: "CSS", exp: 50, icon: "mdi-language-css3", color: "#2965f1" },
       {
         name: "Spring FW",
         exp: 75,
         icon: "mdi-check-outline",
-        color: "#4CAF50"
+        color: "#4CAF50",
       },
       {
         name: "SQL",
         exp: 60,
         icon: "mdi-database-search",
-        color: "#80DEEA"
+        color: "#80DEEA",
       },
       {
         name: "Mongo DB",
         exp: 60,
         icon: "mdi-database",
-        color: "#3FA037"
+        color: "#3FA037",
       },
       {
         name: "Redis",
         exp: 75,
         icon: "mdi-database",
-        color: "#A41E11"
+        color: "#A41E11",
       },
       {
         name: "Docker",
         exp: 70,
         icon: "mdi-docker",
-        color: "#0db7ed"
+        color: "#0db7ed",
       },
       {
         name: "Python",
         exp: 60,
         icon: "mdi-language-python",
-        color: "#306998"
-      }
-    ]
-  })
+        color: "#306998",
+      },
+    ],
+  }),
 };
 </script>

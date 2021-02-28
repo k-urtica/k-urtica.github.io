@@ -3,11 +3,9 @@
     id="profile"
     class="mt-5 mb-10 px-4"
     fluid
-    style="overflow-x: hidden;"
+    style="overflow-x: hidden"
   >
-    <h2 class="display-2 mt-9 mb-3 font-weight-bold blue--text">
-      About Me
-    </h2>
+    <h2 class="display-2 mt-9 mb-3 font-weight-bold blue--text">About Me</h2>
     <v-divider class="mb-9" />
 
     <v-row class="px-4" align="center">
@@ -31,13 +29,9 @@
           主にVue、Nuxt、Vuetify、Pythonを使ってWebサービスの開発を行っています。
         </p>
         <h4 class="mb-1 section-title">旅行好き</h4>
-        <p>
-          ✈ 国内・海外問わず、様々な場所へ旅行するのが好き。
-        </p>
+        <p>✈ 国内・海外問わず、様々な場所へ旅行するのが好き。</p>
         <h4 class="mb-1 section-title">お酒好き</h4>
-        <p>
-          🥃 ビール、ウイスキー、日本酒等々、個人開発はお酒を嗜みつつ...
-        </p>
+        <p>🥃 ビール、ウイスキー、日本酒等々、個人開発はお酒を嗜みつつ...</p>
       </v-col>
 
       <v-col
@@ -61,8 +55,8 @@ import ProfileCard from "~/components/main/parts/ProfileCard.vue";
 
 export default {
   components: {
-    ProfileCard
-  }
+    ProfileCard,
+  },
 };
 </script>
 

@@ -18,7 +18,7 @@ export default {
     HeaderHero,
     MyProfile,
     MySkills,
-    MyProduct
-  }
+    MyProduct,
+  },
 };
 </script>

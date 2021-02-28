@@ -21,11 +21,11 @@
         :key="item.caption"
         justify="space-between"
       >
-        <v-col cols="auto" class="py-0 ">
+        <v-col cols="auto" class="py-0">
           <v-icon small class="pr-2" color="blue-grey darken-1">{{
             item.icon
           }}</v-icon>
-          <span class="font-weight-bold" style="color: #7986CB;">
+          <span class="font-weight-bold" style="color: #7986cb">
             {{ item.caption }}
           </span>
         </v-col>
@@ -53,21 +53,21 @@ export default {
   data: () => ({
     profilList: [
       { caption: "Name", value: "K", icon: "mdi-account-badge" },
-      { caption: "Location", value: "Tokyo, Japan", icon: "mdi-map-marker" }
+      { caption: "Location", value: "Tokyo, Japan", icon: "mdi-map-marker" },
     ],
     snsLinkList: [
       {
         title: "Twitter",
         icon: "mdi-twitter",
-        link: "https://twitter.com/k_urtica"
+        link: "https://twitter.com/k_urtica",
       },
       {
         title: "GitHub",
         icon: "mdi-github-circle",
-        link: "https://github.com/k-urtica"
-      }
-    ]
-  })
+        link: "https://github.com/k-urtica",
+      },
+    ],
+  }),
 };
 </script>
 

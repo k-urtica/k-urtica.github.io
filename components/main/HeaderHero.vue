@@ -1,5 +1,5 @@
 <template>
-  <div id="header-hero" style="overflow-x: hidden;">
+  <div id="header-hero" style="overflow-x: hidden">
     <v-img :src="require('@/assets/img/header-hero.jpg')" class="hero-image">
       <v-container fill-height fluid align="center" class="custom-gradient">
         <v-row class="mt-auto px-2" no-gutters>
@@ -42,9 +42,9 @@ export default {
   data: () => ({
     options: {
       duration: 1000,
-      easing: "easeInOutQuad"
-    }
-  })
+      easing: "easeInOutQuad",
+    },
+  }),
 };
 </script>
 

@@ -17,7 +17,7 @@ import TheDrawer from "~/components/common/TheDrawer.vue";
 export default {
   components: {
     TheFooter,
-    TheDrawer
-  }
+    TheDrawer,
+  },
 };
 </script>

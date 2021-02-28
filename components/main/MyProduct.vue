@@ -3,7 +3,7 @@
     id="product"
     class="mt-5 mb-10 px-4"
     fluid
-    style="over-flow-y: hidden;"
+    style="over-flow-y: hidden"
   >
     <h2 class="display-2 mt-9 mb-3 font-weight-bold blue--text">Product</h2>
     <v-divider class="mb-9" />
@@ -16,7 +16,7 @@
         sm="6"
         lg="4"
       >
-        <v-hover v-slot:default="{ hover }">
+        <v-hover v-slot="{ hover }">
           <v-card
             class="mx-auto"
             max-width="400"
@@ -51,13 +51,13 @@
             <v-card-title class="py-2 product-title">
               {{ item.title }}
             </v-card-title>
-            <v-card-text class="caption" style="height: 100%;">
+            <v-card-text class="caption" style="height: 100%">
               {{ item.description }}
             </v-card-text>
 
             <v-divider class="mx-3" color="#BDBDBD" />
             <v-tooltip top color="#66BB6A">
-              <template v-slot:activator="{ on }">
+              <template #activator="{ on }">
                 <v-card-actions class="justify-center" v-on="on">
                   <v-icon
                     v-for="icon in item.stackIcons"
@@ -98,22 +98,22 @@ export default {
           { icon: "mdi-language-python", color: "#306998" },
           { icon: "mdi-flask-empty-outline", color: "#616161" },
           { icon: "mdi-database", color: "#3FA037" },
-          { icon: "mdi-database", color: "#A41E11" }
+          { icon: "mdi-database", color: "#A41E11" },
         ],
         stackDetail: [
           {
             title: "Front-end",
-            stacks: "Vue.js / Vuetify"
+            stacks: "Vue.js / Vuetify",
           },
           {
             title: "Back-end",
-            stacks: "Python / Flask / MongoDB / Redis"
+            stacks: "Python / Flask / MongoDB / Redis",
           },
           {
             title: "Others",
-            stacks: "Heroku / AmazonS3 / CloudFlare"
-          }
-        ]
+            stacks: "Heroku / AmazonS3 / CloudFlare",
+          },
+        ],
       },
       {
         title: "ポートフォリオページ",
@@ -125,18 +125,18 @@ export default {
         stackIcons: [
           { icon: "mdi-nuxt", color: "#41B883" },
           { icon: "mdi-vuetify", color: "#42A5F5" },
-          { icon: "mdi-github-circle", color: "#222" }
+          { icon: "mdi-github-circle", color: "#222" },
         ],
         stackDetail: [
           {
             title: "Front-end",
-            stacks: "Nuxt.js / Vuetify / AOS"
+            stacks: "Nuxt.js / Vuetify / AOS",
           },
           {
             title: "Others",
-            stacks: "GitHub Pages"
-          }
-        ]
+            stacks: "GitHub Pages",
+          },
+        ],
       },
       {
         title: "NUXT-NEWS-APP",
@@ -148,25 +148,25 @@ export default {
         stackIcons: [
           { icon: "mdi-nuxt", color: "#41B883" },
           { icon: "mdi-vuetify", color: "#42A5F5" },
-          { icon: "mdi-nodejs", color: "#6cc24a" }
+          { icon: "mdi-nodejs", color: "#6cc24a" },
         ],
         stackDetail: [
           {
             title: "Front-end",
-            stacks: "Nuxt.js / Vuetify"
+            stacks: "Nuxt.js / Vuetify",
           },
           {
             title: "Serverless-Functions",
-            stacks: "Node.js"
+            stacks: "Node.js",
           },
           {
             title: "Others",
-            stacks: "Zeit Now"
-          }
-        ]
-      }
-    ]
-  })
+            stacks: "Zeit Now",
+          },
+        ],
+      },
+    ],
+  }),
 };
 </script>
 
