@@ -82,11 +82,11 @@ export default {
     [
       "@nuxtjs/google-analytics",
       {
-        id: process.env.G_ANALYTICS,
+        id: "UA-135479814-6",
       },
     ],
   ],
-  modules: ["@nuxtjs/dotenv"],
+  modules: [],
   vuetify: {
     customVariables: ["~/assets/css/vuetify/variables.scss"],
     defaultAssets: {
