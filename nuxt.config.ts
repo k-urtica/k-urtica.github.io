@@ -78,6 +78,7 @@ const config: NuxtConfig = {
   css: [],
   plugins: [{ src: "~/plugins/aos", mode: "client" }],
   buildModules: [
+    "@nuxt/typescript-build",
     "@nuxtjs/vuetify",
     [
       "@nuxtjs/google-analytics",

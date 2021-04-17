@@ -148,10 +148,11 @@ export default Vue.extend({
     offset: true,
   }),
   methods: {
-    setImage(img) {
+    setImage(img: string) {
       this.currentImage = img;
     },
-    getImageUrl(img) {
+    getImageUrl(img: string) {
+      // @ts-ignore(Provisional)
       const images = require.context("@/assets/img/", false, /\.jpg$/);
       if (img === "") {
         return images("./" + this.currentImage + ".jpg");
