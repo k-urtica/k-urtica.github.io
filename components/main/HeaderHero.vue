@@ -37,15 +37,17 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   data: () => ({
     options: {
       duration: 1000,
       easing: "easeInOutQuad",
     },
   }),
-};
+});
 </script>
 
 <style lang="scss" scoped>

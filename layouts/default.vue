@@ -10,14 +10,16 @@
   </v-app>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import TheFooter from "~/components/common/TheFooter.vue";
 import TheDrawer from "~/components/common/TheDrawer.vue";
 
-export default {
+export default Vue.extend({
+  name: "Default",
   components: {
     TheFooter,
     TheDrawer,
   },
-};
+});
 </script>

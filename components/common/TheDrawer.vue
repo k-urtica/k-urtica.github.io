@@ -102,8 +102,10 @@
   </v-navigation-drawer>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   data: () => ({
     mini: false,
     drawerMenu: [
@@ -157,7 +159,7 @@ export default {
       return images("./" + img + ".jpg");
     },
   },
-};
+});
 </script>
 
 <style lang="scss" scoped>

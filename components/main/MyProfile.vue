@@ -50,14 +50,15 @@
   </v-container>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import ProfileCard from "~/components/main/parts/ProfileCard.vue";
 
-export default {
+export default Vue.extend({
   components: {
     ProfileCard,
   },
-};
+});
 </script>
 
 <style lang="scss" scoped>

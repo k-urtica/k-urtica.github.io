@@ -1,12 +1,12 @@
-require("dotenv").config();
-const { G_ANALYTICS } = process.env;
+import { NuxtConfig } from "@nuxt/types";
 
 const siteTitle = "K -- Back-end Developer";
 const description =
   "旅行／お酒好きバックエンドエンジニア『K』のポートフォリオサイトです。";
 
-export default {
+const config: NuxtConfig = {
   target: "static",
+  components: [{ path: "~/components", pathPrefix: false }],
   head: {
     htmlAttrs: {
       lang: "ja",
@@ -96,7 +96,6 @@ export default {
   build: {
     extractCSS: true,
   },
-  env: {
-    G_ANALYTICS,
-  },
 };
+
+export default config;

@@ -36,8 +36,10 @@
   </v-container>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   data: () => ({
     skills: [
       { name: "Java", exp: 85, icon: "mdi-language-java", color: "#f89820" },
@@ -96,5 +98,5 @@ export default {
       },
     ],
   }),
-};
+});
 </script>

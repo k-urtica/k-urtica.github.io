@@ -48,8 +48,10 @@
   </v-card>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   data: () => ({
     profilList: [
       { caption: "Name", value: "K", icon: "mdi-account-badge" },
@@ -68,7 +70,7 @@ export default {
       },
     ],
   }),
-};
+});
 </script>
 
 <style lang="scss" scoped>
