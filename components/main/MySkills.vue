@@ -38,62 +38,77 @@
 
 <script lang="ts">
 import Vue from "vue";
+import {
+  mdiLanguageJava,
+  mdiLanguageC,
+  mdiLanguageJavascript,
+  mdiVuejs,
+  mdiNuxt,
+  mdiVuetify,
+  mdiLanguageHtml5,
+  mdiLanguageCss3,
+  mdiLeaf,
+  mdiDatabaseSearch,
+  mdiDatabase,
+  mdiDocker,
+  mdiLanguagePython,
+} from "@mdi/js";
 
 export default Vue.extend({
   data: () => ({
     skills: [
-      { name: "Java", exp: 85, icon: "mdi-language-java", color: "#f89820" },
-      { name: "C", exp: 45, icon: "mdi-language-c", color: "#BDBDBD" },
+      { name: "Java", exp: 85, icon: mdiLanguageJava, color: "#f89820" },
+      { name: "C", exp: 45, icon: mdiLanguageC, color: "#BDBDBD" },
       {
         name: "JavaScript",
         exp: 65,
-        icon: "mdi-language-javascript",
+        icon: mdiLanguageJavascript,
         color: "#F0DB4F",
       },
-      { name: "Vue.js", exp: 75, icon: "mdi-vuejs", color: "#41B883" },
-      { name: "Nuxt.js", exp: 80, icon: "mdi-nuxt", color: "#41B883" },
-      { name: "Vuetify", exp: 80, icon: "mdi-vuetify", color: "#42A5F5" },
+      { name: "Vue.js", exp: 75, icon: mdiVuejs, color: "#41B883" },
+      { name: "Nuxt.js", exp: 80, icon: mdiNuxt, color: "#41B883" },
+      { name: "Vuetify", exp: 80, icon: mdiVuetify, color: "#42A5F5" },
       {
         name: "HTML",
         exp: 70,
-        icon: "mdi-language-html5",
+        icon: mdiLanguageHtml5,
         color: "#E44D26",
       },
-      { name: "CSS", exp: 50, icon: "mdi-language-css3", color: "#2965f1" },
+      { name: "CSS", exp: 50, icon: mdiLanguageCss3, color: "#2965f1" },
       {
         name: "Spring FW",
         exp: 75,
-        icon: "mdi-check-outline",
+        icon: mdiLeaf,
         color: "#4CAF50",
       },
       {
         name: "SQL",
         exp: 60,
-        icon: "mdi-database-search",
+        icon: mdiDatabaseSearch,
         color: "#80DEEA",
       },
       {
         name: "Mongo DB",
         exp: 60,
-        icon: "mdi-database",
+        icon: mdiDatabase,
         color: "#3FA037",
       },
       {
         name: "Redis",
         exp: 75,
-        icon: "mdi-database",
+        icon: mdiDatabase,
         color: "#A41E11",
       },
       {
         name: "Docker",
         exp: 70,
-        icon: "mdi-docker",
+        icon: mdiDocker,
         color: "#0db7ed",
       },
       {
         name: "Python",
         exp: 60,
-        icon: "mdi-language-python",
+        icon: mdiLanguagePython,
         color: "#306998",
       },
     ],

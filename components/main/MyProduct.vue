@@ -43,7 +43,9 @@
                   class="d-flex transition-fast-in-fast-out v-card--reveal title white--text"
                 >
                   Learn More
-                  <v-icon small right color="white">mdi-open-in-new</v-icon>
+                  <v-icon small right color="white">{{
+                    icon.mdiOpenInNew
+                  }}</v-icon>
                 </v-card>
               </v-expand-transition>
             </v-img>
@@ -83,9 +85,23 @@
 
 <script lang="ts">
 import Vue from "vue";
+import {
+  mdiVuejs,
+  mdiVuetify,
+  mdiLanguagePython,
+  mdiFlaskEmptyOutline,
+  mdiDatabase,
+  mdiNuxt,
+  mdiNodejs,
+  mdiGithub,
+  mdiOpenInNew,
+} from "@mdi/js";
 
 export default Vue.extend({
   data: () => ({
+    icon: {
+      mdiOpenInNew,
+    },
     productDetail: [
       {
         title: "QT Visualizer",
@@ -95,12 +111,12 @@ export default Vue.extend({
           "Qiitaの人気の記事・ユーザー・書籍を見つけられるWebサービスです。" +
           "Pythonでデータ集計を行い、フロントエンドはVue.jsによるSPAで構築しています 😄",
         stackIcons: [
-          { icon: "mdi-vuejs", color: "#41B883" },
-          { icon: "mdi-vuetify", color: "#42A5F5" },
-          { icon: "mdi-language-python", color: "#306998" },
-          { icon: "mdi-flask-empty-outline", color: "#616161" },
-          { icon: "mdi-database", color: "#3FA037" },
-          { icon: "mdi-database", color: "#A41E11" },
+          { icon: mdiVuejs, color: "#41B883" },
+          { icon: mdiVuetify, color: "#42A5F5" },
+          { icon: mdiLanguagePython, color: "#306998" },
+          { icon: mdiFlaskEmptyOutline, color: "#616161" },
+          { icon: mdiDatabase, color: "#3FA037" },
+          { icon: mdiDatabase, color: "#A41E11" },
         ],
         stackDetail: [
           {
@@ -125,9 +141,9 @@ export default Vue.extend({
           "現在閲覧されている、私のポートフォリオサイトです🤔 " +
           "Nuxt.js・Vuetifyで構築し、静的生成した資産をGitHub Pagesでホスティングして公開しています。",
         stackIcons: [
-          { icon: "mdi-nuxt", color: "#41B883" },
-          { icon: "mdi-vuetify", color: "#42A5F5" },
-          { icon: "mdi-github-circle", color: "#222" },
+          { icon: mdiNuxt, color: "#41B883" },
+          { icon: mdiVuetify, color: "#42A5F5" },
+          { icon: mdiGithub, color: "#222" },
         ],
         stackDetail: [
           {
@@ -148,9 +164,9 @@ export default Vue.extend({
           "NuxtとNews APIを利用した国内・海外の様々なニュースソースからホットなニュースを集めたニュースサイトです。" +
           "Zeit NowにSPAでホスティングしています。",
         stackIcons: [
-          { icon: "mdi-nuxt", color: "#41B883" },
-          { icon: "mdi-vuetify", color: "#42A5F5" },
-          { icon: "mdi-nodejs", color: "#6cc24a" },
+          { icon: mdiNuxt, color: "#41B883" },
+          { icon: mdiVuetify, color: "#42A5F5" },
+          { icon: mdiNodejs, color: "#6cc24a" },
         ],
         stackDetail: [
           {

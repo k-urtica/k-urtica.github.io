@@ -12,7 +12,7 @@
         <v-img :src="require('@/assets/img/prof-icon.png')" width="150" />
       </v-avatar>
     </v-card-actions>
-    <v-card-text class="caption pb-0">
+    <v-card-text class="caption">
       Back-end Developer / Traveler / Liquor lover
     </v-card-text>
     <v-card-text class="pb-1">
@@ -22,9 +22,9 @@
         justify="space-between"
       >
         <v-col cols="auto" class="py-0">
-          <v-icon small class="pr-2" color="blue-grey darken-1">{{
-            item.icon
-          }}</v-icon>
+          <v-icon class="pr-2" color="blue-grey darken-1">
+            {{ item.icon }}
+          </v-icon>
           <span class="font-weight-bold" style="color: #7986cb">
             {{ item.caption }}
           </span>
@@ -32,7 +32,7 @@
         <v-col cols="6" class="text-left py-0">{{ item.value }}</v-col>
       </v-row>
     </v-card-text>
-    <v-divider class="mx-3" />
+    <v-divider class="mt-4" />
     <v-card-actions class="py-1 justify-center">
       <v-btn
         v-for="item in snsLinkList"
@@ -50,22 +50,23 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { mdiAccount, mdiMapMarker, mdiTwitter, mdiGithub } from "@mdi/js";
 
 export default Vue.extend({
   data: () => ({
     profilList: [
-      { caption: "Name", value: "K", icon: "mdi-account-badge" },
-      { caption: "Location", value: "Tokyo, Japan", icon: "mdi-map-marker" },
+      { caption: "Name", value: "K", icon: mdiAccount },
+      { caption: "Location", value: "Tokyo, Japan", icon: mdiMapMarker },
     ],
     snsLinkList: [
       {
         title: "Twitter",
-        icon: "mdi-twitter",
+        icon: mdiTwitter,
         link: "https://twitter.com/k_urtica",
       },
       {
         title: "GitHub",
-        icon: "mdi-github-circle",
+        icon: mdiGithub,
         link: "https://github.com/k-urtica",
       },
     ],

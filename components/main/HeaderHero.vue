@@ -30,7 +30,9 @@
           icon
           large
           @click="$vuetify.goTo('#profile', options)"
-          ><v-icon large color="white">mdi-chevron-double-down</v-icon></v-btn
+          ><v-icon large color="white">{{
+            icon.mdiChevronDoubleDown
+          }}</v-icon></v-btn
         >
       </v-container>
     </v-img>
@@ -39,9 +41,13 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { mdiChevronDoubleDown } from "@mdi/js";
 
 export default Vue.extend({
   data: () => ({
+    icon: {
+      mdiChevronDoubleDown,
+    },
     options: {
       duration: 1000,
       easing: "easeInOutQuad",

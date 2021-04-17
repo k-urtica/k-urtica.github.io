@@ -26,7 +26,7 @@
         <p class="mb-0 caption grey--text text--lighten-1">Traveler</p>
       </v-list-item-title>
       <v-btn icon color="white" @click.stop="mini = !mini">
-        <v-icon>mdi-chevron-left</v-icon>
+        <v-icon>{{ icon.mdiChevronLeft }}</v-icon>
       </v-btn>
     </v-list-item>
     <v-divider class="mb-6" />
@@ -59,7 +59,7 @@
         >
           <template #activator="{ on }">
             <v-btn class="mx-auto" small icon color="grey" v-on="on">
-              <v-icon>mdi-settings-outline</v-icon>
+              <v-icon>{{ icon.mdiCogOutline }}</v-icon>
             </v-btn>
           </template>
           <v-card elevation="5" color="blue-grey" style="opacity: 0.85">
@@ -104,34 +104,45 @@
 
 <script lang="ts">
 import Vue from "vue";
+import {
+  mdiHome,
+  mdiAccountSearchOutline,
+  mdiFileAccount,
+  mdiDesktopMacDashboard,
+  mdiTwitter,
+  mdiGithub,
+  mdiPost,
+  mdiChevronLeft,
+  mdiCogOutline,
+} from "@mdi/js";
 
 export default Vue.extend({
   data: () => ({
     mini: false,
     drawerMenu: [
-      { title: "Top", icon: "mdi-home", to: "#header-hero" },
-      { title: "About", icon: "mdi-account-search-outline", to: "#profile" },
-      { title: "Skills", icon: "mdi-file-account", to: "#skills" },
+      { title: "Top", icon: mdiHome, to: "#header-hero" },
+      { title: "About", icon: mdiAccountSearchOutline, to: "#profile" },
+      { title: "Skills", icon: mdiFileAccount, to: "#skills" },
       {
         title: "Product",
-        icon: "mdi-desktop-mac-dashboard",
+        icon: mdiDesktopMacDashboard,
         to: "#product",
       },
     ],
     buttomLink: [
       {
         title: "Twitter",
-        icon: "mdi-twitter-box",
+        icon: mdiTwitter,
         link: "https://twitter.com/k_urtica",
       },
       {
         title: "GitHub",
-        icon: "mdi-github-box",
+        icon: mdiGithub,
         link: "https://github.com/k-urtica",
       },
       {
         title: "MyBlog",
-        icon: "mdi-post-outline",
+        icon: mdiPost,
         link: "https://knote.dev/",
       },
     ],
@@ -146,6 +157,7 @@ export default Vue.extend({
     ],
     currentImage: "drawer-back-01",
     offset: true,
+    icon: { mdiChevronLeft, mdiCogOutline },
   }),
   methods: {
     setImage(img: string) {

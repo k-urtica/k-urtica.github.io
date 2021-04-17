@@ -64,15 +64,7 @@ const config: NuxtConfig = {
         content: "@k_urtica",
       },
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
-      {
-        rel: "stylesheet",
-        type: "text/css",
-        href:
-          "https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css",
-      },
-    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
   },
   loading: { color: "#fff" },
   css: [],
@@ -90,9 +82,8 @@ const config: NuxtConfig = {
   modules: [],
   vuetify: {
     customVariables: ["~/assets/css/vuetify/variables.scss"],
-    defaultAssets: {
-      icons: false,
-    },
+    optionsPath: "./plugins/vuetify.options.ts",
+    defaultAssets: false,
   },
   build: {
     extractCSS: true,
