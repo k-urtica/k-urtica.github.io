@@ -67,7 +67,7 @@ const config: NuxtConfig = {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
   },
   loading: { color: "#fff" },
-  css: [],
+  css: ["~/assets/css/global.scss"],
   plugins: [{ src: "~/plugins/aos", mode: "client" }],
   buildModules: [
     "@nuxt/typescript-build",
@@ -81,7 +81,7 @@ const config: NuxtConfig = {
   ],
   modules: [],
   vuetify: {
-    customVariables: ["~/assets/css/vuetify/variables.scss"],
+    customVariables: ["~/assets/css/variables.scss"],
     optionsPath: "./plugins/vuetify.options.ts",
     defaultAssets: false,
   },
