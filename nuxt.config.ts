@@ -2,7 +2,7 @@ import { NuxtConfig } from "@nuxt/types";
 
 const siteTitle = "K -- Back-end Developer";
 const description =
-  "旅行／お酒好きバックエンドエンジニア『K』のポートフォリオサイトです。";
+  "旅すること／お酒を飲むことが好きなバックエンドエンジニア『K』のポートフォリオサイトです😉";
 
 const config: NuxtConfig = {
   target: "static",
@@ -52,7 +52,7 @@ const config: NuxtConfig = {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://k-urtica.github.io/img/ogp-image.jpg",
+        content: "https://k-urtica.github.io/ogp.png",
       },
       // twitter
       {
