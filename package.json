@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
-    "nuxt": "^2.15.4"
+    "nuxt": "^2.15.4",
+    "tsparticles": "^1.26.2"
   },
   "devDependencies": {
     "@mdi/js": "^5.9.55",
