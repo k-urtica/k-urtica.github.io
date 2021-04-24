@@ -5,7 +5,13 @@
       class="d-flex align-center justify-center"
       style="height: 100%; position: relative"
     >
-      <header-hero-card style="position: absolute" />
+      <div
+        style="position: absolute"
+        data-aos="zoom-out-down"
+        data-aos-duration="500"
+      >
+        <header-hero-card />
+      </div>
     </div>
   </div>
 </template>

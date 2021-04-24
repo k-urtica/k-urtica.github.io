@@ -6,7 +6,13 @@
     </p>
 
     <v-row justify="center">
-      <v-col cols="12" sm="6" class="px-4" style="max-width: 480px">
+      <v-col
+        cols="12"
+        sm="6"
+        class="px-4"
+        style="max-width: 480px"
+        data-aos="flip-left"
+      >
         <v-card outlined class="skill-card">
           <v-img
             :src="require('@/assets/img/development.svg')"
@@ -40,7 +46,13 @@
         </v-card>
       </v-col>
 
-      <v-col cols="12" sm="6" class="px-4" style="max-width: 480px">
+      <v-col
+        cols="12"
+        sm="6"
+        class="px-4"
+        style="max-width: 480px"
+        data-aos="flip-right"
+      >
         <v-card outlined class="skill-card">
           <v-img
             :src="require('@/assets/img/front-end.svg')"

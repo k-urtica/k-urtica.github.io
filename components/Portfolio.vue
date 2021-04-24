@@ -11,6 +11,7 @@
         sm="6"
         lg="4"
         class="py-4"
+        data-aos="fade-up"
       >
         <v-card
           outlined

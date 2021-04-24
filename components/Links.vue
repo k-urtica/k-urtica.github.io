@@ -2,7 +2,7 @@
   <v-container>
     <h2 id="links" class="text-h2 font-weight-bold mb-11">Links</h2>
 
-    <v-row justify="center">
+    <v-row justify="center" data-aos="fade-up">
       <v-col v-for="item in linkItems" :key="item.name" cols="12" sm="3">
         <v-card
           outlined

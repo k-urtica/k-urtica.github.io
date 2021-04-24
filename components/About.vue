@@ -38,7 +38,7 @@
       </v-col>
 
       <v-col cols="12" md="5" offset-md="1" class="text-center">
-        <v-avatar size="250" class="elevation-8">
+        <v-avatar size="250" class="elevation-8" data-aos="zoom-in">
           <v-img :src="require('@/assets/img/prof-icon.png')" />
         </v-avatar>
       </v-col>
