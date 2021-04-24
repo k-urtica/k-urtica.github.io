@@ -79,7 +79,12 @@ const config: NuxtConfig = {
       },
     ],
   ],
-  modules: [],
+  modules: ["@nuxtjs/sitemap"],
+
+  sitemap: {
+    hostname: "https://k-urtica.github.io/",
+    gzip: true,
+  },
   vuetify: {
     customVariables: ["~/assets/css/variables.scss"],
     optionsPath: "./plugins/vuetify.options.ts",

@@ -13,6 +13,7 @@
     "lintfix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@nuxtjs/sitemap": "^2.4.0",
     "aos": "^3.0.0-beta.6",
     "nuxt": "^2.15.4",
     "tsparticles": "^1.26.2"
