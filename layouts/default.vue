@@ -6,7 +6,7 @@
       <nuxt />
     </v-main>
 
-    <the-footer class="mt-8" />
+    <the-footer />
   </v-app>
 </template>
 
