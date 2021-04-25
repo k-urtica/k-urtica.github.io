@@ -78,6 +78,7 @@ const config: NuxtConfig = {
         id: "UA-135479814-6",
       },
     ],
+    "@nuxtjs/pwa",
   ],
   modules: ["@nuxtjs/sitemap"],
 
@@ -90,6 +91,23 @@ const config: NuxtConfig = {
     optionsPath: "./plugins/vuetify.options.ts",
     defaultAssets: false,
   },
+
+  pwa: {
+    manifest: {
+      name: siteTitle,
+      short_name: siteTitle,
+      description,
+      display: "standalone",
+      theme_color: "#e8f1ff",
+      background_color: "#e8f1ff",
+      start_url: "/",
+      useWebmanifestExtension: false,
+    },
+    // workbox: {
+    //   offline: false,
+    // },
+  },
+
   build: {
     extractCSS: true,
   },
