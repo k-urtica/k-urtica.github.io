@@ -25,10 +25,10 @@ export default Vue.extend({
     tsParticles.load("tsparticles", {
       particles: {
         number: {
-          value: 40,
+          value: 35,
         },
         color: {
-          value: "#CFD8DC",
+          value: "#607D8B",
           animation: {
             enable: true,
             speed: 30,
@@ -36,7 +36,7 @@ export default Vue.extend({
           },
         },
         shape: {
-          type: "polygon",
+          type: "edge",
           polygon: {
             nb_sides: 6,
           },
@@ -63,6 +63,7 @@ export default Vue.extend({
         move: {
           enable: true,
           speed: 1.2,
+          outModes: "bounce",
         },
       },
       interactivity: {
@@ -93,6 +94,6 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .hero-wrapper {
   height: 100vh;
-  background-color: #fefefe;
+  // background-color: #fefefe;
 }
 </style>
