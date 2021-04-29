@@ -25,7 +25,7 @@ export default Vue.extend({
     tsParticles.load("tsparticles", {
       particles: {
         number: {
-          value: 35,
+          value: 30,
         },
         color: {
           value: "#607D8B",
