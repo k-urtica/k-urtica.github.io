@@ -1,7 +1,11 @@
 <template>
   <v-container>
-    <h2 id="portfolio" class="text-h2 font-weight-bold mb-11">Portfolio</h2>
-    <p class="text-h5 mb-8">Some of my latest works.</p>
+    <section-header
+      id="portfolio"
+      title="Portfolio"
+      text="Some of my latest works"
+      class="mb-8"
+    />
 
     <v-row>
       <v-col
@@ -50,8 +54,10 @@
 
 <script lang="ts">
 import Vue from "vue";
+import SectionHeader from "./SectionHeader.vue";
 
 export default Vue.extend({
+  components: { SectionHeader },
   data() {
     return {
       products: [

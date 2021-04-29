@@ -1,9 +1,11 @@
 <template>
   <v-container>
-    <h2 id="skills" class="text-h2 font-weight-bold mb-11">Skills</h2>
-    <p class="text-h5 mb-8">
-      My technical skills in work and hobby development.
-    </p>
+    <section-header
+      id="skills"
+      title="Skills"
+      text="My technical skills in work and hobby development"
+      class="mb-8"
+    />
 
     <v-row justify="center">
       <v-col

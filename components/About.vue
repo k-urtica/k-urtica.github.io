@@ -1,7 +1,11 @@
 <template>
   <v-container>
-    <h2 id="about" class="text-h2 font-weight-bold mb-11">About</h2>
-    <p class="text-h5 mb-8">Hi there 👋👋</p>
+    <section-header
+      id="about"
+      title="About"
+      text="Hi there 👋👋"
+      class="mb-8"
+    />
 
     <v-row>
       <v-col cols="12" md="6" align-self="center" order="last" order-sm="first">
