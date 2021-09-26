@@ -109,7 +109,9 @@ const config: NuxtConfig = {
   },
 
   build: {
-    extractCSS: true,
+    extractCSS: {
+      ignoreOrder: true,
+    },
   },
 };
 
