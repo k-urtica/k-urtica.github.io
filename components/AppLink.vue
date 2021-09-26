@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 
 type InternalAttr = {
   to: { name: string };
@@ -28,14 +28,14 @@ export default Vue.extend({
       return /^https?:\/\//.test(this.to);
     },
     linkTag(): string {
-      return this.isExternal ? "a" : "nuxt-link";
+      return this.isExternal ? 'a' : 'nuxt-link';
     },
     attr(): ExternalAttr | InternalAttr {
       if (this.isExternal) {
         return {
           href: this.to,
-          target: "_blank",
-          rel: "noopener noreferrer",
+          target: '_blank',
+          rel: 'noopener noreferrer',
         };
       } else {
         return {

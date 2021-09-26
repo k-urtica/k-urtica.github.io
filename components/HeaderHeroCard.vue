@@ -47,8 +47,8 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import { mdiTwitter, mdiGithub } from "@mdi/js";
+import Vue from 'vue';
+import { mdiTwitter, mdiGithub } from '@mdi/js';
 
 export default Vue.extend({
   data() {
@@ -58,10 +58,10 @@ export default Vue.extend({
         mdiGithub,
       },
       btnItems: [
-        { text: "About", anchor: "#about" },
-        { text: "Skills", anchor: "#skills" },
-        { text: "Product", anchor: "#portfolio" },
-        { text: "Links", anchor: "#links" },
+        { text: 'About', anchor: '#about' },
+        { text: 'Skills', anchor: '#skills' },
+        { text: 'Product', anchor: '#portfolio' },
+        { text: 'Links', anchor: '#links' },
       ],
       options: {
         duration: 720,

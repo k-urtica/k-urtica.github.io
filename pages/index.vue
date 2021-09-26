@@ -12,8 +12,8 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import HeaderHero from "~/components/HeaderHero.vue";
+import Vue from 'vue';
+import HeaderHero from '~/components/HeaderHero.vue';
 
 export default Vue.extend({
   components: {

@@ -36,8 +36,8 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import { mdiTwitter, mdiGithub } from "@mdi/js";
+import Vue from 'vue';
+import { mdiTwitter, mdiGithub } from '@mdi/js';
 
 export default Vue.extend({
   data() {
@@ -45,24 +45,24 @@ export default Vue.extend({
       icon: { mdiTwitter },
       linkItems: [
         {
-          name: "Twitter",
-          account: "@k_urtica",
+          name: 'Twitter',
+          account: '@k_urtica',
           icon: mdiTwitter,
-          color: "#1DA1F2",
-          link: "https://twitter.com/k_urtica",
+          color: '#1DA1F2',
+          link: 'https://twitter.com/k_urtica',
         },
         {
-          name: "GitHub",
-          account: "k-urtica",
+          name: 'GitHub',
+          account: 'k-urtica',
           icon: mdiGithub,
-          color: "#333",
-          link: "https://github.com/k-urtica",
+          color: '#333',
+          link: 'https://github.com/k-urtica',
         },
         {
-          name: "Qiita",
-          account: "KIYS",
-          icon: require("@/assets/img/qiita-icon.png"),
-          link: "https://qiita.com/KIYS",
+          name: 'Qiita',
+          account: 'KIYS',
+          icon: require('@/assets/img/qiita-icon.png'),
+          link: 'https://qiita.com/KIYS',
         },
       ],
     };

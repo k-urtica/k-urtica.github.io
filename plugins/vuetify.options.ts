@@ -1,5 +1,5 @@
 export default {
   icons: {
-    iconfont: "mdiSvg",
+    iconfont: 'mdiSvg',
   },
 };

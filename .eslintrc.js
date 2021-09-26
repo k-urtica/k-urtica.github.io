@@ -5,12 +5,12 @@ module.exports = {
     node: true,
   },
   extends: [
-    "@nuxtjs/eslint-config-typescript",
-    "plugin:nuxt/recommended",
-    "prettier",
+    '@nuxtjs/eslint-config-typescript',
+    'plugin:nuxt/recommended',
+    'prettier',
   ],
   plugins: [],
   rules: {
-    "vue/max-attributes-per-line": "off",
+    'vue/max-attributes-per-line': 'off',
   },
 };

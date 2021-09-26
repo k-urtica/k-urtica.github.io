@@ -92,7 +92,7 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 import {
   mdiLanguageHtml5,
   mdiLanguageJavascript,
@@ -106,7 +106,7 @@ import {
   mdiLanguagePython,
   mdiDocker,
   mdiAws,
-} from "@mdi/js";
+} from '@mdi/js';
 
 export default Vue.extend({
   data() {
@@ -116,78 +116,78 @@ export default Vue.extend({
       },
       workSkills: [
         {
-          text: "HTML/CSS",
+          text: 'HTML/CSS',
           icon: mdiLanguageHtml5,
           rate: 3,
-          color: "#E44D26",
+          color: '#E44D26',
         },
         {
-          text: "JavaScript",
+          text: 'JavaScript',
           icon: mdiLanguageJavascript,
           rate: 3.5,
-          color: "#F0DB4F",
+          color: '#F0DB4F',
         },
         {
-          text: "TypeScript",
+          text: 'TypeScript',
           icon: mdiLanguageTypescript,
           rate: 3,
-          color: "#007acc",
+          color: '#007acc',
         },
         {
-          text: "Angularjs",
+          text: 'Angularjs',
           icon: mdiAngularjs,
           rate: 2.5,
-          color: "#dd1b16",
+          color: '#dd1b16',
         },
         {
-          text: "Java/SpringFW",
+          text: 'Java/SpringFW',
           icon: mdiLanguageJava,
           rate: 4.5,
-          color: "#f89820",
+          color: '#f89820',
         },
         {
-          text: "SQL",
+          text: 'SQL',
           icon: mdiDatabase,
           rate: 2,
-          color: "#80DEEA",
+          color: '#80DEEA',
         },
       ],
       hobbySkills: [
         {
-          text: "Vue.js",
+          text: 'Vue.js',
           icon: mdiVuejs,
           rate: 3,
-          color: "#41B883",
+          color: '#41B883',
         },
         {
-          text: "Nuxt.js",
+          text: 'Nuxt.js',
           icon: mdiNuxt,
           rate: 4,
-          color: "#41B883",
+          color: '#41B883',
         },
         {
-          text: "Vuetify.js",
+          text: 'Vuetify.js',
           icon: mdiVuetify,
           rate: 4,
-          color: "#42A5F5",
+          color: '#42A5F5',
         },
         {
-          text: "Python",
+          text: 'Python',
           icon: mdiLanguagePython,
           rate: 3,
-          color: "#306998",
+          color: '#306998',
         },
         {
-          text: "Docker",
+          text: 'Docker',
           icon: mdiDocker,
           rate: 2.5,
-          color: "#0db7ed",
+          color: '#0db7ed',
         },
         {
-          text: "AWS",
+          text: 'AWS',
           icon: mdiAws,
           rate: 2.5,
-          color: "#FF9900",
+          color: '#FF9900',
         },
       ],
     };

@@ -17,18 +17,18 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import { tsParticles } from "tsparticles";
+import Vue from 'vue';
+import { tsParticles } from 'tsparticles';
 
 export default Vue.extend({
   mounted() {
-    tsParticles.load("tsparticles", {
+    tsParticles.load('tsparticles', {
       particles: {
         number: {
           value: 30,
         },
         color: {
-          value: "#607D8B",
+          value: '#607D8B',
           animation: {
             enable: true,
             speed: 30,
@@ -36,7 +36,7 @@ export default Vue.extend({
           },
         },
         shape: {
-          type: "edge",
+          type: 'edge',
           polygon: {
             nb_sides: 6,
           },
@@ -63,15 +63,15 @@ export default Vue.extend({
         move: {
           enable: true,
           speed: 1.2,
-          outModes: "bounce",
+          outModes: 'bounce',
         },
       },
       interactivity: {
-        detectsOn: "canvas",
+        detectsOn: 'canvas',
         events: {
           onHover: {
             enable: true,
-            mode: "bubble",
+            mode: 'bubble',
           },
         },
         modes: {
@@ -81,7 +81,7 @@ export default Vue.extend({
             opacity: 0.2,
             size: 10,
             color: {
-              value: "#00E676",
+              value: '#00E676',
             },
           },
         },

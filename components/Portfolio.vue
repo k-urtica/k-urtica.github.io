@@ -53,8 +53,8 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import SectionHeader from "./SectionHeader.vue";
+import Vue from 'vue';
+import SectionHeader from './SectionHeader.vue';
 
 export default Vue.extend({
   components: { SectionHeader },
@@ -62,32 +62,32 @@ export default Vue.extend({
     return {
       products: [
         {
-          title: "ポートフォリオサイト👋",
+          title: 'ポートフォリオサイト👋',
           text:
-            "私のポートフォリオサイトです。Nuxt.js/Vuetifyでシンプルに作成しました😉 Nuxtで静的に生成したサイトをGitHub Pagesでホスティングしています。",
-          image: "portfolio-site.png",
-          link: "https://k-urtica.github.io/",
+            '私のポートフォリオサイトです。Nuxt.js/Vuetifyでシンプルに作成しました😉 Nuxtで静的に生成したサイトをGitHub Pagesでホスティングしています。',
+          image: 'portfolio-site.png',
+          link: 'https://k-urtica.github.io/',
         },
         {
-          title: "Web ToolBox | 無料で気軽に使えるWebツールサイト",
+          title: 'Web ToolBox | 無料で気軽に使えるWebツールサイト',
           text:
-            "プログラミングやWeb制作などに役に立つ自作ツールを公開しているサイトです🔧 ツールは随時追加していっています。インフラはAWSを利用😄",
-          image: "web-toolbox.png",
-          link: "https://web-toolbox.dev/",
+            'プログラミングやWeb制作などに役に立つ自作ツールを公開しているサイトです🔧 ツールは随時追加していっています。インフラはAWSを利用😄',
+          image: 'web-toolbox.png',
+          link: 'https://web-toolbox.dev/',
         },
         {
-          title: "QT Visualizer | 【Qiita技術記事のランキング】",
+          title: 'QT Visualizer | 【Qiita技術記事のランキング】',
           text:
-            "Qiitaの人気の記事/ユーザー/技術書籍を検索できるWebサービスです。Pythonでデータ集計を行い、Vue.jsによるSPAで構築しています😌",
-          image: "qtvisualizer.png",
-          link: "https://qtvisualizer.com/",
+            'Qiitaの人気の記事/ユーザー/技術書籍を検索できるWebサービスです。Pythonでデータ集計を行い、Vue.jsによるSPAで構築しています😌',
+          image: 'qtvisualizer.png',
+          link: 'https://qtvisualizer.com/',
         },
         {
-          title: "K note",
+          title: 'K note',
           text:
-            "Vueの静的サイトジェネレーター「Gridsome」で構築したマークダウンブログです。Netlifyホスティングで完全無料で運営🤭",
-          image: "knote.png",
-          link: "https://knote.dev/",
+            'Vueの静的サイトジェネレーター「Gridsome」で構築したマークダウンブログです。Netlifyホスティングで完全無料で運営🤭',
+          image: 'knote.png',
+          link: 'https://knote.dev/',
         },
       ],
     };

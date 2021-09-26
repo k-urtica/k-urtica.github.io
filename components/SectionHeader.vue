@@ -10,17 +10,17 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 
 export default Vue.extend({
   props: {
     title: {
       type: String,
-      default: "",
+      default: '',
     },
     text: {
       type: String,
-      default: "",
+      default: '',
     },
   },
 });

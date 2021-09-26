@@ -1,6 +1,6 @@
-import { Context } from "@nuxt/types";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Context } from '@nuxt/types';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default ({ app }: Context) => {
   // @ts-ignore
@@ -9,7 +9,7 @@ export default ({ app }: Context) => {
     duration: 800,
     delay: 0,
     once: true,
-    easing: "ease-in-out",
-    anchorPlacement: "bottom-bottom",
+    easing: 'ease-in-out',
+    anchorPlacement: 'bottom-bottom',
   });
 };
