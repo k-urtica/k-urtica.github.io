@@ -1,5 +1,5 @@
 <template>
-  <v-card outlined tile class="hero-card">
+  <v-card elevation="0" class="glass-container">
     <v-list-item class="py-4">
       <v-row no-gutters>
         <v-col
@@ -77,13 +77,14 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.hero-card {
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-  &:hover {
-    background-color: #f3e5f5;
-  }
+.glass-container {
+  gap: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(234, 118, 203, 0.063);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 1px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+  border-right: 1px rgba(40, 40, 40, 0.35) solid;
 }
 </style>

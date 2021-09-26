@@ -97,6 +97,13 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .product-card {
-  border-radius: 14px !important;
+  gap: 20px;
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(32, 32, 32, 0.06);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 1px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+  border-right: 1px rgba(40, 40, 40, 0.35) solid;
 }
 </style>

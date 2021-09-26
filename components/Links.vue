@@ -6,9 +6,8 @@
       <v-col v-for="item in linkItems" :key="item.name" cols="12" sm="3">
         <v-card
           outlined
-          tile
           max-width="275px"
-          class="mx-auto"
+          class="mx-auto glass-container"
           :href="item.link"
           target="_blank"
           rel="noopener"
@@ -69,3 +68,16 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.glass-container {
+  gap: 20px;
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(234, 118, 203, 0.063);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 1px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+  border-right: 1px rgba(40, 40, 40, 0.35) solid;
+}
+</style>
