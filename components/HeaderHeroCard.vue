@@ -21,9 +21,9 @@
         order="first"
         order-sm="last"
       >
-        <v-list-item-avatar class="ma-3 prof-icon" size="95">
-          <v-img :src="require('@/assets/img/prof-icon.png')" eager />
-        </v-list-item-avatar>
+        <v-avatar class="ma-3 outlined" size="95">
+          <img :src="require('@/assets/img/prof-icon.png')" />
+        </v-avatar>
       </v-col>
     </v-row>
 
@@ -72,7 +72,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.prof-icon {
+.outlined {
   outline: solid 6px rgba(250, 250, 250, 0.15);
 }
 </style>
