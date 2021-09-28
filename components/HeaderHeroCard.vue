@@ -22,7 +22,7 @@
         order-sm="last"
       >
         <v-list-item-avatar class="ma-3 prof-icon" size="95">
-          <v-img :src="require('@/assets/img/prof-icon.png')" />
+          <v-img :src="require('@/assets/img/prof-icon.png')" eager />
         </v-list-item-avatar>
       </v-col>
     </v-row>
