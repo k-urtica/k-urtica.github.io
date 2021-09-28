@@ -22,70 +22,72 @@ import { tsParticles } from 'tsparticles';
 
 export default Vue.extend({
   mounted() {
-    tsParticles.load('tsparticles', {
-      particles: {
-        number: {
-          value: 30,
-        },
-        color: {
-          value: '#B2EBF2',
-          animation: {
+    this.$nextTick(() => {
+      tsParticles.load('tsparticles', {
+        particles: {
+          number: {
+            value: this.$vuetify.breakpoint.xsOnly ? 15 : 30,
+          },
+          color: {
+            value: '#B2EBF2',
+            animation: {
+              enable: true,
+              speed: 30,
+              sync: false,
+            },
+          },
+          shape: {
+            type: 'edge',
+            polygon: {
+              nb_sides: 6,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            animation: {
+              enable: true, // シェイプの透明度をアニメーションさせるか否か
+              speed: 0.2, // アニメーションのスピード
+              opacity_min: 0.1, // 透明度の最小値
+              sync: false, // 全てのシェイプを同時にアニメーションさせるか否か
+            },
+          },
+          size: {
+            value: 70,
+            random: true,
+            animation: {
+              enable: true,
+              speed: 16,
+              minimumValue: 10,
+              sync: false,
+            },
+          },
+          move: {
             enable: true,
-            speed: 30,
-            sync: false,
+            speed: 1.2,
+            outModes: 'bounce',
           },
         },
-        shape: {
-          type: 'edge',
-          polygon: {
-            nb_sides: 6,
+        interactivity: {
+          detectsOn: 'canvas',
+          events: {
+            onHover: {
+              enable: true,
+              mode: 'bubble',
+            },
           },
-        },
-        opacity: {
-          value: 0.5,
-          animation: {
-            enable: true, // シェイプの透明度をアニメーションさせるか否か
-            speed: 0.2, // アニメーションのスピード
-            opacity_min: 0.1, // 透明度の最小値
-            sync: false, // 全てのシェイプを同時にアニメーションさせるか否か
-          },
-        },
-        size: {
-          value: 75,
-          random: true,
-          animation: {
-            enable: true,
-            speed: 16,
-            minimumValue: 10,
-            sync: false,
-          },
-        },
-        move: {
-          enable: true,
-          speed: 1.2,
-          outModes: 'bounce',
-        },
-      },
-      interactivity: {
-        detectsOn: 'canvas',
-        events: {
-          onHover: {
-            enable: true,
-            mode: 'bubble',
-          },
-        },
-        modes: {
-          bubble: {
-            distance: 100,
-            duration: 1,
-            opacity: 0.2,
-            size: 10,
-            color: {
-              value: '#00E676',
+          modes: {
+            bubble: {
+              distance: 100,
+              duration: 1,
+              opacity: 0.2,
+              size: 10,
+              color: {
+                value: '#00E676',
+              },
             },
           },
         },
-      },
+      });
     });
   },
 });
