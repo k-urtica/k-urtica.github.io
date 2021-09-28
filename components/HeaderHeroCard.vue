@@ -21,7 +21,7 @@
         order="first"
         order-sm="last"
       >
-        <v-avatar class="ma-3 outlined" size="95">
+        <v-avatar class="ma-3 elevation-10" size="95">
           <img :src="require('@/assets/img/prof-icon.png')" />
         </v-avatar>
       </v-col>
@@ -70,9 +70,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-<style lang="scss" scoped>
-.outlined {
-  outline: solid 6px rgba(250, 250, 250, 0.15);
-}
-</style>
