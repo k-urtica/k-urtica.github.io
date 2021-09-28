@@ -28,7 +28,7 @@ export default Vue.extend({
           value: 30,
         },
         color: {
-          value: '#607D8B',
+          value: '#B2EBF2',
           animation: {
             enable: true,
             speed: 30,
