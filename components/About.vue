@@ -9,9 +9,9 @@
 
     <v-row>
       <v-col cols="12" md="6" align-self="center" order="last" order-sm="first">
-        <v-simple-table dark class="prof-table glass-container">
+        <v-simple-table dark class="glass-container blue--text text--lighten-5">
           <template #default>
-            <tbody class="green--text text--accent-2">
+            <tbody>
               <tr>
                 <td>名前</td>
                 <td>K</td>
@@ -51,20 +51,13 @@
 </template>
 
 <style lang="scss" scoped>
-.prof-table {
-  /* background-color: #20232c;
-  border-radius: 14px; */
-  overflow: hidden;
-}
-
 .glass-container {
-  gap: 20px;
-  border-radius: 16px;
-  backdrop-filter: blur(6px);
-  background-color: rgba(16, 16, 16, 0.6);
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 1px rgba(255, 255, 255, 0.4) solid;
-  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
-  border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  overflow: hidden;
+  background-color: rgba(90, 90, 90, 0.06) !important;
+  box-shadow: 0 8px 26px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 </style>

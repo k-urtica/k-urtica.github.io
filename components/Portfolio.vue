@@ -17,23 +17,19 @@
         class="py-4"
         data-aos="fade-up"
       >
-        <v-card
-          outlined
-          height="100%"
-          :href="item.link"
-          target="_blank"
-          rel="noopener"
-          class="product-card"
-        >
-          <v-img :src="require('@/assets/img/' + item.image)" />
-          <v-card-title class="font-weight-bold indigo--text">
-            {{ item.title }}
-          </v-card-title>
-          <v-card-text>
-            {{ item.text }}
-          </v-card-text>
-        </v-card>
+        <app-link :to="item.link">
+          <glass-card height="100%">
+            <v-img :src="require('@/assets/img/' + item.image)" />
+            <v-card-title class="font-weight-bold white--text">
+              {{ item.title }}
+            </v-card-title>
+            <v-card-text class="blue--text text--lighten-5">
+              {{ item.text }}
+            </v-card-text>
+          </glass-card>
+        </app-link>
       </v-col>
+
       <v-col
         v-show="$vuetify.breakpoint.lgAndUp"
         lg="6"

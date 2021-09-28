@@ -1,49 +1,44 @@
 <template>
-  <v-card elevation="0" class="glass-container">
-    <v-list-item class="py-4">
-      <v-row no-gutters>
-        <v-col
-          cols="12"
-          sm="6"
-          class="text-center"
-          order="last"
-          order-sm="first"
-        >
-          <v-list-item-content class="mt-1">
-            <v-list-item-subtitle class="mb-2">
-              Software Engineer
-            </v-list-item-subtitle>
-            <v-list-item-title class="text-h5 font-weight-bold mb-2">
-              K
-            </v-list-item-title>
-          </v-list-item-content>
-        </v-col>
+  <glass-card class="pt-4 px-sm-3">
+    <v-row no-gutters>
+      <v-col cols="12" sm="6" class="text-center" order="last" order-sm="first">
+        <v-list-item-content>
+          <v-list-item-subtitle class="mb-2 grey--text text--lighten-4">
+            Software Engineer
+          </v-list-item-subtitle>
+          <v-list-item-title
+            class="text-h4 font-weight-bold mb-2 grey--text text--lighten-4"
+          >
+            K
+          </v-list-item-title>
+        </v-list-item-content>
+      </v-col>
 
-        <v-col
-          cols="12"
-          sm="6"
-          class="text-center text-sm-right"
-          order="first"
-          order-sm="last"
-        >
-          <v-list-item-avatar class="mx-3" size="80">
-            <v-img :src="require('@/assets/img/prof-icon.png')" />
-          </v-list-item-avatar>
-        </v-col>
-      </v-row>
-    </v-list-item>
+      <v-col
+        cols="12"
+        sm="6"
+        class="text-center text-sm-right"
+        order="first"
+        order-sm="last"
+      >
+        <v-list-item-avatar class="ma-3 prof-icon" size="95">
+          <v-img :src="require('@/assets/img/prof-icon.png')" />
+        </v-list-item-avatar>
+      </v-col>
+    </v-row>
 
     <v-card-actions>
       <v-btn
         v-for="item in btnItems"
         :key="item.text"
+        color="grey lighten-4"
         text
         @click="goToAnchor(item.anchor)"
       >
         {{ item.text }}
       </v-btn>
     </v-card-actions>
-  </v-card>
+  </glass-card>
 </template>
 
 <script lang="ts">
@@ -77,14 +72,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.glass-container {
-  gap: 20px;
-  border-radius: 16px;
-  backdrop-filter: blur(6px);
-  background-color: rgba(234, 118, 203, 0.063);
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 1px rgba(255, 255, 255, 0.4) solid;
-  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
-  border-right: 1px rgba(40, 40, 40, 0.35) solid;
+.prof-icon {
+  outline: solid 6px rgba(250, 250, 250, 0.15);
 }
 </style>

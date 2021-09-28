@@ -15,13 +15,13 @@
         style="max-width: 480px"
         data-aos="flip-left"
       >
-        <v-card outlined class="skill-card py-2">
+        <glass-card class="py-3">
           <v-img
             :src="require('@/assets/img/development.svg')"
             width="115"
             class="mx-auto mt-5"
           />
-          <v-card-title class="font-weight-bold justify-center">
+          <v-card-title class="font-weight-bold justify-center white--text">
             Work
           </v-card-title>
 
@@ -29,7 +29,7 @@
             <v-list-item-icon>
               <v-icon :color="item.color">{{ item.icon }}</v-icon>
             </v-list-item-icon>
-            <v-list-item-title class="text-body-2">
+            <v-list-item-title class="text-body-2 blue--text text--lighten-5">
               {{ item.text }}
             </v-list-item-title>
             <v-list-item-subtitle class="text-right">
@@ -41,11 +41,11 @@
                 size="19"
                 dense
                 color="yellow darken-3"
-                background-color="grey darken-1"
+                background-color="grey"
               />
             </v-list-item-subtitle>
           </v-list-item>
-        </v-card>
+        </glass-card>
       </v-col>
 
       <v-col
@@ -55,13 +55,15 @@
         style="max-width: 480px"
         data-aos="flip-right"
       >
-        <v-card outlined class="skill-card py-2">
+        <glass-card class="py-3">
           <v-img
             :src="require('@/assets/img/front-end.svg')"
             width="115"
             class="mx-auto mt-5"
           />
-          <v-card-title class="font-weight-bold justify-center">
+          <v-card-title
+            class="font-weight-bold justify-center blue--text text--lighten-5"
+          >
             Hobby dev
           </v-card-title>
 
@@ -69,7 +71,7 @@
             <v-list-item-icon>
               <v-icon :color="item.color">{{ item.icon }}</v-icon>
             </v-list-item-icon>
-            <v-list-item-title class="text-body-2">
+            <v-list-item-title class="text-body-2 blue--text text--lighten-5">
               {{ item.text }}
             </v-list-item-title>
             <v-list-item-subtitle class="text-right">
@@ -81,11 +83,11 @@
                 size="19"
                 dense
                 color="yellow darken-3"
-                background-color="grey darken-1"
+                background-color="grey"
               />
             </v-list-item-subtitle>
           </v-list-item>
-        </v-card>
+        </glass-card>
       </v-col>
     </v-row>
   </v-container>
@@ -194,16 +196,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-<style lang="scss" scoped>
-.skill-card {
-  gap: 20px;
-  border-radius: 16px;
-  backdrop-filter: blur(6px);
-  background-color: rgba(32, 32, 32, 0.06);
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 1px rgba(255, 255, 255, 0.4) solid;
-  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
-  border-right: 1px rgba(40, 40, 40, 0.35) solid;
-}
-</style>

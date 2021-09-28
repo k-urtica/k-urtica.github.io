@@ -1,18 +1,32 @@
 <template>
-  <v-footer padless color="#ECEFFA">
+  <v-footer padless color="grey darken-4" dark>
     <v-container class="pt-5 pb-2 text-center">
-      <div class="text-caption" data-aos="fade-up">
-        👉Made with <app-link to="https://ja.nuxtjs.org/">Nuxt.js</app-link> and
-        <app-link to="https://vuetifyjs.com/ja/">Vuetify.js</app-link>
+      <div class="text-caption">
+        👉Made with
+        <app-link to="https://ja.nuxtjs.org/" class="blue--text text--accent-2"
+          >Nuxt.js</app-link
+        >
+        and
+        <app-link
+          to="https://vuetifyjs.com/ja/"
+          class="blue--text text--accent-2"
+          >Vuetify.js</app-link
+        >
       </div>
-      <div class="text-caption" data-aos="fade-up">
+      <div class="text-caption">
         Icons made by
-        <app-link to="https://www.freepik.com">Freepik</app-link>
+        <app-link to="https://www.freepik.com" class="blue--text text--accent-2"
+          >Freepik</app-link
+        >
         from
-        <app-link to="https://www.flaticon.com/">www.flaticon.com</app-link>
+        <app-link
+          to="https://www.flaticon.com/"
+          class="blue--text text--accent-2"
+          >www.flaticon.com</app-link
+        >
       </div>
       <v-divider class="my-2" />
-      <div data-aos="fade-up">
+      <div>
         {{ new Date().getFullYear() }} —
         <strong>K -- Back-end Developer😆</strong>
       </div>
