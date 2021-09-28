@@ -8,14 +8,8 @@
     />
 
     <v-row justify="center">
-      <v-col
-        cols="12"
-        sm="6"
-        class="px-4"
-        style="max-width: 480px"
-        data-aos="flip-left"
-      >
-        <glass-card class="py-3">
+      <v-col cols="12" sm="6" class="px-4" style="max-width: 480px">
+        <glass-card class="py-3" data-aos="flip-left">
           <v-img
             :src="require('@/assets/img/development.svg')"
             width="115"
@@ -48,14 +42,8 @@
         </glass-card>
       </v-col>
 
-      <v-col
-        cols="12"
-        sm="6"
-        class="px-4"
-        style="max-width: 480px"
-        data-aos="flip-right"
-      >
-        <glass-card class="py-3">
+      <v-col cols="12" sm="6" class="px-4" style="max-width: 480px">
+        <glass-card class="py-3" data-aos="flip-right">
           <v-img
             :src="require('@/assets/img/front-end.svg')"
             width="115"
