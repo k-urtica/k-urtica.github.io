@@ -66,18 +66,22 @@ const config: NuxtConfig = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
   },
-  loading: { color: '#fff' },
-  css: ['~/assets/css/global.scss'],
-  plugins: [{ src: '~/plugins/aos', mode: 'client' }],
+  loading: false,
+
+  css: [
+    '~/assets/css/global.css',
+    '@fortawesome/fontawesome-svg-core/styles.css',
+  ],
+  plugins: ['~/plugins/ts-particles', '~/plugins/fontawesome'],
   buildModules: [
     '@nuxt/typescript-build',
-    '@nuxtjs/vuetify',
     [
       '@nuxtjs/google-analytics',
       {
         id: 'UA-135479814-6',
       },
     ],
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/pwa',
   ],
   modules: ['@nuxtjs/sitemap'],
@@ -85,11 +89,6 @@ const config: NuxtConfig = {
   sitemap: {
     hostname: 'https://k-urtica.github.io/',
     gzip: true,
-  },
-  vuetify: {
-    customVariables: ['~/assets/css/variables.scss'],
-    optionsPath: './plugins/vuetify.options.ts',
-    defaultAssets: false,
   },
 
   pwa: {
@@ -109,9 +108,12 @@ const config: NuxtConfig = {
   },
 
   build: {
-    extractCSS: {
-      ignoreOrder: true,
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false,
+      },
     },
+    extractCSS: true,
   },
 };
 

@@ -4,7 +4,7 @@ a {
 
 @font-face {
   font-family: FlopDesignFONT;
-  src: url("/font/FlopDesignFONT.woff2");
+  src: url('/font/FlopDesignFONT.woff2');
   font-weight: normal bold;
   font-display: swap;
 }

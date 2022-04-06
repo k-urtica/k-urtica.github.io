@@ -1,13 +1,11 @@
 <template>
-  <v-app>
-    <!-- <header-bar /> -->
+  <div class="page-wrapper">
+    <Particles id="tsparticles" :options="require('@/assets/particles.json')" />
 
-    <v-main>
+    <div class="container mx-auto max-w-5xl">
       <nuxt />
-    </v-main>
-
-    <the-footer />
-  </v-app>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">

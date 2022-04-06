@@ -8,7 +8,7 @@
 import Vue from 'vue';
 
 type InternalAttr = {
-  to: { name: string };
+  to: String;
 };
 type ExternalAttr = {
   href: String;
@@ -39,7 +39,7 @@ export default Vue.extend({
         };
       } else {
         return {
-          to: { name: this.to },
+          to: this.to,
         };
       }
     },
