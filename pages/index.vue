@@ -1,89 +1,84 @@
 <template>
-  <div>
-    <div class="wrapper pb-8">
-      <header-hero />
+  <div class="flex h-screen px-5">
+    <glass-card tag="article" class="relative m-auto w-full py-9 px-7 sm:w-112">
+      <header>
+        <h1 class="mb-3 text-4xl font-bold text-slate-50">K</h1>
+        <p class="text-sm text-slate-200">Web developer working in Japan.</p>
+        <p class="text-sm text-slate-200">I love programming and traveling.</p>
+      </header>
 
-      <about class="py-12 mb-12" />
-      <skills class="py-12 mb-12" />
-      <portfolio class="py-12 mb-12" />
-      <links class="py-12" />
-    </div>
+      <section class="mt-7 mb-3 border-t border-slate-600">
+        <ul>
+          <li v-for="menu in menus" :key="menu.title" class="mt-5">
+            <app-link :to="menu.to" class="text-teal-300">
+              <h2
+                class="relative text-xl font-bold underline-offset-2 hover:underline"
+              >
+                {{ menu.title }}
+                <span class="absolute right-0 top-1.5">
+                  <mdi-icon :icon="menu.icon" color="#5eead4" size="18" />
+                </span>
+              </h2>
+            </app-link>
+            <div class="mt-1 text-sm text-slate-300/95">
+              {{ menu.caption }}
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="absolute bottom-0 left-1/2 -translate-x-1/2">
+        <app-link
+          to="https://github.com/k-urtica/k-urtica.github.io"
+          class="text-sm text-teal-400/90"
+        >
+          Source Code
+        </app-link>
+      </footer>
+    </glass-card>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HeaderHero from '~/components/HeaderHero.vue';
+import { mdiArrowRight, mdiOpenInNew } from '@mdi/js';
 
 export default Vue.extend({
-  components: {
-    HeaderHero,
+  data() {
+    return {
+      menus: [
+        {
+          title: 'About',
+          to: '/about',
+          caption: 'About me.',
+          icon: mdiArrowRight,
+        },
+        {
+          title: 'Portfolio',
+          to: '/portfolio',
+          caption: 'Personal projects.',
+          icon: mdiArrowRight,
+        },
+        {
+          title: 'Picture',
+          to: '/picture',
+          caption: 'A scene from the travel.',
+          icon: mdiArrowRight,
+        },
+        {
+          title: 'Blog',
+          to: 'https://knote.dev',
+          caption: 'My personal Blog.',
+          icon: mdiOpenInNew,
+        },
+        {
+          title: 'Twitter',
+          to: 'https://twitter.com/k_urtica',
+          caption: 'Follow me.',
+          icon: mdiOpenInNew,
+        },
+      ],
+    };
   },
 });
 </script>
-
-<style lang="scss" scoped>
-.wrapper {
-  background-image: linear-gradient(
-      135deg,
-      rgba(61, 61, 61, 0.08) 0%,
-      rgba(61, 61, 61, 0.08) 16%,
-      rgba(209, 209, 209, 0.08) 16%,
-      rgba(209, 209, 209, 0.08) 53%,
-      rgba(180, 180, 180, 0.08) 53%,
-      rgba(180, 180, 180, 0.08) 75%,
-      rgba(247, 247, 247, 0.08) 75%,
-      rgba(247, 247, 247, 0.08) 81%,
-      rgba(161, 161, 161, 0.08) 81%,
-      rgba(161, 161, 161, 0.08) 83%,
-      rgba(17, 17, 17, 0.08) 83%,
-      rgba(17, 17, 17, 0.08) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgba(105, 105, 105, 0.1) 0%,
-      rgba(105, 105, 105, 0.1) 11%,
-      rgba(103, 103, 103, 0.1) 11%,
-      rgba(103, 103, 103, 0.1) 50%,
-      rgba(7, 7, 7, 0.1) 50%,
-      rgba(7, 7, 7, 0.1) 69%,
-      rgba(166, 166, 166, 0.1) 69%,
-      rgba(166, 166, 166, 0.1) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(40, 40, 40, 0.1) 0%,
-      rgba(40, 40, 40, 0.1) 31%,
-      rgba(216, 216, 216, 0.1) 31%,
-      rgba(216, 216, 216, 0.1) 34%,
-      rgba(24, 24, 24, 0.1) 34%,
-      rgba(24, 24, 24, 0.1) 36%,
-      rgba(107, 107, 107, 0.1) 36%,
-      rgba(107, 107, 107, 0.1) 53%,
-      rgba(228, 228, 228, 0.1) 53%,
-      rgba(228, 228, 228, 0.1) 60%,
-      rgba(136, 136, 136, 0.1) 60%,
-      rgba(136, 136, 136, 0.1) 92%,
-      rgba(88, 88, 88, 0.1) 92%,
-      rgba(88, 88, 88, 0.1) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgba(180, 180, 180, 0.01) 0%,
-      rgba(180, 180, 180, 0.01) 8%,
-      rgba(250, 250, 250, 0.01) 8%,
-      rgba(250, 250, 250, 0.01) 62%,
-      rgba(101, 101, 101, 0.01) 62%,
-      rgba(101, 101, 101, 0.01) 82%,
-      rgba(243, 243, 243, 0.01) 82%,
-      rgba(243, 243, 243, 0.01) 89%,
-      rgba(22, 22, 22, 0.01) 89%,
-      rgba(22, 22, 22, 0.01) 90%,
-      rgba(73, 73, 73, 0.01) 90%,
-      rgba(73, 73, 73, 0.01) 96%,
-      rgba(61, 61, 61, 0.01) 96%,
-      rgba(61, 61, 61, 0.01) 100%
-    ),
-    linear-gradient(90deg, rgb(11, 170, 156), rgb(60, 8, 248));
-}
-</style>
