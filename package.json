@@ -6,9 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt build --modern",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate --modern",
     "lint": "eslint . --ext .ts,.js,.vue --max-warnings=0 --ignore-path .gitignore",
     "lint-fix": "yarn prettier-fix && eslint . --fix --ext .ts,.js,.vue --max-warnings=0 --ignore-path .gitignore",
     "prettier-check": "prettier --check .",
