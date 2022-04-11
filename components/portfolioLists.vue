@@ -9,7 +9,7 @@
             <div class="aspect-video">
               <nuxt-picture
                 format="webp"
-                quality="95"
+                quality="80"
                 loading="lazy"
                 preload
                 :alt="portfolio.title"
