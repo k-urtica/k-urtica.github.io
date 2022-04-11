@@ -1,10 +1,10 @@
 <template>
-  <div class="page-wrapper">
+  <div>
     <Particles id="tsparticles" :options="require('@/assets/particles.json')" />
 
-    <div class="container mx-auto max-w-5xl">
+    <main class="container mx-auto max-w-5xl">
       <nuxt />
-    </div>
+    </main>
   </div>
 </template>
 

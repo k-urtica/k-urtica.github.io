@@ -68,11 +68,10 @@ const config: NuxtConfig = {
   },
   loading: false,
 
-  css: [
-    '~/assets/css/global.css',
-    '@fortawesome/fontawesome-svg-core/styles.css',
-  ],
-  plugins: ['~/plugins/ts-particles', '~/plugins/fontawesome'],
+  css: ['~/assets/css/global.css'],
+
+  plugins: ['~/plugins/ts-particles', '~/plugins/twemoji'],
+
   buildModules: [
     '@nuxt/typescript-build',
     [
@@ -82,6 +81,7 @@ const config: NuxtConfig = {
       },
     ],
     '@nuxtjs/tailwindcss',
+    '@nuxt/image',
     '@nuxtjs/pwa',
   ],
   modules: ['@nuxtjs/sitemap'],

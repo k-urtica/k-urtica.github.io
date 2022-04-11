@@ -2,7 +2,7 @@
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#fff"
+      "value": "#0f172a"
     },
     "image": "",
     "position": "",
@@ -26,7 +26,7 @@
   },
   "detectRetina": true,
   "duration": 0,
-  "fpsLimit": 120,
+  "fpsLimit": 60,
   "interactivity": {
     "detectsOn": "window",
     "events": {
@@ -510,8 +510,8 @@
       "wait": false
     },
     "rate": {
-      "quantity": 10,
-      "delay": 0.25
+      "quantity": 6,
+      "delay": 0.35
     },
     "shape": "square",
     "startCount": 0,

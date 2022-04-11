@@ -13,15 +13,14 @@
     "lintfix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/vue-fontawesome": "^2.0.6",
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.15.4",
-    "particles.vue": "^2.43.0"
+    "particles.vue": "^2.43.0",
+    "twemoji": "^14.0.2"
   },
   "devDependencies": {
+    "@mdi/js": "^6.6.96",
+    "@nuxt/image": "^0.6.2",
     "@nuxt/types": "^2.15.4",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config": "^6.0.0",

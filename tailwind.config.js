@@ -2,7 +2,15 @@ module.exports = {
   content: [],
   theme: {
     fontFamily: {
-      sans: ['FlopDesignFONT', 'メイリオ', 'sans-serif'],
+      sans: [
+        'FlopDesignFONT',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        'Helvetica',
+        'Arial',
+        'メイリオ',
+        'sans-serif',
+      ],
     },
     extend: {
       blur: {

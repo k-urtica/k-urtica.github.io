@@ -1,64 +1,91 @@
 <template>
-  <div class="h-screen px-5 pt-24">
-    <glass-card class="p-6 sm:p-9">
-      <div>
-        <h1
-          class="text-4xl font-bold text-emerald-300 underline underline-offset-8"
-        >
-          About
-        </h1>
-        <p class="mt-5 text-slate-300/80">Brief introduction about me.</p>
-      </div>
+  <div class="my-16 px-4 sm:my-20 sm:px-0">
+    <glass-card tag="article" class="relative p-6 sm:p-9">
+      <nav-link
+        class="absolute right-0 top-0 rounded-bl-xl rounded-tr-2xl border-l border-b border-slate-300/20 bg-gray-700/50"
+      />
 
-      <div class="mt-14 text-slate-300">
-        <p class="mt-2">Hi there👋 I'm K.</p>
-        <p class="mt-2">
-          I'm a web developer working in Tokyo, Japan. I have been working as a
-          developer since 2013.
-        </p>
-        <p class="mt-2">
-          I have worked for several companies and participated in a number of
-          interesting projects there.
-        </p>
-
-        <p class="mt-2">👶Currently on leave to raise my cute baby!</p>
-      </div>
-
-      <div class="mt-14">
-        <h2 class="text-xl font-bold text-emerald-300">Skills</h2>
-        <p class="mt-3 text-slate-400">
-          😅There seem to be pros and cons to describing one's skills in this
-          way.
-        </p>
-
-        <div
-          class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
-        >
-          <div
-            class="flex flex-col rounded-2xl border border-slate-200/20 bg-slate-700/30 p-4 text-center"
+      <fade-up>
+        <header>
+          <h1
+            class="text-4xl font-bold text-lime-300 underline underline-offset-8"
           >
-            <fa-icon size="3x" class="text-emerald-300" :icon="faVuejs" />
-            <h3 class="mt-2 text-slate-300">Vue.js</h3>
-            <div class="flex basis-1 justify-center">
-              <fa-icon class="text-yellow-200/90" size="xs" :icon="faStar" />
-            </div>
-          </div>
-        </div>
-      </div>
+            About
+          </h1>
+          <p class="mt-6 text-slate-300/95">Brief introduction about me.</p>
+        </header>
+
+        <section v-twemoji class="mt-14 text-slate-200">
+          <p class="mt-2">Hi there👋 I'm K.</p>
+          <p class="mt-2">
+            I'm a web developer working in Tokyo, Japan. I have been working as
+            a developer since 2013.
+          </p>
+          <p class="mt-2">
+            I have worked for several companies and participated in a number of
+            interesting projects there.
+          </p>
+          <p class="mt-2">
+            👶Currently on leave to raise my cute baby! (through Oct. 2022)
+          </p>
+        </section>
+      </fade-up>
+
+      <fade-up delay="0.35s">
+        <section class="mt-14">
+          <h2 class="mb-3 text-2xl font-bold text-lime-300">Skills</h2>
+          <p v-twemoji class="text-slate-300/80">
+            Note: 😅It may seem a bit silly to describe one's own skills in this
+            way.
+            <br />
+            And, of course, there are things not written here!
+          </p>
+          <skill-lists class="mt-6" />
+        </section>
+
+        <section class="mt-14">
+          <h2 class="mb-3 text-2xl font-bold text-lime-300">Likes</h2>
+          <p class="text-slate-200">Some of my favorite things.</p>
+          <p class="text-slate-200">
+            A scene from the travel can be seen
+            <app-link
+              to="/picture"
+              class="text-teal-300 underline underline-offset-2"
+            >
+              here.
+            </app-link>
+          </p>
+          <like-lists class="mt-6" />
+        </section>
+
+        <section class="mt-14">
+          <h2 class="mb-3 text-2xl font-bold text-lime-300">Contact</h2>
+          <p class="text-slate-200">
+            Contact me on
+            <app-link to="https://twitter.com/k_urtica" class="text-teal-300">
+              Twitter
+              <mdi-icon
+                class="inline"
+                size="16"
+                color="#64748b"
+                :icon="mdiOpenInNew"
+              />
+            </app-link>
+          </p>
+        </section>
+      </fade-up>
     </glass-card>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import { faVuejs } from '@fortawesome/free-brands-svg-icons';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { mdiOpenInNew } from '@mdi/js';
 
 export default Vue.extend({
   data() {
     return {
-      faVuejs,
-      faStar,
+      mdiOpenInNew,
     };
   },
 });

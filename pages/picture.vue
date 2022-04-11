@@ -10,22 +10,24 @@
           <h1
             class="text-4xl font-bold text-lime-300 underline underline-offset-8"
           >
-            Portfolio
+            Picture
           </h1>
-          <p class="mt-6 text-slate-300/95">Some of my personal works.</p>
+          <p class="mt-6 text-slate-300/95">Some fascinating travel scenes.</p>
         </header>
 
-        <section class="mt-14 text-slate-200">
+        <section v-twemoji class="mt-14 text-slate-200">
+          <p class="mt-2">I love to travel as much as I love programming✈</p>
           <p class="mt-2">
-            I like to work on personal projects outside of work.
+            I have traveled to many places in the world and Japan. I especially
+            love Southeast Asian countries, which are full of passion and
+            vibrancy😆
           </p>
-          <p class="mt-2">I often use Vue.js/NuxtJS for development tools!</p>
         </section>
       </fade-up>
 
       <fade-up delay="0.35s">
         <section class="mt-14">
-          <portfolio-lists />
+          <picture-lists />
         </section>
       </fade-up>
     </glass-card>
