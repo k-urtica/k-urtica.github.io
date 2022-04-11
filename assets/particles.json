@@ -24,7 +24,7 @@
     "enable": true,
     "zIndex": -1
   },
-  "detectRetina": true,
+  "detectRetina": false,
   "duration": 0,
   "fpsLimit": 60,
   "interactivity": {
@@ -510,8 +510,8 @@
       "wait": false
     },
     "rate": {
-      "quantity": 6,
-      "delay": 0.35
+      "quantity": 4,
+      "delay": 0.45
     },
     "shape": "square",
     "startCount": 0,
