@@ -1,0 +1,11 @@
+{
+  "name": "K -- Back-end Developer",
+  "short_name": "K -- Back-end Developer",
+  "description": "旅すること／お酒を飲むことが好きなバックエンドエンジニア『K』のポートフォリオサイトです😉",
+  "icons": [],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e8f1ff",
+  "theme_color": "#e8f1ff",
+  "lang": "en"
+}
