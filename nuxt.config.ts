@@ -1,18 +1,17 @@
 import { NuxtConfig } from '@nuxt/types';
 
-const siteTitle = 'K -- Back-end Developer';
+const siteTitle = 'K - Web Developer';
 const description =
-  '旅すること／お酒を飲むことが好きなバックエンドエンジニア『K』のポートフォリオサイトです😉';
+  "Hey there! I'm k, a web developer who loves programming and traveling. This is my portfolio site.";
 
 const config: NuxtConfig = {
   target: 'static',
   components: [{ path: '~/components', pathPrefix: false }],
   head: {
     htmlAttrs: {
-      lang: 'ja',
       prefix: 'og: http://ogp.me/ns#',
     },
-    titleTemplate: '%s -- ' + 'Back-end Developer',
+    titleTemplate: '%s - ' + 'Web Developer',
     title: 'K',
     meta: [
       { charset: 'utf-8' },
