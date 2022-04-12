@@ -2,7 +2,7 @@ import { NuxtConfig } from '@nuxt/types';
 
 const siteTitle = 'K - Web Developer';
 const description =
-  "Hey there! I'm k, a web developer who loves programming and traveling. This is my portfolio site.";
+  "Hey there! I'm K, a web developer who loves programming and traveling. This is my portfolio site.";
 
 const config: NuxtConfig = {
   target: 'static',
