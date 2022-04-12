@@ -510,8 +510,8 @@
       "wait": false
     },
     "rate": {
-      "quantity": 4,
-      "delay": 0.45
+      "quantity": 5,
+      "delay": 0.5
     },
     "shape": "square",
     "startCount": 0,
