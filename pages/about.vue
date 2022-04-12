@@ -88,5 +88,11 @@ export default Vue.extend({
       mdiOpenInNew,
     };
   },
+  head() {
+    return {
+      title: 'About',
+      titleTemplate: '%s | K - Web Developer',
+    };
+  },
 });
 </script>

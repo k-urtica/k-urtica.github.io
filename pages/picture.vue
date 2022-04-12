@@ -33,3 +33,15 @@
     </glass-card>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+export default Vue.extend({
+  head() {
+    return {
+      title: 'Picture',
+      titleTemplate: '%s | K - Web Developer',
+    };
+  },
+});
+</script>
