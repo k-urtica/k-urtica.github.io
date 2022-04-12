@@ -1,10 +1,34 @@
-<h1 align="center">My portfolio site😊</h1>
+<h1>My Personal site😁</h1>
 
-![K -- Back-end developer](https://user-images.githubusercontent.com/46732829/135112782-956e8f21-a2e0-4242-924e-c36378c94817.png)
+Hi, I'm K. This is my personal website.
 
-![about](https://user-images.githubusercontent.com/46732829/135113404-111208b1-c47b-407e-9be5-f9a26c970337.png)
+It has gone through several renewals and is now built with NuxtJS and Tailwind CSS.
 
-![portfolio](https://user-images.githubusercontent.com/46732829/135113114-6cdfff36-d786-4cae-9fdb-f08b76189d32.png)
+It is deployed to GitHub Pages as a static site.
+
+![](https://user-images.githubusercontent.com/46732829/162890083-8032237d-9c1f-4927-8064-7623042a3e77.png)
+
+## 💻 Getting Started
+
+Developing locally is easy.
+
+Install project dependencies.
+
+```bash
+yarn
+```
+
+Start the dev server.
+
+```bash
+yarn dev
+```
+
+To deploy, simply use the following command to place the statically generated files and assets at a location of your choice(GitHub Pages, Netlify, S3 etc...)
+
+```bash
+yarn generate
+```
 
 ## ⭐️ URL
 
