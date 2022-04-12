@@ -3,12 +3,12 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: [
-        'FlopDesignFONT',
+        'Helvetica Neue',
         '-apple-system',
         'BlinkMacSystemFont',
-        'Helvetica',
         'Arial',
         'メイリオ',
+        'Meiryo',
         'sans-serif',
       ],
     },
