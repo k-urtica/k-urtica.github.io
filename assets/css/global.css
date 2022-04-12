@@ -11,8 +11,8 @@ img.emoji {
 }
 
 @font-face {
-  font-family: FlopDesignFONT;
-  src: url('/font/FlopDesignFONT.woff2');
+  font-family: Exo;
+  src: url('/Exo-Light.woff2');
   font-weight: normal bold;
   font-display: swap;
 }

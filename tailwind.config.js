@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: [
+        'Exo',
         'Helvetica Neue',
         '-apple-system',
         'BlinkMacSystemFont',
