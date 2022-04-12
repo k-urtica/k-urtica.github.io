@@ -6,7 +6,6 @@
           <nuxt-picture
             format="webp"
             quality="80"
-            loading="lazy"
             preload
             alt=""
             :src="`/images/${pic.image}`"

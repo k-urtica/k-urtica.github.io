@@ -10,7 +10,6 @@
               <nuxt-picture
                 format="webp"
                 quality="80"
-                loading="lazy"
                 preload
                 :alt="portfolio.title"
                 :src="`/images/${portfolio.image}`"
