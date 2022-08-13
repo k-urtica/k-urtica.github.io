@@ -10,19 +10,19 @@
       <section class="mt-7 mb-3 border-t border-slate-600">
         <ul>
           <li v-for="menu in menus" :key="menu.title" class="mt-5">
-            <app-link :to="menu.to" class="text-teal-300">
+            <app-link :to="menu.to" class="text-indigo-300">
               <h2
                 class="relative text-xl font-bold underline-offset-2 hover:underline"
               >
                 {{ menu.title }}
                 <span class="absolute right-0 top-1.5">
-                  <mdi-icon :icon="menu.icon" color="#5eead4" size="18" />
+                  <mdi-icon :icon="menu.icon" color="#a5b4fc" size="18" />
                 </span>
               </h2>
             </app-link>
-            <div class="mt-1 text-sm text-slate-300/95">
+            <p class="mt-1 text-sm text-slate-200/90">
               {{ menu.caption }}
-            </div>
+            </p>
           </li>
         </ul>
       </section>
@@ -30,7 +30,7 @@
       <footer class="absolute bottom-0 left-1/2 -translate-x-1/2">
         <app-link
           to="https://github.com/k-urtica/k-urtica.github.io"
-          class="text-sm text-teal-400/90"
+          class="text-sm text-indigo-300/90"
         >
           Source Code
         </app-link>
