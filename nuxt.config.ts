@@ -79,11 +79,10 @@ const config: NuxtConfig = {
         id: 'UA-135479814-6',
       },
     ],
-    '@nuxtjs/tailwindcss',
     '@nuxt/image',
     '@nuxtjs/pwa',
   ],
-  modules: ['@nuxtjs/sitemap'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
 
   sitemap: {
     hostname: 'https://k-urtica.github.io/',
@@ -107,11 +106,6 @@ const config: NuxtConfig = {
   },
 
   build: {
-    postcss: {
-      plugins: {
-        'postcss-custom-properties': false,
-      },
-    },
     extractCSS: true,
   },
 };
