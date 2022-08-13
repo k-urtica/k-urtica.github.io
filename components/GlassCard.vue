@@ -1,7 +1,7 @@
 <template>
   <component
     :is="tag"
-    class="bg-blur rounded-2xl border border-slate-300/20 bg-gray-600/25 shadow-2xl shadow-cyan-600/20"
+    class="bg-blur rounded-2xl border border-slate-300/20 bg-gray-900/25 shadow-2xl shadow-cyan-600/20"
   >
     <slot />
   </component>

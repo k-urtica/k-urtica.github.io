@@ -17,7 +17,6 @@
   "dependencies": {
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.15.4",
-    "particles.vue": "^2.43.0",
     "twemoji": "^14.0.2"
   },
   "devDependencies": {

@@ -69,7 +69,7 @@ const config: NuxtConfig = {
 
   css: ['~/assets/css/global.css'],
 
-  plugins: ['~/plugins/ts-particles', '~/plugins/twemoji'],
+  plugins: ['~/plugins/twemoji'],
 
   buildModules: [
     '@nuxt/typescript-build',

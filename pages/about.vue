@@ -1,5 +1,5 @@
 <template>
-  <div class="my-16 px-4 sm:my-20 sm:px-0">
+  <div class="py-16 px-4 sm:py-20 sm:px-0">
     <glass-card tag="article" class="relative p-6 sm:p-9">
       <nav-link
         class="absolute right-0 top-0 rounded-bl-xl rounded-tr-2xl border-l border-b border-slate-300/20 bg-gray-700/50"
