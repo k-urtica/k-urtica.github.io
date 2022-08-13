@@ -97,7 +97,6 @@ const config: NuxtConfig = {
       display: 'standalone',
       theme_color: '#e8f1ff',
       background_color: '#e8f1ff',
-      start_url: '/',
       useWebmanifestExtension: false,
     },
     // workbox: {
