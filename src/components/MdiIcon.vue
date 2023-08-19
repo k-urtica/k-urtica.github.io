@@ -1,11 +1,5 @@
 <template>
-  <svg
-    viewBox="0 0 24 24"
-    :height="size"
-    :width="size"
-    :fill="color"
-    role="img"
-  >
+  <svg viewBox="0 0 24 24" :height="size" :width="size" :fill="color" role="img">
     <path :d="icon"></path>
   </svg>
 </template>
@@ -20,6 +14,6 @@ withDefaults(
   {
     color: '#e2e8f0',
     size: '24',
-  },
+  }
 );
 </script>

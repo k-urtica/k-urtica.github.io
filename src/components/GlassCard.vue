@@ -14,7 +14,7 @@ withDefaults(
   }>(),
   {
     tag: 'div',
-  },
+  }
 );
 </script>
 
