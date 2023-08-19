@@ -78,4 +78,10 @@ export default defineNuxtConfig({
     discoverImages: false,
     xsl: false,
   },
+
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://k-urtica.github.io',
+    },
+  },
 });
