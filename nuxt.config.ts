@@ -3,6 +3,8 @@ const description =
   "Hey there! I'm K, a web developer who loves programming and traveling. This is my portfolio site.";
 
 export default defineNuxtConfig({
+  srcDir: 'src/',
+
   components: [{ path: '~/components', pathPrefix: false }],
   app: {
     head: {
