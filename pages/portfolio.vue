@@ -32,14 +32,9 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-export default Vue.extend({
-  head() {
-    return {
-      title: 'Portfolio',
-      titleTemplate: '%s | K - Web Developer',
-    };
-  },
+<script setup lang="ts">
+useHead({
+  title: 'Portfolio',
+  titleTemplate: '%s | K - Web Developer',
 });
 </script>

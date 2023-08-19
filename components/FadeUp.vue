@@ -7,20 +7,17 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-export default Vue.extend({
-  props: {
-    duration: {
-      type: String,
-      default: '0.5s',
-    },
-    delay: {
-      type: String,
-      default: '0.25s',
-    },
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    duration?: string;
+    delay?: string;
+  }>(),
+  {
+    duration: '0.5s',
+    delay: '0.25s',
   },
-});
+);
 </script>
 
 <style scoped>

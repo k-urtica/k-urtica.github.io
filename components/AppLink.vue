@@ -4,45 +4,24 @@
   </component>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
+<script setup lang="ts">
+const props = defineProps<{
+  to: string;
+}>();
 
-type InternalAttr = {
-  to: String;
-};
-type ExternalAttr = {
-  href: String;
-  target: String;
-  rel: String;
-};
+const isExternal = computed(() => /^https?:\/\//.test(props.to));
 
-export default Vue.extend({
-  props: {
-    to: {
-      type: String,
-      required: true,
-    },
-  },
-  computed: {
-    isExternal(): boolean {
-      return /^https?:\/\//.test(this.to);
-    },
-    linkTag(): string {
-      return this.isExternal ? 'a' : 'nuxt-link';
-    },
-    attr(): ExternalAttr | InternalAttr {
-      if (this.isExternal) {
-        return {
-          href: this.to,
-          target: '_blank',
-          rel: 'noopener noreferrer',
-        };
-      } else {
-        return {
-          to: this.to,
-        };
-      }
-    },
-  },
+const linkTag = computed(() => (isExternal.value ? 'a' : 'NuxtLink'));
+
+const attr = computed(() => {
+  if (isExternal.value) {
+    return {
+      href: props.to,
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    };
+  } else {
+    props.to;
+  }
 });
 </script>

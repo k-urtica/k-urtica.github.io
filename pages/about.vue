@@ -78,21 +78,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
+<script setup lang="ts">
 import { mdiOpenInNew } from '@mdi/js';
 
-export default Vue.extend({
-  data() {
-    return {
-      mdiOpenInNew,
-    };
-  },
-  head() {
-    return {
-      title: 'About',
-      titleTemplate: '%s | K - Web Developer',
-    };
-  },
+useHead({
+  title: 'About',
+  titleTemplate: '%s | K - Web Developer',
 });
 </script>

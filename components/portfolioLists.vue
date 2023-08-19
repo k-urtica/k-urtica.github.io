@@ -34,50 +34,42 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-
-export default Vue.extend({
-  data() {
-    return {
-      portfolios: [
-        {
-          image: 'p1.png',
-          title: 'Web ToolBox',
-          text: "Web tools for developers that can be used in the browser. This is what I'm most focused on right now😆",
-          tools: 'Made with: NuxtJS, Vuetify, Python etc',
-          url: 'https://web-toolbox.dev',
-        },
-        {
-          image: 'p2.png',
-          title: '日本踏破図🗾',
-          text: 'This service allows you to share the prefectures you have visited on a map of Japan!',
-          tools: 'Made with: NuxtJS, Vuetify',
-          url: 'https://traverse-japan.dev',
-        },
-        {
-          image: 'p3.png',
-          title: 'Portfolio site',
-          text: 'This is my personal website. It has been refined through several renewals🤭',
-          tools: 'Made with: NuxtJS, Tailwind CSS',
-          url: 'https://k-urtica.github.io',
-        },
-        {
-          image: 'p4.png',
-          title: 'My Blog',
-          text: 'Markdown blog made by Gatsby. I have no experience with react, but I built it from scratch.',
-          tools: 'Made with: Gatsby, Tailwind CSS',
-          url: 'https://knote.dev',
-        },
-        {
-          image: 'p5.png',
-          title: 'QT Visualizer',
-          text: 'Web service to visualize trends on the technology sharing platform Qiita. This is my first personal project🚀',
-          tools: 'Made with: Vue.js, Vuetify, Python etc',
-          url: 'https://qtvisualizer.com',
-        },
-      ],
-    };
+<script setup lang="ts">
+const portfolios = [
+  {
+    image: 'p1.png',
+    title: 'Web ToolBox',
+    text: "Web tools for developers that can be used in the browser. This is what I'm most focused on right now😆",
+    tools: 'Made with: NuxtJS, Vuetify, Python etc',
+    url: 'https://web-toolbox.dev',
   },
-});
+  {
+    image: 'p2.png',
+    title: '日本踏破図🗾',
+    text: 'This service allows you to share the prefectures you have visited on a map of Japan!',
+    tools: 'Made with: NuxtJS, Vuetify',
+    url: 'https://traverse-japan.dev',
+  },
+  {
+    image: 'p3.png',
+    title: 'Portfolio site',
+    text: 'This is my personal website. It has been refined through several renewals🤭',
+    tools: 'Made with: NuxtJS, Tailwind CSS',
+    url: 'https://k-urtica.github.io',
+  },
+  {
+    image: 'p4.png',
+    title: 'My Blog',
+    text: 'Markdown blog made by Gatsby. I have no experience with react, but I built it from scratch.',
+    tools: 'Made with: Gatsby, Tailwind CSS',
+    url: 'https://knote.dev',
+  },
+  {
+    image: 'p5.png',
+    title: 'QT Visualizer',
+    text: 'Web service to visualize trends on the technology sharing platform Qiita. This is my first personal project🚀',
+    tools: 'Made with: Vue.js, Vuetify, Python etc',
+    url: 'https://qtvisualizer.com',
+  },
+];
 </script>

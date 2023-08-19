@@ -39,46 +39,39 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
+<script setup lang="ts">
 import { mdiArrowRight, mdiOpenInNew } from '@mdi/js';
 
-export default Vue.extend({
-  data() {
-    return {
-      menus: [
-        {
-          title: 'About',
-          to: '/about',
-          caption: 'About me.',
-          icon: mdiArrowRight,
-        },
-        {
-          title: 'Portfolio',
-          to: '/portfolio',
-          caption: 'Personal projects.',
-          icon: mdiArrowRight,
-        },
-        {
-          title: 'Picture',
-          to: '/picture',
-          caption: 'A scene from the travel.',
-          icon: mdiArrowRight,
-        },
-        {
-          title: 'Blog',
-          to: 'https://knote.dev',
-          caption: 'My personal Blog.',
-          icon: mdiOpenInNew,
-        },
-        {
-          title: 'Twitter',
-          to: 'https://twitter.com/k_urtica',
-          caption: 'Follow me.',
-          icon: mdiOpenInNew,
-        },
-      ],
-    };
+const menus = [
+  {
+    title: 'About',
+    to: '/about',
+    caption: 'About me.',
+    icon: mdiArrowRight,
   },
-});
+  {
+    title: 'Portfolio',
+    to: '/portfolio',
+    caption: 'Personal projects.',
+    icon: mdiArrowRight,
+  },
+  {
+    title: 'Picture',
+    to: '/picture',
+    caption: 'A scene from the travel.',
+    icon: mdiArrowRight,
+  },
+  {
+    title: 'Blog',
+    to: 'https://knote.dev',
+    caption: 'My personal Blog.',
+    icon: mdiOpenInNew,
+  },
+  {
+    title: 'Twitter',
+    to: 'https://twitter.com/k_urtica',
+    caption: 'Follow me.',
+    icon: mdiOpenInNew,
+  },
+];
 </script>

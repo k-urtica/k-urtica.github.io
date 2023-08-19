@@ -10,23 +10,16 @@
   </svg>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-
-export default Vue.extend({
-  props: {
-    icon: {
-      type: String,
-      required: true,
-    },
-    color: {
-      type: String,
-      default: '#e2e8f0',
-    },
-    size: {
-      type: String,
-      default: '24',
-    },
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    icon: string;
+    color?: string;
+    size?: string;
+  }>(),
+  {
+    color: '#e2e8f0',
+    size: '24',
   },
-});
+);
 </script>

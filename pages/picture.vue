@@ -27,21 +27,16 @@
 
       <fade-up delay="0.35s">
         <section class="mt-14">
-          <picture-lists />
+          <Picture-lists />
         </section>
       </fade-up>
     </glass-card>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-export default Vue.extend({
-  head() {
-    return {
-      title: 'Picture',
-      titleTemplate: '%s | K - Web Developer',
-    };
-  },
+<script setup lang="ts">
+useHead({
+  title: 'Picture',
+  titleTemplate: '%s | K - Web Developer',
 });
 </script>

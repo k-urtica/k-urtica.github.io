@@ -15,15 +15,6 @@
   </nav>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
+<script setup lang="ts">
 import { mdiHomeCircleOutline } from '@mdi/js';
-
-export default Vue.extend({
-  data() {
-    return {
-      mdiHomeCircleOutline,
-    };
-  },
-});
 </script>

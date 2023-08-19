@@ -17,35 +17,27 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-
-export default Vue.extend({
-  data() {
-    return {
-      likes: [
-        {
-          icon: '💻',
-          title: 'Programming',
-          text: 'I code almost every day.',
-        },
-        {
-          icon: '🗺',
-          title: 'Travel',
-          text: 'Seeking beautiful landscapes.',
-        },
-        {
-          icon: '♨',
-          title: 'Onsen',
-          text: 'Pride of Japan.',
-        },
-        {
-          icon: '🎮',
-          title: 'Games',
-          text: 'Especially RPG.',
-        },
-      ],
-    };
+<script setup lang="ts">
+const likes = [
+  {
+    icon: '💻',
+    title: 'Programming',
+    text: 'I code almost every day.',
   },
-});
+  {
+    icon: '🗺',
+    title: 'Travel',
+    text: 'Seeking beautiful landscapes.',
+  },
+  {
+    icon: '♨',
+    title: 'Onsen',
+    text: 'Pride of Japan.',
+  },
+  {
+    icon: '🎮',
+    title: 'Games',
+    text: 'Especially RPG.',
+  },
+];
 </script>
