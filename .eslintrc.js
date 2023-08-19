@@ -6,7 +6,5 @@ module.exports = {
   },
   extends: ['eslint:recommended', '@nuxt/eslint-config', 'prettier'],
   plugins: [],
-  rules: {
-    'vue/max-attributes-per-line': 'off',
-  },
+  rules: {},
 };
