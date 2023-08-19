@@ -1,15 +1,13 @@
 <template>
-  <div class="py-16 px-4 sm:py-20 sm:px-0">
+  <div class="px-4 py-16 sm:px-0 sm:py-20">
     <glass-card tag="article" class="relative p-6 sm:p-9">
       <nav-link
-        class="absolute right-0 top-0 rounded-bl-xl rounded-tr-2xl border-l border-b border-slate-300/20 bg-gray-700/50"
+        class="absolute right-0 top-0 rounded-bl-xl rounded-tr-2xl border-b border-l border-slate-300/20 bg-gray-700/50"
       />
 
       <fade-up>
         <header>
-          <h1
-            class="text-4xl font-bold text-lime-300 underline underline-offset-8"
-          >
+          <h1 class="text-4xl font-bold text-lime-300 underline underline-offset-8">
             About
           </h1>
           <p class="mt-6 text-slate-300/95">Brief introduction about me.</p>
@@ -18,8 +16,8 @@
         <section v-twemoji class="mt-14 text-slate-200">
           <p class="mt-2">Hi there👋 I'm K.</p>
           <p class="mt-2">
-            I'm a web developer working in Tokyo, Japan. I have been working as
-            a developer since 2013.
+            I'm a web developer working in Tokyo, Japan. I have been working as a
+            developer since 2013.
           </p>
           <p class="mt-2">
             I have worked for several companies and participated in a number of
@@ -35,8 +33,7 @@
         <section class="mt-14">
           <h2 class="mb-3 text-2xl font-bold text-lime-300">Skills</h2>
           <p v-twemoji class="text-slate-300/80">
-            Note: 😅It may seem a bit silly to describe one's own skills in this
-            way.
+            Note: 😅It may seem a bit silly to describe one's own skills in this way.
             <br />
             And, of course, there are things not written here!
           </p>
@@ -48,10 +45,7 @@
           <p class="text-slate-200">Some of my favorite things.</p>
           <p class="text-slate-200">
             A scene from the travel can be seen
-            <app-link
-              to="/picture"
-              class="text-teal-300 underline underline-offset-2"
-            >
+            <app-link to="/picture" class="text-teal-300 underline underline-offset-2">
               here.
             </app-link>
           </p>
@@ -64,12 +58,7 @@
             Contact me on
             <app-link to="https://twitter.com/k_urtica" class="text-teal-300">
               Twitter
-              <mdi-icon
-                class="inline"
-                size="16"
-                color="#64748b"
-                :icon="mdiOpenInNew"
-              />
+              <mdi-icon class="inline" size="16" color="#64748b" :icon="mdiOpenInNew" />
             </app-link>
           </p>
         </section>
@@ -78,21 +67,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
+<script setup lang="ts">
 import { mdiOpenInNew } from '@mdi/js';
 
-export default Vue.extend({
-  data() {
-    return {
-      mdiOpenInNew,
-    };
-  },
-  head() {
-    return {
-      title: 'About',
-      titleTemplate: '%s | K - Web Developer',
-    };
-  },
+useHead({
+  title: 'About',
+  titleTemplate: '%s | K - Web Developer',
 });
 </script>

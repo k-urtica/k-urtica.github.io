@@ -1,5 +1,8 @@
 {
   "semi": true,
-  "arrowParens": "always",
-  "singleQuote": true
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "printWidth": 90,
+  "endOfLine": "lf",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

@@ -1,14 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    `components/**/*.{vue,js}`,
-    `layouts/**/*.vue`,
-    `pages/**/*.vue`,
-    `composables/**/*.{js,ts}`,
-    `plugins/**/*.{js,ts}`,
-    `App.{js,ts,vue}`,
-    `app.{js,ts,vue}`,
-  ],
+import type { Config } from 'tailwindcss';
+
+export default <Partial<Config>>{
   theme: {
     fontFamily: {
       sans: [
@@ -31,5 +23,4 @@ module.exports = {
       },
     },
   },
-  plugins: [],
 };
