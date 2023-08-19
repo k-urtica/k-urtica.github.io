@@ -7,13 +7,7 @@
             class="flex flex-col overflow-hidden rounded-2xl border border-slate-200/10 bg-gray-600/25 shadow-lg shadow-cyan-700/20 transition duration-300 hover:bg-teal-600/20 hover:shadow-cyan-200/20"
           >
             <div class="aspect-video">
-              <nuxt-picture
-                format="webp"
-                quality="80"
-                preload
-                :alt="portfolio.title"
-                :src="`/images/${portfolio.image}`"
-              />
+              <img :alt="portfolio.title" :src="`/images/${portfolio.image}`" />
             </div>
 
             <section class="p-4">

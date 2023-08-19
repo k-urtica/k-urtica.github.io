@@ -3,13 +3,7 @@
     <ul class="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3">
       <li v-for="pic in pics" :key="pic.title">
         <div class="aspect-video overflow-hidden rounded-xl">
-          <nuxt-picture
-            format="webp"
-            quality="80"
-            preload
-            alt=""
-            :src="`/images/${pic.image}`"
-          />
+          <img alt="" :src="`/images/${pic.image}`" />
         </div>
       </li>
     </ul>

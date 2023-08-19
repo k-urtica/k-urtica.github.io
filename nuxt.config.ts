@@ -69,5 +69,5 @@ export default defineNuxtConfig({
 
   plugins: ['~/plugins/twemoji'],
 
-  modules: ['@nuxt/image', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss'],
 });
