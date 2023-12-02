@@ -77,6 +77,7 @@ export default defineNuxtConfig({
     autoLastmod: false,
     discoverImages: false,
     xsl: false,
+    sitemaps: false,
   },
 
   runtimeConfig: {
