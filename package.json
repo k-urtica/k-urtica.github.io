@@ -10,10 +10,10 @@
     "preview": "nuxt preview",
     "generate": "nuxt generate",
     "analyze": "nuxt analyze",
-    "lint": "eslint . --ext .ts,.js,.vue --max-warnings=0 --ignore-path .gitignore",
-    "lint-fix": "yarn prettier-fix && eslint . --fix --ext .ts,.js,.vue --max-warnings=0 --ignore-path .gitignore",
-    "prettier-check": "prettier --check .",
-    "prettier-fix": "prettier --write ."
+    "lint": "eslint src/ --ext .ts,.js,.vue --max-warnings=0 --ignore-path .gitignore",
+    "lint-fix": "yarn prettier-fix && eslint src/ --fix --ext .ts,.js,.vue --max-warnings=0 --ignore-path .gitignore",
+    "prettier-check": "prettier --check src/",
+    "prettier-fix": "prettier --write src/"
   },
   "dependencies": {
     "twemoji": "^14.0.2"
