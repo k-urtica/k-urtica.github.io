@@ -1,7 +1,5 @@
 <template>
   <div class="bg-gradient">
-    <div class="css-selector" />
-
     <main class="container mx-auto max-w-5xl">
       <slot />
     </main>
