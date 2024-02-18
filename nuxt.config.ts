@@ -71,7 +71,7 @@ export default defineNuxtConfig({
 
   plugins: ['~/plugins/twemoji'],
 
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-simple-sitemap'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
 
   sitemap: {
     autoLastmod: false,
