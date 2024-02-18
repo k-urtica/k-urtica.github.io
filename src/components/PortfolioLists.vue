@@ -4,7 +4,7 @@
       <li v-for="portfolio in portfolios" :key="portfolio.title">
         <app-link :to="portfolio.url">
           <article
-            class="flex flex-col overflow-hidden rounded-2xl border border-slate-200/10 bg-gray-600/25 shadow-lg shadow-cyan-700/20 transition duration-300 hover:bg-teal-600/20 hover:shadow-cyan-200/20"
+            class="flex flex-col overflow-hidden rounded-2xl border border-slate-200/10 bg-gray-600/25 shadow-lg shadow-slate-700/20 transition duration-300 hover:bg-slate-500/20 hover:shadow-slate-200/20"
           >
             <div class="aspect-video">
               <img :alt="portfolio.title" :src="`/images/${portfolio.image}`" />
