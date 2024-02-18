@@ -20,7 +20,7 @@ module.exports = {
     'vue/define-macros-order': [
       'error',
       {
-        order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots'],
+        order: ['defineOptions', 'defineModel', 'defineProps', 'defineEmits', 'defineSlots'],
       },
     ],
     'vue/no-useless-v-bind': 'error',
