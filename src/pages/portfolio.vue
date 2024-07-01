@@ -7,9 +7,7 @@
 
       <fade-up>
         <header>
-          <h1 class="text-4xl font-bold text-lime-300 underline underline-offset-8">
-            Portfolio
-          </h1>
+          <h1 class="text-4xl font-bold text-lime-300 underline underline-offset-8">Portfolio</h1>
           <p class="mt-6 text-slate-300/95">Some of my personal works.</p>
         </header>
 

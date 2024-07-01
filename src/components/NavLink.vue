@@ -3,12 +3,7 @@
     <ul>
       <li>
         <app-link to="/" class="inline-block px-4 py-1">
-          <mdi-icon
-            :icon="mdiHomeCircleOutline"
-            class="inline"
-            color="#5eead4"
-            aria-label="Home"
-          />
+          <mdi-icon :icon="mdiHomeCircleOutline" class="inline" color="#5eead4" aria-label="Home" />
         </app-link>
       </li>
     </ul>

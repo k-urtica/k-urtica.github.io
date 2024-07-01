@@ -7,25 +7,21 @@
 
       <fade-up>
         <header>
-          <h1 class="text-4xl font-bold text-lime-300 underline underline-offset-8">
-            About
-          </h1>
+          <h1 class="text-4xl font-bold text-lime-300 underline underline-offset-8">About</h1>
           <p class="mt-6 text-slate-300/95">Brief introduction about me.</p>
         </header>
 
         <section v-twemoji class="mt-14 text-slate-200">
           <p class="mt-2">Hi there👋 I'm K.</p>
           <p class="mt-2">
-            I'm a web developer working in Tokyo, Japan. I have been working as a
-            developer since 2013.
+            I'm a web developer working in Tokyo, Japan. I have been working as a developer since
+            2013.
           </p>
           <p class="mt-2">
-            I have worked for several companies and participated in a number of
-            interesting projects there.
+            I have worked for several companies and participated in a number of interesting projects
+            there.
           </p>
-          <p class="mt-2">
-            👶Currently on leave to raise my cute baby! (through Oct. 2022)
-          </p>
+          <p class="mt-2">👶Currently on leave to raise my cute baby! (through Oct. 2022)</p>
         </section>
       </fade-up>
 

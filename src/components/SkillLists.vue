@@ -12,13 +12,7 @@
 
         <h3 class="mt-3 text-slate-100">{{ skill.title }}</h3>
         <div class="mt-1 flex basis-1 justify-center text-yellow-200/95">
-          <mdi-icon
-            v-for="n in skill.rating"
-            :key="n"
-            :icon="mdiStar"
-            color="#FEF08A"
-            size="15"
-          />
+          <mdi-icon v-for="n in skill.rating" :key="n" :icon="mdiStar" color="#FEF08A" size="15" />
         </div>
       </li>
     </ul>
