@@ -10,8 +10,8 @@
     "preview": "nuxt preview",
     "generate": "nuxt generate",
     "analyze": "nuxt analyze",
-    "lint": "eslint src/ --ext .ts,.js,.vue --max-warnings=0 --ignore-path .gitignore",
-    "lint-fix": "yarn prettier-fix && eslint src/ --fix --ext .ts,.js,.vue --max-warnings=0 --ignore-path .gitignore",
+    "lint": "eslint . --max-warnings=0",
+    "lint-fix": "pnpm prettier-fix && eslint . --fix",
     "prettier-check": "prettier --check src/",
     "prettier-fix": "prettier --write src/"
   },
@@ -20,13 +20,13 @@
   },
   "devDependencies": {
     "@mdi/js": "^7.4.47",
-    "@nuxt/eslint-config": "^0.2.0",
+    "@nuxt/eslint": "^0.3.13",
     "@nuxtjs/sitemap": "^5.1.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
-    "eslint": "^8.56.0",
+    "eslint": "^9.6.0",
     "eslint-config-prettier": "^9.1.0",
     "nuxt": "^3.10.2",
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.11"
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5"
   }
 }
