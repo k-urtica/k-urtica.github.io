@@ -16,52 +16,17 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        // SEO
-        {
-          hid: 'description',
-          name: 'description',
-          content: description,
-        },
+        { name: 'description', content: description },
         // OGP
-        {
-          hid: 'og:site_name',
-          property: 'og:site_name',
-          content: siteTitle,
-        },
-        {
-          hid: 'og:type',
-          property: 'og:type',
-          content: 'website',
-        },
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: 'https://k-urtica.github.io/',
-        },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: siteTitle,
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: description,
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: 'https://k-urtica.github.io/ogp.png',
-        },
+        { property: 'og:site_name', content: siteTitle },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://k-urtica.github.io/' },
+        { property: 'og:title', content: siteTitle },
+        { property: 'og:description', content: description },
+        { property: 'og:image', content: 'https://k-urtica.github.io/ogp.png' },
         // twitter
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-        {
-          name: 'twitter:site',
-          content: '@k_urtica',
-        },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:site', content: '@k_urtica' },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
     },
