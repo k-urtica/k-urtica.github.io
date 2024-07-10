@@ -1,1 +1,0 @@
-import{k as s,c as a,a as t,j as o,o as c}from"./CkcCaQBn.js";const n={},r={class:"bg-zinc-900"},_={class:"container mx-auto max-w-5xl"};function l(e,d){return c(),a("div",r,[t("main",_,[o(e.$slots,"default")])])}const f=s(n,[["render",l]]);export{f as default};
