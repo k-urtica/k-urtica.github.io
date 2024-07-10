@@ -14,15 +14,15 @@ useHead({
 
       <FadeUp>
         <header>
-          <h1 class="text-4xl font-bold text-lime-300 underline underline-offset-8">
+          <h1 class="text-4xl font-bold text-orange-200 underline underline-offset-8">
             Portfolio
           </h1>
-          <p class="mt-6 text-slate-300/95">
+          <p class="mt-6 text-zinc-200/90">
             Some of my personal works.
           </p>
         </header>
 
-        <section class="mt-14 text-slate-200">
+        <section class="mt-14 text-zinc-200">
           <p class="mt-2">
             I like to work on personal projects outside of work.
           </p>

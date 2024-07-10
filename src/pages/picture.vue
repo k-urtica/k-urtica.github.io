@@ -14,15 +14,15 @@ useHead({
 
       <FadeUp>
         <header>
-          <h1 class="text-4xl font-bold text-lime-300 underline underline-offset-8">
+          <h1 class="text-4xl font-bold text-orange-200 underline underline-offset-8">
             Picture
           </h1>
-          <p class="mt-6 text-slate-300/95">
+          <p class="mt-6 text-zinc-200/90">
             Some fascinating travel scenes.
           </p>
         </header>
 
-        <section v-twemoji class="mt-14 text-slate-200 ">
+        <section v-twemoji class="mt-14 text-zinc-200 ">
           <p class="mt-2">
             I love to travel as much as I love programming✈
           </p>

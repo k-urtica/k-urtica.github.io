@@ -41,24 +41,24 @@ const portfolios = [
 <template>
   <div>
     <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2">
-      <li v-for="portfolio in portfolios" :key="portfolio.title">
-        <NuxtLink :to="portfolio.url" target="_blank">
+      <li v-for="p in portfolios" :key="p.title">
+        <NuxtLink :to="p.url" target="_blank">
           <article
             class="flex flex-col overflow-hidden rounded-2xl border border-slate-200/10 bg-gray-600/25 shadow-lg shadow-slate-700/20 transition duration-300 hover:bg-slate-500/20 hover:shadow-slate-200/20"
           >
             <div class="aspect-video">
-              <img :alt="portfolio.title" :src="`/images/${portfolio.image}`">
+              <img :alt="p.title" :src="`/images/${p.image}`">
             </div>
 
             <section class="p-4">
-              <h3 v-twemoji class="text-center text-lg font-bold text-teal-400">
-                {{ portfolio.title }}
+              <h3 v-twemoji class="text-center text-lg font-bold text-orange-200">
+                {{ p.title }}
               </h3>
-              <p v-twemoji class="mt-2 text-sm text-slate-300/95">
-                {{ portfolio.text }}
+              <p v-twemoji class="mt-2 text-sm text-zinc-200/90">
+                {{ p.text }}
               </p>
-              <p class="mt-2 text-xs text-amber-300/90">
-                {{ portfolio.tools }}
+              <p class="mt-2 text-xs font-bold text-zinc-50">
+                {{ p.tools }}
               </p>
             </section>
           </article>

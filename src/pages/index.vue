@@ -53,13 +53,13 @@ const menus = [
       <section class="mb-3 mt-6 border-t border-zinc-400/40">
         <ul class="mt-5 space-y-5">
           <li v-for="{ title, to, icon, caption } in menus" :key="title">
-            <NuxtLink :to class="flex items-center justify-between gap-2 text-indigo-300">
+            <NuxtLink :to class="flex items-center justify-between gap-2 text-orange-200">
               <h2 class="text-xl font-bold underline-offset-2 hover:underline">
                 {{ title }}
               </h2>
               <MdiIcon :icon size="18" />
             </NuxtLink>
-            <p class="mt-1 text-sm text-slate-200/90">
+            <p class="mt-1 text-sm text-zinc-200/80">
               {{ caption }}
             </p>
           </li>
@@ -70,7 +70,7 @@ const menus = [
         <NuxtLink
           to="https://github.com/k-urtica/k-urtica.github.io"
           target="_blank"
-          class="text-sm text-indigo-300/90"
+          class="text-sm text-zinc-200/90"
         >
           GitHub
         </NuxtLink>

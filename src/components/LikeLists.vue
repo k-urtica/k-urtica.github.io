@@ -35,10 +35,10 @@ const likes = [
           <span v-twemoji class="text-5xl">{{ like.icon }}</span>
         </div>
 
-        <h3 class="mt-3 font-bold text-slate-100">
+        <h3 class="mt-3 font-bold text-zinc-50">
           {{ like.title }}
         </h3>
-        <p class="mt-1 text-sm text-slate-300/95">
+        <p class="mt-1 text-sm text-zinc-300/95">
           {{ like.text }}
         </p>
       </li>
