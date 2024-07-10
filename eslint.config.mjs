@@ -1,17 +1,26 @@
-import eslintConfigPrettier from 'eslint-config-prettier';
-// @ts-check
+import antfu from '@antfu/eslint-config';
+
+import tailwind from 'eslint-plugin-tailwindcss';
 import withNuxt from './.nuxt/eslint.config.mjs';
 
-export default withNuxt({
-  rules: {
-    'vue/define-macros-order': [
-      'warn',
-      {
-        order: ['defineOptions', 'defineModel', 'defineProps', 'defineEmits', 'defineSlots'],
-      },
-    ],
-    'vue/require-default-prop': 'off',
+export default withNuxt(
+  antfu({
+    stylistic: {
+      semi: true,
+    },
+    rules: {
+      'vue/define-macros-order': [
+        'warn',
+        {
+          order: ['defineOptions', 'defineModel', 'defineProps', 'defineEmits', 'defineSlots'],
+        },
+      ],
+    },
 
-    ...eslintConfigPrettier.rules,
-  },
-});
+  }),
+  [...tailwind.configs['flat/recommended'], {
+    rules: {
+      'tailwindcss/no-custom-classname': 'off',
+    },
+  }],
+);
