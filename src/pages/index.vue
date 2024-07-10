@@ -36,8 +36,8 @@ const menus = [
 </script>
 
 <template>
-  <div class="flex h-screen px-5">
-    <GlassCard tag="article" class="relative m-auto w-full px-7 py-9 sm:w-112">
+  <div class="flex min-h-dvh items-center p-5">
+    <GlassCard tag="article" class="mx-auto w-full p-8 sm:w-[500px]">
       <header>
         <h1 class="mb-3 text-4xl font-bold text-slate-50">
           K
@@ -50,7 +50,7 @@ const menus = [
         </p>
       </header>
 
-      <section class="mb-3 mt-7 border-t border-slate-600">
+      <section class="mb-3 mt-6 border-t border-zinc-400/40">
         <ul class="mt-5 space-y-5">
           <li v-for="{ title, to, icon, caption } in menus" :key="title">
             <NuxtLink :to class="flex items-center justify-between gap-2 text-indigo-300">

@@ -6,8 +6,8 @@ useHead({
 </script>
 
 <template>
-  <div class="px-4 py-16 sm:px-0 sm:py-20">
-    <GlassCard tag="article" class="relative p-6 sm:p-9">
+  <div class="flex min-h-dvh items-center px-5 py-20">
+    <GlassCard tag="article" class="mx-auto max-w-5xl p-8">
       <NavLink
         class="absolute right-0 top-0 rounded-bl-xl rounded-tr-2xl border-b border-l border-slate-300/20 bg-gray-700/50"
       />

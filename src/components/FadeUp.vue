@@ -6,7 +6,7 @@ withDefaults(
   }>(),
   {
     duration: '0.5s',
-    delay: '0.25s',
+    delay: '0.15s',
   },
 );
 </script>
