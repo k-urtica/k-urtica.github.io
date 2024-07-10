@@ -12,8 +12,8 @@ withDefaults(
     size?: string;
   }>(),
   {
-    color: '#e2e8f0',
-    size: '24',
+    color: 'currentColor',
+    size: '1.2em',
   }
 );
 </script>

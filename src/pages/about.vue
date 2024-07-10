@@ -52,9 +52,13 @@
           <h2 class="mb-3 text-2xl font-bold text-lime-300">Contact</h2>
           <p class="text-slate-200">
             Contact me on
-            <NuxtLink to="https://twitter.com/k_urtica" target="_blank" class="text-teal-300">
+            <NuxtLink
+              to="https://twitter.com/k_urtica"
+              target="_blank"
+              class="inline-flex items-center gap-1 text-teal-300"
+            >
               Twitter
-              <mdi-icon class="inline" size="16" color="#64748b" :icon="mdiOpenInNew" />
+              <MdiIcon size="16" :icon="mdiOpenInNew" />
             </NuxtLink>
           </p>
         </section>

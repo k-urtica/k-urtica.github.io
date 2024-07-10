@@ -1,22 +1,18 @@
 <template>
-  <div>
-    <ul class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-      <li
-        v-for="skill in skills"
-        :key="skill.title"
-        class="flex flex-col rounded-2xl border border-slate-200/20 bg-slate-700/30 p-4 text-center shadow-lg shadow-gray-500/10"
-      >
-        <div class="mx-auto">
-          <mdi-icon :icon="skill.icon" :color="skill.color" size="36" />
-        </div>
+  <ul class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+    <li
+      v-for="{ title, color, icon, rating } in skills"
+      :key="title"
+      class="flex flex-col rounded-xl border border-slate-200/20 bg-slate-700/30 p-4 text-center shadow-lg shadow-gray-500/10"
+    >
+      <MdiIcon :icon :color size="36" class="mx-auto" />
 
-        <h3 class="mt-3 text-slate-100">{{ skill.title }}</h3>
-        <div class="mt-1 flex basis-1 justify-center text-yellow-200/95">
-          <mdi-icon v-for="n in skill.rating" :key="n" :icon="mdiStar" color="#FEF08A" size="15" />
-        </div>
-      </li>
-    </ul>
-  </div>
+      <h3 class="mt-3 text-slate-100">{{ title }}</h3>
+      <div class="mt-1 flex justify-center text-yellow-200/90">
+        <MdiIcon v-for="n in rating" :key="n" :icon="mdiStar" size="14" />
+      </div>
+    </li>
+  </ul>
 </template>
 
 <script setup lang="ts">

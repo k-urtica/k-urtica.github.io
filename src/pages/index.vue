@@ -8,18 +8,16 @@
       </header>
 
       <section class="mb-3 mt-7 border-t border-slate-600">
-        <ul>
-          <li v-for="menu in menus" :key="menu.title" class="mt-5">
-            <NuxtLink :to="menu.to" class="text-indigo-300">
-              <h2 class="relative text-xl font-bold underline-offset-2 hover:underline">
-                {{ menu.title }}
-                <span class="absolute right-0 top-1.5">
-                  <mdi-icon :icon="menu.icon" color="#a5b4fc" size="18" />
-                </span>
+        <ul class="mt-5 space-y-5">
+          <li v-for="{ title, to, icon, caption } in menus" :key="title">
+            <NuxtLink :to class="flex items-center justify-between gap-2 text-indigo-300">
+              <h2 class="text-xl font-bold underline-offset-2 hover:underline">
+                {{ title }}
               </h2>
+              <MdiIcon :icon size="18" />
             </NuxtLink>
             <p class="mt-1 text-sm text-slate-200/90">
-              {{ menu.caption }}
+              {{ caption }}
             </p>
           </li>
         </ul>
@@ -31,7 +29,7 @@
           target="_blank"
           class="text-sm text-indigo-300/90"
         >
-          Source Code
+          GitHub
         </NuxtLink>
       </footer>
     </glass-card>

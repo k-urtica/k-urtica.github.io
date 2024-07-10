@@ -1,12 +1,8 @@
 <template>
-  <nav class="border-slate-300/20 bg-gray-700/50">
-    <ul>
-      <li>
-        <NuxtLink to="/" class="inline-block px-4 py-1">
-          <mdi-icon :icon="mdiHomeCircleOutline" class="inline" color="#5eead4" aria-label="Home" />
-        </NuxtLink>
-      </li>
-    </ul>
+  <nav class="border-slate-300/20 bg-gray-700/30">
+    <NuxtLink to="/" class="flex items-center p-2">
+      <MdiIcon :icon="mdiHomeCircleOutline" class="text-amber-200" size="24" aria-label="Home" />
+    </NuxtLink>
   </nav>
 </template>
 
