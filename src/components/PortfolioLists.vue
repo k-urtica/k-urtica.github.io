@@ -2,7 +2,7 @@
   <div>
     <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2">
       <li v-for="portfolio in portfolios" :key="portfolio.title">
-        <app-link :to="portfolio.url">
+        <NuxtLink :to="portfolio.url" target="_blank">
           <article
             class="flex flex-col overflow-hidden rounded-2xl border border-slate-200/10 bg-gray-600/25 shadow-lg shadow-slate-700/20 transition duration-300 hover:bg-slate-500/20 hover:shadow-slate-200/20"
           >
@@ -22,7 +22,7 @@
               </p>
             </section>
           </article>
-        </app-link>
+        </NuxtLink>
       </li>
     </ul>
   </div>

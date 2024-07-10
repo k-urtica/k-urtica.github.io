@@ -2,7 +2,7 @@
   <div class="grid min-h-screen place-content-center bg-zinc-900">
     <div class="container mx-auto max-w-5xl text-center">
       <h1 class="py-5 text-2xl font-bold text-zinc-300">{{ title }}</h1>
-      <AppLink to="/" class="text-zinc-300 underline">Back to Top</AppLink>
+      <NuxtLink to="/" class="text-zinc-300 underline">Back to Top</NuxtLink>
     </div>
   </div>
 </template>

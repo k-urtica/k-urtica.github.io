@@ -41,9 +41,9 @@
           <p class="text-slate-200">Some of my favorite things.</p>
           <p class="text-slate-200">
             A scene from the travel can be seen
-            <app-link to="/picture" class="text-teal-300 underline underline-offset-2">
+            <NuxtLink to="/picture" class="text-teal-300 underline underline-offset-2">
               here.
-            </app-link>
+            </NuxtLink>
           </p>
           <like-lists class="mt-6" />
         </section>
@@ -52,10 +52,10 @@
           <h2 class="mb-3 text-2xl font-bold text-lime-300">Contact</h2>
           <p class="text-slate-200">
             Contact me on
-            <app-link to="https://twitter.com/k_urtica" class="text-teal-300">
+            <NuxtLink to="https://twitter.com/k_urtica" target="_blank" class="text-teal-300">
               Twitter
               <mdi-icon class="inline" size="16" color="#64748b" :icon="mdiOpenInNew" />
-            </app-link>
+            </NuxtLink>
           </p>
         </section>
       </fade-up>

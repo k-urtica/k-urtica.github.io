@@ -10,14 +10,14 @@
       <section class="mb-3 mt-7 border-t border-slate-600">
         <ul>
           <li v-for="menu in menus" :key="menu.title" class="mt-5">
-            <app-link :to="menu.to" class="text-indigo-300">
+            <NuxtLink :to="menu.to" class="text-indigo-300">
               <h2 class="relative text-xl font-bold underline-offset-2 hover:underline">
                 {{ menu.title }}
                 <span class="absolute right-0 top-1.5">
                   <mdi-icon :icon="menu.icon" color="#a5b4fc" size="18" />
                 </span>
               </h2>
-            </app-link>
+            </NuxtLink>
             <p class="mt-1 text-sm text-slate-200/90">
               {{ menu.caption }}
             </p>
@@ -26,12 +26,13 @@
       </section>
 
       <footer class="absolute bottom-0 left-1/2 -translate-x-1/2">
-        <app-link
+        <NuxtLink
           to="https://github.com/k-urtica/k-urtica.github.io"
+          target="_blank"
           class="text-sm text-indigo-300/90"
         >
           Source Code
-        </app-link>
+        </NuxtLink>
       </footer>
     </glass-card>
   </div>
