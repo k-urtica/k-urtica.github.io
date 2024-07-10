@@ -37,7 +37,7 @@ const menus = [
 
 <template>
   <div class="flex h-screen px-5">
-    <glass-card tag="article" class="relative m-auto w-full px-7 py-9 sm:w-112">
+    <GlassCard tag="article" class="relative m-auto w-full px-7 py-9 sm:w-112">
       <header>
         <h1 class="mb-3 text-4xl font-bold text-slate-50">
           K
@@ -75,6 +75,6 @@ const menus = [
           GitHub
         </NuxtLink>
       </footer>
-    </glass-card>
+    </GlassCard>
   </div>
 </template>

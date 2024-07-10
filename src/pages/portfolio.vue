@@ -7,12 +7,12 @@ useHead({
 
 <template>
   <div class="px-4 py-16 sm:px-0 sm:py-20">
-    <glass-card tag="article" class="relative p-6 sm:p-9">
-      <nav-link
+    <GlassCard tag="article" class="relative p-6 sm:p-9">
+      <NavLink
         class="absolute right-0 top-0 rounded-bl-xl rounded-tr-2xl border-b border-l border-slate-300/20 bg-gray-700/50"
       />
 
-      <fade-up>
+      <FadeUp>
         <header>
           <h1 class="text-4xl font-bold text-lime-300 underline underline-offset-8">
             Portfolio
@@ -30,13 +30,13 @@ useHead({
             I often use Vue.js/NuxtJS for development tools!
           </p>
         </section>
-      </fade-up>
+      </FadeUp>
 
-      <fade-up delay="0.35s">
+      <FadeUp delay="0.35s">
         <section class="mt-14">
           <portfolio-lists />
         </section>
-      </fade-up>
-    </glass-card>
+      </FadeUp>
+    </GlassCard>
   </div>
 </template>
