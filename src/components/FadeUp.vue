@@ -1,12 +1,3 @@
-<template>
-  <div
-    class="fade-up"
-    :style="{ 'animation-duration': duration, 'animation-delay': delay }"
-  >
-    <slot />
-  </div>
-</template>
-
 <script setup lang="ts">
 withDefaults(
   defineProps<{
@@ -16,9 +7,18 @@ withDefaults(
   {
     duration: '0.5s',
     delay: '0.25s',
-  }
+  },
 );
 </script>
+
+<template>
+  <div
+    class="fade-up"
+    :style="{ 'animation-duration': duration, 'animation-delay': delay }"
+  >
+    <slot />
+  </div>
+</template>
 
 <style scoped>
 .fade-up {

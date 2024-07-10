@@ -1,39 +1,9 @@
-<template>
-  <div>
-    <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2">
-      <li v-for="portfolio in portfolios" :key="portfolio.title">
-        <NuxtLink :to="portfolio.url" target="_blank">
-          <article
-            class="flex flex-col overflow-hidden rounded-2xl border border-slate-200/10 bg-gray-600/25 shadow-lg shadow-slate-700/20 transition duration-300 hover:bg-slate-500/20 hover:shadow-slate-200/20"
-          >
-            <div class="aspect-video">
-              <img :alt="portfolio.title" :src="`/images/${portfolio.image}`" />
-            </div>
-
-            <section class="p-4">
-              <h3 v-twemoji class="text-center text-lg font-bold text-teal-400">
-                {{ portfolio.title }}
-              </h3>
-              <p v-twemoji class="mt-2 text-sm text-slate-300/95">
-                {{ portfolio.text }}
-              </p>
-              <p class="mt-2 text-xs text-amber-300/90">
-                {{ portfolio.tools }}
-              </p>
-            </section>
-          </article>
-        </NuxtLink>
-      </li>
-    </ul>
-  </div>
-</template>
-
 <script setup lang="ts">
 const portfolios = [
   {
     image: 'p1.png',
     title: 'Web ToolBox',
-    text: "Web tools for developers that can be used in the browser. This is what I'm most focused on right now😆",
+    text: 'Web tools for developers that can be used in the browser. This is what I\'m most focused on right now😆',
     tools: 'Made with: NuxtJS, Vuetify, Python etc',
     url: 'https://web-toolbox.dev',
   },
@@ -67,3 +37,33 @@ const portfolios = [
   },
 ];
 </script>
+
+<template>
+  <div>
+    <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+      <li v-for="portfolio in portfolios" :key="portfolio.title">
+        <NuxtLink :to="portfolio.url" target="_blank">
+          <article
+            class="flex flex-col overflow-hidden rounded-2xl border border-slate-200/10 bg-gray-600/25 shadow-lg shadow-slate-700/20 transition duration-300 hover:bg-slate-500/20 hover:shadow-slate-200/20"
+          >
+            <div class="aspect-video">
+              <img :alt="portfolio.title" :src="`/images/${portfolio.image}`">
+            </div>
+
+            <section class="p-4">
+              <h3 v-twemoji class="text-center text-lg font-bold text-teal-400">
+                {{ portfolio.title }}
+              </h3>
+              <p v-twemoji class="mt-2 text-sm text-slate-300/95">
+                {{ portfolio.text }}
+              </p>
+              <p class="mt-2 text-xs text-amber-300/90">
+                {{ portfolio.tools }}
+              </p>
+            </section>
+          </article>
+        </NuxtLink>
+      </li>
+    </ul>
+  </div>
+</template>

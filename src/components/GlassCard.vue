@@ -1,3 +1,14 @@
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    tag?: string;
+  }>(),
+  {
+    tag: 'div',
+  },
+);
+</script>
+
 <template>
   <component
     :is="tag"
@@ -6,17 +17,6 @@
     <slot />
   </component>
 </template>
-
-<script setup lang="ts">
-withDefaults(
-  defineProps<{
-    tag?: string;
-  }>(),
-  {
-    tag: 'div',
-  }
-);
-</script>
 
 <style scoped>
 /* TODO: Temporary fix: https://github.com/tailwindlabs/tailwindcss/discussions/7835 */
