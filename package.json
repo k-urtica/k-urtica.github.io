@@ -1,17 +1,17 @@
 {
   "name": "k-urtica.github.io",
   "version": "1.0.0",
+  "private": true,
   "description": "K portfolio site.",
   "author": "K",
-  "private": true,
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
     "preview": "nuxt preview",
     "generate": "nuxt generate",
     "analyze": "nuxt analyze",
-    "lint": "eslint . --max-warnings=0",
-    "lint-fix": "pnpm prettier-fix && eslint . --fix",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
     "prettier-check": "prettier --check src/",
     "prettier-fix": "prettier --write src/",
     "postinstall": "nuxt prepare"
@@ -20,14 +20,13 @@
     "twemoji": "^14.0.2"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.22.0",
     "@mdi/js": "^7.4.47",
     "@nuxt/eslint": "^0.3.13",
     "@nuxtjs/sitemap": "^5.2.2",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "eslint": "^9.6.0",
-    "eslint-config-prettier": "^9.1.0",
-    "nuxt": "^3.12.2",
-    "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.5"
+    "eslint-plugin-tailwindcss": "^3.17.4",
+    "nuxt": "^3.12.2"
   }
 }

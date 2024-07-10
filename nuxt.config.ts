@@ -1,6 +1,6 @@
 const siteTitle = 'K - Web Developer';
-const description =
-  "Hey there! I'm K, a web developer who loves programming and traveling. This is my portfolio site.";
+const description
+  = 'Hey there! I\'m K, a web developer who loves programming and traveling. This is my portfolio site.';
 
 export default defineNuxtConfig({
   srcDir: 'src/',
@@ -43,6 +43,12 @@ export default defineNuxtConfig({
     discoverImages: false,
     xsl: false,
     sitemaps: false,
+  },
+
+  eslint: {
+    config: {
+      standalone: false,
+    },
   },
 
   runtimeConfig: {
