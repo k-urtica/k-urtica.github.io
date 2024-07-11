@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
 
-  css: ['~/assets/css/global.css'],
+  css: ['~/assets/main.css'],
 
   plugins: ['~/plugins/twemoji'],
 
