@@ -1,15 +1,3 @@
-a {
-  text-decoration: none;
-}
-
-img.emoji {
-  height: 1em;
-  width: 1em;
-  margin: 0 0.25em 0 0.25em;
-  vertical-align: -0.2em;
-  display: inline;
-}
-
 .page-enter-active,
 .page-leave-active {
   transition: all 0.2s ease-in-out;
