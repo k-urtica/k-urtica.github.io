@@ -36,7 +36,7 @@ export default defineNuxtConfig({
 
   css: ['~/assets/main.css'],
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/eslint'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/eslint', '@nuxt/fonts'],
 
   sitemap: {
     autoLastmod: false,

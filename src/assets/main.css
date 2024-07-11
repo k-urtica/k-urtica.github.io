@@ -10,13 +10,6 @@ img.emoji {
   display: inline;
 }
 
-@font-face {
-  font-family: Exo;
-  src: url('/Exo-Light.woff2');
-  font-weight: normal bold;
-  font-display: swap;
-}
-
 .page-enter-active,
 .page-leave-active {
   transition: all 0.2s ease-in-out;
@@ -28,6 +21,6 @@ img.emoji {
 }
 
 body {
-  font-family: Exo, Inter, 'Noto Sans JP', '-apple-system', BlinkMacSystemFont,
+  font-family: 'Exo 2', '-apple-system', BlinkMacSystemFont,
     Helvetica, Arial, Meiryo, sans-serif;
 }

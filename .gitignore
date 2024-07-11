@@ -91,3 +91,5 @@ sw.*
 *.swp
 
 .output
+
+.data
