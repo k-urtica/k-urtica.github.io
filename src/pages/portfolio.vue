@@ -27,7 +27,7 @@ useHead({
             I like to work on personal projects outside of work.
           </p>
           <p class="mt-2">
-            I often use Vue.js/NuxtJS for development tools!
+            I often use Vue.js/Nuxt for development tools!
           </p>
         </section>
       </FadeUp>

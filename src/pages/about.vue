@@ -29,15 +29,12 @@ useHead({
             Hi there👋 I'm K.
           </p>
           <p class="mt-2">
-            I'm a web developer working in Tokyo, Japan. I have been working as a developer since
-            2013.
+            I'm a web developer working in Tokyo, Japan.
+            I have been working as a developer since 2013.
           </p>
           <p class="mt-2">
             I have worked for several companies and participated in a number of interesting projects
-            there.
-          </p>
-          <p class="mt-2">
-            👶Currently on leave to raise my cute baby! (through Oct. 2022)
+            there. I started my career as a backend engineer (C and Java), but now I specialize in frontend.
           </p>
         </section>
       </FadeUp>
