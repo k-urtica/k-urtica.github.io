@@ -12,8 +12,6 @@
     "analyze": "nuxt analyze",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "prettier-check": "prettier --check src/",
-    "prettier-fix": "prettier --write src/",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
