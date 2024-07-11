@@ -22,7 +22,7 @@ useHead({
           </p>
         </header>
 
-        <section v-twemoji class="mt-14 text-zinc-200 ">
+        <section class="mt-14 text-zinc-200 ">
           <p class="mt-2">
             I love to travel as much as I love programming✈
           </p>

@@ -51,10 +51,10 @@ const portfolios = [
             </div>
 
             <section class="p-4">
-              <h3 v-twemoji class="text-center text-lg font-bold text-orange-200">
+              <h3 class="text-center text-lg font-bold text-orange-200">
                 {{ p.title }}
               </h3>
-              <p v-twemoji class="mt-2 text-sm text-zinc-200/90">
+              <p class="mt-2 text-sm text-zinc-200/90">
                 {{ p.text }}
               </p>
               <p class="mt-2 text-xs font-bold text-zinc-50">

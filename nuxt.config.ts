@@ -36,8 +36,6 @@ export default defineNuxtConfig({
 
   css: ['~/assets/main.css'],
 
-  plugins: ['~/plugins/twemoji'],
-
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/eslint'],
 
   sitemap: {

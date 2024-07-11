@@ -24,7 +24,7 @@ useHead({
           </p>
         </header>
 
-        <section v-twemoji class="mt-14 text-zinc-200">
+        <section class="mt-14 text-zinc-200">
           <p class="mt-2">
             Hi there👋 I'm K.
           </p>
@@ -47,12 +47,13 @@ useHead({
           <h2 class="mb-3 text-2xl font-bold text-orange-200">
             Skills
           </h2>
-          <p v-twemoji class="text-zinc-300/80">
+          <p class="text-zinc-300/80">
             Note: 😅It may seem a bit silly to describe one's own skills in this way.
             <br>
             And, of course, there are things not written here!
           </p>
-          <skill-lists class="mt-6" />
+
+          <SkillLists class="mt-6" />
         </section>
 
         <section class="mt-14">
@@ -68,7 +69,8 @@ useHead({
               here.
             </NuxtLink>
           </p>
-          <like-lists class="mt-6" />
+
+          <LikeLists class="mt-6" />
         </section>
 
         <section class="mt-14">

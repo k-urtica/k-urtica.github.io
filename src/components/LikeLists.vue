@@ -6,7 +6,7 @@ const likes = [
     text: 'I code almost every day.',
   },
   {
-    icon: '🗺',
+    icon: '🗺️',
     title: 'Travel',
     text: 'Seeking beautiful landscapes.',
   },
@@ -31,10 +31,7 @@ const likes = [
         :key="like.title"
         class="flex flex-col rounded-2xl border border-slate-200/20 bg-slate-700/30 p-4 text-center shadow-lg shadow-gray-900/20"
       >
-        <div class="mx-auto">
-          <span v-twemoji class="text-5xl">{{ like.icon }}</span>
-        </div>
-
+        <span class="text-5xl">{{ like.icon }}</span>
         <h3 class="mt-3 font-bold text-zinc-50">
           {{ like.title }}
         </h3>

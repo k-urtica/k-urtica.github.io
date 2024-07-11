@@ -16,9 +16,6 @@
     "prettier-fix": "prettier --write src/",
     "postinstall": "nuxt prepare"
   },
-  "dependencies": {
-    "twemoji": "^14.0.2"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.22.0",
     "@mdi/js": "^7.4.47",
