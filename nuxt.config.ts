@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://k-urtica.github.io/' },
         { property: 'og:title', content: siteTitle },
         { property: 'og:description', content: description },
-        { property: 'og:image', content: 'https://k-urtica.github.io/ogp.png' },
+        { property: 'og:image', content: 'https://k-urtica.github.io/ogp.webp' },
         // twitter
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@k_urtica' },
