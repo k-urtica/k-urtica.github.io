@@ -41,7 +41,6 @@ export default defineNuxtConfig({
   sitemap: {
     autoLastmod: false,
     discoverImages: false,
-    xsl: false,
     sitemaps: false,
   },
 
@@ -51,9 +50,7 @@ export default defineNuxtConfig({
     },
   },
 
-  runtimeConfig: {
-    public: {
-      siteUrl: 'https://k-urtica.github.io',
-    },
+  site: {
+    url: 'https://k-urtica.github.io',
   },
 });
