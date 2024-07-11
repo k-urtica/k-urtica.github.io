@@ -26,3 +26,8 @@ img.emoji {
   opacity: 0;
   filter: blur(1rem);
 }
+
+body {
+  font-family: Exo, Inter, 'Noto Sans JP', '-apple-system', BlinkMacSystemFont,
+    Helvetica, Arial, Meiryo, sans-serif;
+}
