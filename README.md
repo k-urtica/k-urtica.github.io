@@ -1,3 +1,5 @@
+![deploy status](https://github.com/k-urtica/k-urtica.github.io/actions/workflows/deploy.yaml/badge.svg)
+
 ## My Personal site🙂
 
 Hi, I'm K. This is my personal website.
