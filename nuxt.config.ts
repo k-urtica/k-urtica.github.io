@@ -28,7 +28,7 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@k_urtica' },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
 
     pageTransition: { name: 'page', mode: 'out-in' },
