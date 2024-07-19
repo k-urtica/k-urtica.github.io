@@ -3,9 +3,11 @@ const description
   = 'Hey there! I\'m K, a web developer who loves programming and traveling. This is my portfolio site.';
 
 export default defineNuxtConfig({
-  srcDir: 'src/',
+  compatibilityDate: '2024-07-19',
 
+  srcDir: 'src/',
   components: [{ path: '~/components', pathPrefix: false }],
+
   app: {
     head: {
       htmlAttrs: {
@@ -35,7 +37,6 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/main.css'],
-
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/eslint', '@nuxt/fonts'],
 
   sitemap: {
