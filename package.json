@@ -15,18 +15,18 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/fonts": "^0.7.1"
+    "@nuxt/fonts": "^0.7.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.23.0",
+    "@antfu/eslint-config": "^3.0.0",
     "@mdi/js": "^7.4.47",
-    "@nuxt/eslint": "^0.3.13",
+    "@nuxt/eslint": "^0.5.4",
     "@nuxtjs/sitemap": "^5.3.5",
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "eslint": "^9.7.0",
+    "eslint": "^9.9.1",
     "eslint-plugin-format": "^0.1.2",
     "eslint-plugin-tailwindcss": "^3.17.4",
-    "nuxt": "^3.12.4",
-    "typescript": "^5.5.3"
+    "nuxt": "^3.13.0",
+    "typescript": "^5.5.4"
   }
 }
