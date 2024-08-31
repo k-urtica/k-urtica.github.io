@@ -37,7 +37,7 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/main.css'],
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/eslint', '@nuxt/fonts'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon'],
 
   sitemap: {
     autoLastmod: false,
@@ -48,6 +48,13 @@ export default defineNuxtConfig({
   eslint: {
     config: {
       standalone: false,
+    },
+  },
+
+  icon: {
+    serverBundle: false,
+    clientBundle: {
+      scan: true,
     },
   },
 

@@ -1,36 +1,29 @@
 <script setup lang="ts">
-import { mdiArrowRight, mdiOpenInNew } from '@mdi/js';
-
 const menus = [
   {
     title: 'About',
     to: '/about',
     caption: 'About me.',
-    icon: mdiArrowRight,
   },
   {
     title: 'Portfolio',
     to: '/portfolio',
     caption: 'Personal projects.',
-    icon: mdiArrowRight,
   },
   {
     title: 'Picture',
     to: '/picture',
     caption: 'A scene from the travel.',
-    icon: mdiArrowRight,
   },
   {
     title: 'Blog',
     to: 'https://knote.dev',
     caption: 'My personal Blog.',
-    icon: mdiOpenInNew,
   },
   {
     title: 'Twitter',
     to: 'https://twitter.com/k_urtica',
     caption: 'Follow me.',
-    icon: mdiOpenInNew,
   },
 ];
 </script>
@@ -52,12 +45,12 @@ const menus = [
 
       <section class="mb-3 mt-6 border-t border-zinc-400/40">
         <ul class="mt-5 space-y-5">
-          <li v-for="{ title, to, icon, caption } in menus" :key="title">
+          <li v-for="{ title, to, caption } in menus" :key="title">
             <NuxtLink :to class="flex items-center justify-between gap-2 text-orange-200">
               <h2 class="text-xl font-bold underline-offset-2 hover:underline">
                 {{ title }}
               </h2>
-              <MdiIcon :icon size="18" />
+              <Icon :name="to.startsWith('http') ? 'i-mdi-open-in-new' : 'i-mdi-arrow-right'" size="18" />
             </NuxtLink>
             <p class="mt-1 text-sm text-zinc-200/80">
               {{ caption }}

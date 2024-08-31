@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { mdiOpenInNew } from '@mdi/js';
-
 useHead({
   title: 'About',
   titleTemplate: '%s | K - Web Developer',
@@ -82,7 +80,7 @@ useHead({
               class="inline-flex items-center gap-1 text-orange-200"
             >
               Twitter
-              <MdiIcon size="16" :icon="mdiOpenInNew" />
+              <Icon name="i-mdi-open-in-new" />
             </NuxtLink>
           </p>
         </section>
