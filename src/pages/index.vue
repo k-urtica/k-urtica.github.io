@@ -63,9 +63,10 @@ const menus = [
         <NuxtLink
           to="https://github.com/k-urtica/k-urtica.github.io"
           target="_blank"
-          class="text-sm text-zinc-200/90"
+          class="flex items-center gap-1 text-sm text-zinc-200/90"
         >
           GitHub
+          <Icon name="i-mdi-github" size="1.2em" />
         </NuxtLink>
       </footer>
     </GlassCard>
