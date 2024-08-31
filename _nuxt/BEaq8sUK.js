@@ -1,0 +1,1 @@
+import{d as a,o,e as r,w as s,i as n,g as t}from"./r9PBGfp7.js";const p=a({__name:"GlassCard",props:{tag:{default:"div"}},setup(d){return(e,l)=>(o(),r(t(e.tag),{class:"rounded-2xl border border-zinc-300/20 bg-zinc-950/35 shadow-xl shadow-zinc-600/10 backdrop-blur-[6px]"},{default:s(()=>[n(e.$slots,"default")]),_:3}))}});export{p as _};
