@@ -1,0 +1,1 @@
+.cover[data-v-2e55e239]:after{animation:noise-anim-2e55e239 1s steps(7) infinite;background-image:url(../noise.webp);content:"";top:0;right:0;bottom:0;left:0;opacity:.04;pointer-events:none;position:fixed}@keyframes noise-anim-2e55e239{0%{background-position:0 0}to{background-position:140px 140px}}
