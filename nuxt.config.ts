@@ -5,7 +5,6 @@ const description
 export default defineNuxtConfig({
   compatibilityDate: '2024-07-19',
 
-  srcDir: 'src/',
   components: [{ path: '~/components', pathPrefix: false }],
 
   app: {
@@ -60,5 +59,9 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://k-urtica.github.io',
+  },
+
+  future: {
+    compatibilityVersion: 4,
   },
 });
