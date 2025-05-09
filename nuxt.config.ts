@@ -3,15 +3,16 @@ const description =
   "Hey there! I'm K, a web developer who loves programming and traveling. This is my portfolio site.";
 
 export default defineNuxtConfig({
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/sitemap',
-    '@nuxt/eslint',
-    '@nuxt/fonts',
-    '@nuxt/icon',
+  modules: ['@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxt/eslint', '@nuxt/ui'],
+
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
   ],
 
-  components: [{ path: '~/components', pathPrefix: false }],
+  devtools: { enabled: true },
 
   app: {
     head: {
@@ -45,6 +46,15 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://k-urtica.github.io',
+  },
+
+  colorMode: {
+    preference: 'dark',
+  },
+
+  ui: {
+    colorMode: true,
+    fonts: true,
   },
 
   future: {

@@ -20,13 +20,13 @@ const skills = [
       :key="title"
       class="flex flex-col rounded-xl border border-slate-200/20 bg-slate-700/30 p-4 text-center shadow-lg shadow-gray-500/10"
     >
-      <Icon :name="icon" size="36" class="mx-auto" :style="{ color }" />
+      <UIcon :name="icon" size="36" class="mx-auto" :style="{ color }" />
 
       <h3 class="mt-3 text-slate-100">
         {{ title }}
       </h3>
-      <div class="mt-1 flex justify-center text-yellow-200/90">
-        <Icon v-for="n in rating" :key="n" name="i-mdi-star" size="14" />
+      <div class="mt-1 flex justify-center text-yellow-200">
+        <UIcon v-for="n in rating" :key="n" name="i-mdi-star" />
       </div>
     </li>
   </ul>

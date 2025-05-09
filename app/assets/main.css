@@ -1,13 +1,43 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@layer base {
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--ui-border, currentColor);
+  }
+}
+
+:root {
+  --font-family:
+    'Exo 2', '-apple-system', BlinkMacSystemFont, Helvetica, Arial, Meiryo, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  line-break: strict;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
-}
-
-body {
-  font-family: 'Exo 2', '-apple-system', BlinkMacSystemFont, Helvetica, Arial, Meiryo, sans-serif;
 }
