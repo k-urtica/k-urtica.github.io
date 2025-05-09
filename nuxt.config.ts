@@ -3,7 +3,7 @@ const description
   = 'Hey there! I\'m K, a web developer who loves programming and traveling. This is my portfolio site.';
 
 export default defineNuxtConfig({
-  compatibilityDate: '2024-07-19',
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon'],
 
   components: [{ path: '~/components', pathPrefix: false }],
 
@@ -36,18 +36,24 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/main.css'],
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon'],
 
-  sitemap: {
-    autoLastmod: false,
-    discoverImages: false,
-    sitemaps: false,
+  site: {
+    url: 'https://k-urtica.github.io',
   },
+
+  future: {
+    compatibilityVersion: 4,
+  },
+  compatibilityDate: '2024-11-01',
 
   eslint: {
     config: {
       standalone: false,
+      nuxt: {
+        sortConfigKeys: true,
+      },
     },
+
   },
 
   icon: {
@@ -57,11 +63,9 @@ export default defineNuxtConfig({
     },
   },
 
-  site: {
-    url: 'https://k-urtica.github.io',
-  },
-
-  future: {
-    compatibilityVersion: 4,
+  sitemap: {
+    autoLastmod: false,
+    discoverImages: false,
+    sitemaps: false,
   },
 });
