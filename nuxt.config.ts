@@ -1,9 +1,15 @@
 const siteTitle = 'K - Web Developer';
-const description
-  = 'Hey there! I\'m K, a web developer who loves programming and traveling. This is my portfolio site.';
+const description =
+  "Hey there! I'm K, a web developer who loves programming and traveling. This is my portfolio site.";
 
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/sitemap',
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+    '@nuxt/icon',
+  ],
 
   components: [{ path: '~/components', pathPrefix: false }],
 
@@ -44,16 +50,16 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+
   compatibilityDate: '2024-11-01',
 
   eslint: {
     config: {
-      standalone: false,
+      stylistic: false,
       nuxt: {
         sortConfigKeys: true,
       },
     },
-
   },
 
   icon: {
