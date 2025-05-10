@@ -65,7 +65,9 @@ const controlButtons = [
     />
 
     <UApp :tooltip="{ delayDuration: 100, skipDelayDuration: 150 }">
-      <div class="absolute top-2 right-2 flex items-center gap-2">
+      <div
+        class="absolute top-2 right-2 flex items-center gap-2 rounded-lg bg-muted/30 px-2 py-1"
+      >
         <UTooltip
           v-for="({ icon, label, ariaLabel, onClick }, idx) in controlButtons"
           :key="idx"
