@@ -1,16 +1,16 @@
 ![deploy status](https://github.com/k-urtica/k-urtica.github.io/actions/workflows/deploy.yaml/badge.svg)
 
-## My Personal site🙂
+## ⭐️ My Personal site
 
-Hi, I'm K. This is my personal website.
+Hey there! I'm K and this is the repo for my personal website.
 
-It has gone through several renewals and is now built with Nuxt and TailwindCSS.
+After several makeovers, my site is now built with Nuxt and NuxtUI.
 
 🚀Running on GithubPages
 
-![""](https://github.com/k-urtica/k-urtica.github.io/assets/46732829/f361ae3f-2a8a-484d-b450-de0cd1568d71)
+![""](https://github.com/user-attachments/assets/96f051ec-24ce-41b5-a77a-89c9cacf22ff)
 
-## ⭐️ URL
+## 🔗 URL
 
 [https://k-urtica.github.io/](https://k-urtica.github.io/)
 
