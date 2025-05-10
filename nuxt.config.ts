@@ -3,7 +3,13 @@ const description =
   "Hey there! I'm K, a web developer who loves programming and traveling. This is my portfolio site.";
 
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxt/eslint', '@nuxt/ui'],
+  modules: [
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    'motion-v/nuxt',
+  ],
 
   components: [
     {
@@ -17,10 +23,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
+        lang: 'en',
         prefix: 'og: http://ogp.me/ns#',
       },
-      titleTemplate: '%s - ' + 'Web Developer',
-      title: 'K',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -38,8 +43,6 @@ export default defineNuxtConfig({
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
-
-    pageTransition: { name: 'page', mode: 'out-in' },
   },
 
   css: ['~/assets/main.css'],
@@ -59,6 +62,10 @@ export default defineNuxtConfig({
 
   future: {
     compatibilityVersion: 4,
+  },
+
+  experimental: {
+    typedPages: true,
   },
 
   compatibilityDate: '2024-11-01',
