@@ -1,8 +1,19 @@
 <script setup lang="ts">
 import { motion } from 'motion-v';
 
+defineOgImageComponent('OgDefault');
+
+const config = useRuntimeConfig();
+const route = useRoute();
+
 useHead({
   titleTemplate: '%s - ' + 'K',
+  meta: () => [
+    {
+      property: 'og:url',
+      content: `${config.public.siteUrl}${route.fullPath}`,
+    },
+  ],
 });
 
 const hideContent = ref(false);

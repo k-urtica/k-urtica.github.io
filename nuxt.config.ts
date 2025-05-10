@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/ui',
     'motion-v/nuxt',
+    'nuxt-og-image',
   ],
 
   components: [
@@ -31,14 +32,9 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: DESCRIPTION },
-        // OGP
         { property: 'og:site_name', content: SITE_NAME },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: SITE_URL },
-        { property: 'og:title', content: SITE_NAME },
         { property: 'og:description', content: DESCRIPTION },
-        { property: 'og:image', content: `${SITE_URL}/ogp.webp` },
-        // twitter
+        { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@k_urtica' },
       ],
@@ -60,6 +56,12 @@ export default defineNuxtConfig({
   ui: {
     colorMode: true,
     fonts: true,
+  },
+
+  runtimeConfig: {
+    public: {
+      siteUrl: SITE_URL,
+    },
   },
 
   future: {
@@ -86,6 +88,12 @@ export default defineNuxtConfig({
     clientBundle: {
       scan: true,
     },
+  },
+
+  ogImage: {
+    enabled: true,
+    fonts: ['Exo+2:400', 'Exo+2:700'],
+    zeroRuntime: true,
   },
 
   sitemap: {
