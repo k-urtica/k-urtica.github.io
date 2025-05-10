@@ -1,52 +1,79 @@
-const siteTitle = 'K - Web Developer';
-const description
-  = 'Hey there! I\'m K, a web developer who loves programming and traveling. This is my portfolio site.';
+const SITE_URL = 'https://k-urtica.github.io';
+const SITE_NAME = 'K - Web Developer';
+const DESCRIPTION =
+  "Hi, I'm K. Front-end developer based in Tokyo. Building web experiences with code and creativity.";
 
 export default defineNuxtConfig({
-  compatibilityDate: '2024-07-19',
+  modules: [
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    'motion-v/nuxt',
+    'nuxt-og-image',
+  ],
 
-  components: [{ path: '~/components', pathPrefix: false }],
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
+
+  devtools: { enabled: true },
 
   app: {
     head: {
       htmlAttrs: {
+        lang: 'en',
         prefix: 'og: http://ogp.me/ns#',
       },
-      titleTemplate: '%s - ' + 'Web Developer',
-      title: 'K',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: description },
-        // OGP
-        { property: 'og:site_name', content: siteTitle },
+        { name: 'description', content: DESCRIPTION },
+        { property: 'og:site_name', content: SITE_NAME },
+        { property: 'og:description', content: DESCRIPTION },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://k-urtica.github.io/' },
-        { property: 'og:title', content: siteTitle },
-        { property: 'og:description', content: description },
-        { property: 'og:image', content: 'https://k-urtica.github.io/ogp.webp' },
-        // twitter
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@k_urtica' },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
-
-    pageTransition: { name: 'page', mode: 'out-in' },
   },
 
   css: ['~/assets/main.css'],
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon'],
 
-  sitemap: {
-    autoLastmod: false,
-    discoverImages: false,
-    sitemaps: false,
+  site: {
+    name: SITE_NAME,
+    url: SITE_URL,
   },
+
+  colorMode: {
+    preference: 'dark',
+  },
+
+  ui: {
+    colorMode: true,
+    fonts: true,
+  },
+
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  experimental: {
+    typedPages: true,
+  },
+
+  compatibilityDate: '2024-11-01',
 
   eslint: {
     config: {
-      standalone: false,
+      stylistic: false,
+      nuxt: {
+        sortConfigKeys: true,
+      },
     },
   },
 
@@ -57,11 +84,15 @@ export default defineNuxtConfig({
     },
   },
 
-  site: {
-    url: 'https://k-urtica.github.io',
+  ogImage: {
+    enabled: true,
+    fonts: ['Exo+2:400', 'Exo+2:700'],
+    zeroRuntime: true,
   },
 
-  future: {
-    compatibilityVersion: 4,
+  sitemap: {
+    autoLastmod: false,
+    discoverImages: false,
+    sitemaps: false,
   },
 });

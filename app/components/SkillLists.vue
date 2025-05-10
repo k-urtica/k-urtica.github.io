@@ -11,6 +11,8 @@ const skills = [
   { icon: 'i-mdi-language-java', title: 'Java/Spring', rating: 4, color: '#f89820' },
   { icon: 'i-mdi-aws', title: 'AWS', rating: 4, color: '#ff9900' },
 ];
+
+const MAX_RATING = 5;
 </script>
 
 <template>
@@ -18,15 +20,20 @@ const skills = [
     <li
       v-for="{ title, color, icon, rating } in skills"
       :key="title"
-      class="flex flex-col rounded-xl border border-slate-200/20 bg-slate-700/30 p-4 text-center shadow-lg shadow-gray-500/10"
+      class="flex flex-col rounded-2xl border border-muted/80 bg-slate-700/30 p-4 text-center"
     >
-      <Icon :name="icon" size="36" class="mx-auto" :style="{ color }" />
+      <UIcon :name="icon" class="mx-auto size-9" :style="{ color }" />
 
-      <h3 class="mt-3 text-slate-100">
-        {{ title }}
-      </h3>
-      <div class="mt-1 flex justify-center text-yellow-200/90">
-        <Icon v-for="n in rating" :key="n" name="i-mdi-star" size="14" />
+      <h3 class="mt-3 font-medium">{{ title }}</h3>
+      <div
+        class="mt-1 text-sm text-yellow-200"
+        :aria-label="`Skill level: ${rating} out of 5 stars`"
+      >
+        <UIcon
+          v-for="n in MAX_RATING"
+          :key="n"
+          :name="n <= rating ? 'i-mdi-star' : 'i-mdi-star-outline'"
+        />
       </div>
     </li>
   </ul>

@@ -1,13 +1,33 @@
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.2s ease-in-out;
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@layer base {
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--ui-border, currentColor);
+  }
 }
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
+
+:root {
+  --font-family:
+    'Exo 2', '-apple-system', BlinkMacSystemFont, Helvetica, Arial, Meiryo, sans-serif;
 }
 
 body {
-  font-family: 'Exo 2', '-apple-system', BlinkMacSystemFont, Helvetica, Arial, Meiryo, sans-serif;
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  line-break: strict;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
