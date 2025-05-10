@@ -1,41 +1,44 @@
 <script setup lang="ts">
+import { motion } from 'motion-v';
+
 useHead({
   title: 'About',
-  titleTemplate: '%s | K - Web Developer',
 });
 </script>
 
 <template>
   <div class="flex min-h-dvh items-center px-5 py-10 md:py-20">
-    <GlassCard tag="article" class="mx-auto max-w-5xl p-5 md:p-8">
-      <NavLink
-        class="absolute top-0 right-0 rounded-tr-2xl rounded-bl-xl border-b border-l border-muted bg-gray-700/50"
-      />
+    <Motion as-child v-bind="fade()">
+      <GlassCard class="mx-auto flex max-w-5xl flex-col gap-14 p-5 md:p-8">
+        <NavLink
+          class="absolute top-0 right-0 rounded-tr-2xl rounded-bl-xl border-b border-l border-muted bg-gray-700/50"
+        />
 
-      <FadeUp>
-        <header>
-          <h1 class="text-4xl font-bold text-primary-200 underline underline-offset-8">
-            About
-          </h1>
-          <p class="mt-6 text-zinc-200/90">Brief introduction about me.</p>
-        </header>
+        <motion.div v-bind="slideUp()">
+          <header>
+            <h1 class="text-4xl font-bold text-primary-200">About</h1>
+            <p class="mt-6">Brief introduction about me.</p>
+          </header>
 
-        <section class="mt-14 text-zinc-200">
-          <p class="mt-2">Hi there👋 I'm K.</p>
-          <p class="mt-2">
-            I'm a web developer working in Tokyo, Japan. I have been working as a
-            developer since 2013.
-          </p>
-          <p class="mt-2">
-            I have worked for several companies and participated in a number of
-            interesting projects there. I started my career as a backend engineer (C and
-            Java), but now I specialize in frontend.
-          </p>
-        </section>
-      </FadeUp>
+          <section class="mt-10 space-y-2">
+            <p>Hi there👋 I'm K.</p>
+            <p>
+              I'm a web developer based in Tokyo. Been coding professionally since 2013,
+              and still enjoying the ride!
+            </p>
+            <p>
+              I've bounced around a few companies and worked on some pretty cool projects
+              along the way. Started out as a backend dev (C and Java stuff), but these
+              days I'm all about frontend.
+            </p>
+            <p>
+              When I'm not coding, I spend time with my kids and dive into gaming
+              adventures.
+            </p>
+          </section>
+        </motion.div>
 
-      <FadeUp delay="0.35s">
-        <section class="mt-14">
+        <motion.section v-bind="slideUp({ delay: 0.1 })">
           <h2 class="mb-3 text-2xl font-bold text-primary-200">Skills</h2>
           <p class="text-zinc-300/80">
             Note: 😅It may seem a bit silly to describe one's own skills in this way.
@@ -44,9 +47,9 @@ useHead({
           </p>
 
           <SkillLists class="mt-6" />
-        </section>
+        </motion.section>
 
-        <section class="mt-14">
+        <motion.section v-bind="slideUp({ delay: 0.15 })">
           <h2 class="mb-3 text-2xl font-bold text-primary-200">Likes</h2>
           <p class="text-zinc-200">Some of my favorite things.</p>
           <p class="text-zinc-200">
@@ -57,9 +60,9 @@ useHead({
           </p>
 
           <LikeLists class="mt-6" />
-        </section>
+        </motion.section>
 
-        <section class="mt-14">
+        <motion.section v-bind="slideUp({ delay: 0.2 })">
           <h2 class="mb-3 text-2xl font-bold text-primary-200">Contact</h2>
           <p class="text-zinc-200">
             Contact me on
@@ -72,8 +75,8 @@ useHead({
               <UIcon name="i-lucide-external-link" />
             </NuxtLink>
           </p>
-        </section>
-      </FadeUp>
-    </GlassCard>
+        </motion.section>
+      </GlassCard>
+    </Motion>
   </div>
 </template>

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    tag?: string;
+    tag?: keyof HTMLElementTagNameMap;
   }>(),
   {
-    tag: 'div',
+    tag: 'article',
   }
 );
 </script>

@@ -1,10 +1,17 @@
+<script setup lang="ts">
+useHead({
+  title: 'K',
+  titleTemplate: '%s - ' + 'Web Developer',
+});
+</script>
+
 <template>
-  <div class="cover min-h-svh">
+  <div class="cover min-h-dvh">
     <img
       src="/bg_dark.webp"
       aria-hidden="true"
       fetchPriority="high"
-      class="fixed inset-0 size-full object-cover"
+      class="pointer-events-none fixed inset-0 size-full object-cover"
     />
 
     <div
