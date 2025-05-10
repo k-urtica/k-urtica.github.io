@@ -3,15 +3,15 @@ import { motion } from 'motion-v';
 
 defineOgImageComponent('OgDefault');
 
-const config = useRuntimeConfig();
 const route = useRoute();
+const siteConfig = useSiteConfig();
 
 useHead({
   titleTemplate: '%s - ' + 'K',
   meta: () => [
     {
       property: 'og:url',
-      content: `${config.public.siteUrl}${route.fullPath}`,
+      content: `${siteConfig.url}${route.path}`,
     },
   ],
 });

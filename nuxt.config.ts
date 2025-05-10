@@ -58,12 +58,6 @@ export default defineNuxtConfig({
     fonts: true,
   },
 
-  runtimeConfig: {
-    public: {
-      siteUrl: SITE_URL,
-    },
-  },
-
   future: {
     compatibilityVersion: 4,
   },
