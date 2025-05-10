@@ -1,7 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'K',
-  titleTemplate: '%s - ' + 'Web Developer',
+  titleTemplate: '%s - ' + 'K',
 });
 </script>
 

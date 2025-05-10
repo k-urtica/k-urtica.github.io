@@ -1,4 +1,9 @@
 <script setup lang="ts">
+useHead({
+  title: 'K',
+  titleTemplate: '%s - ' + 'Web Developer',
+});
+
 const menus = [
   {
     title: 'About',

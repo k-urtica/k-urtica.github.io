@@ -1,6 +1,7 @@
-const siteTitle = 'K - Web Developer';
-const description =
-  "Hey there! I'm K, a web developer who loves programming and traveling. This is my portfolio site.";
+const SITE_URL = 'https://k-urtica.github.io';
+const SITE_NAME = 'K - Web Developer';
+const DESCRIPTION =
+  "Hi, I'm K. Front-end developer based in Tokyo. Building web experiences with code and creativity.";
 
 export default defineNuxtConfig({
   modules: [
@@ -29,14 +30,14 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: description },
+        { name: 'description', content: DESCRIPTION },
         // OGP
-        { property: 'og:site_name', content: siteTitle },
+        { property: 'og:site_name', content: SITE_NAME },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://k-urtica.github.io/' },
-        { property: 'og:title', content: siteTitle },
-        { property: 'og:description', content: description },
-        { property: 'og:image', content: 'https://k-urtica.github.io/ogp.webp' },
+        { property: 'og:url', content: SITE_URL },
+        { property: 'og:title', content: SITE_NAME },
+        { property: 'og:description', content: DESCRIPTION },
+        { property: 'og:image', content: `${SITE_URL}/ogp.webp` },
         // twitter
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@k_urtica' },
@@ -48,7 +49,8 @@ export default defineNuxtConfig({
   css: ['~/assets/main.css'],
 
   site: {
-    url: 'https://k-urtica.github.io',
+    name: SITE_NAME,
+    url: SITE_URL,
   },
 
   colorMode: {
