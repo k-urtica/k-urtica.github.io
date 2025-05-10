@@ -46,7 +46,7 @@ const menus = [
         </header>
 
         <section class="mt-6 mb-4 border-t border-muted/30">
-          <ul class="mt-4 space-y-5">
+          <ul class="mt-4 space-y-3 md:space-y-4">
             <li v-for="{ title, to, caption } in menus" :key="title">
               <NuxtLink
                 :to

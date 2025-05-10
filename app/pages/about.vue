@@ -7,9 +7,9 @@ useHead({
 </script>
 
 <template>
-  <div class="flex min-h-dvh items-center px-5 py-10 md:py-20">
-    <Motion as-child v-bind="fade()">
-      <GlassCard class="mx-auto flex max-w-5xl flex-col gap-14 p-5 md:p-8">
+  <div class="flex min-h-dvh items-center">
+    <Motion as-child v-bind="fade({ delay: 0.1 })">
+      <GlassCard class="mx-auto flex max-w-5xl flex-col gap-14">
         <NavLink
           class="absolute top-0 right-0 rounded-tr-2xl rounded-bl-xl border-b border-l border-muted bg-gray-700/50"
         />

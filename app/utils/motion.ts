@@ -6,10 +6,10 @@ export const fade = (
   const { delay, duration = 0.5 } = options;
 
   return {
-    initial: { opacity: 0, filter: 'blur(10px)' },
+    initial: { opacity: 0, filter: 'blur(12px)' },
     whileInView: { opacity: 1, filter: 'blur(0px)' },
     inViewOptions: { once: true },
-    transition: { delay, duration },
+    transition: { delay, duration, type: 'tween' },
   };
 };
 
@@ -22,6 +22,6 @@ export const slideUp = (
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
     inViewOptions: { once: true },
-    transition: { delay, duration },
+    transition: { delay, duration, type: 'tween' },
   };
 };
