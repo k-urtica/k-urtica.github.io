@@ -77,6 +77,12 @@ export default defineNuxtConfig({
     },
   },
 
+  fonts: {
+    defaults: {
+      weights: ['400', '700'],
+    },
+  },
+
   icon: {
     serverBundle: false,
     clientBundle: {
