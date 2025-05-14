@@ -40,12 +40,12 @@ const controlButtons = [
 
 <template>
   <div class="cover min-h-dvh bg-neutral-900">
-    <AnimatePresence :initial="false">
+    <AnimatePresence :initial="false" mode="sync">
       <motion.img
         :key="bgSrc"
         :initial="{ opacity: 0, filter: 'blur(20px)' }"
-        :while-in-view="{ opacity: 1, filter: 'blur(0px)' }"
-        :in-view-options="{ once: true }"
+        :animate="{ opacity: 1, filter: 'blur(0px)' }"
+        :exit="{ opacity: 0 }"
         :transition="{ duration: 0.8 }"
         :src="bgSrc"
         aria-hidden="true"
