@@ -1,7 +1,7 @@
 const SITE_URL = 'https://k-urtica.github.io';
 const SITE_NAME = 'K - Web Developer';
 const DESCRIPTION =
-  "Hi, I'm K. Front-end developer based in Tokyo. Building web experiences with code and creativity.";
+  'Hi, I\'m K. Front-end developer based in Tokyo. Building web experiences with code and creativity.';
 
 export default defineNuxtConfig({
   modules: [
@@ -70,7 +70,7 @@ export default defineNuxtConfig({
 
   eslint: {
     config: {
-      stylistic: false,
+      standalone: false,
       nuxt: {
         sortConfigKeys: true,
       },
