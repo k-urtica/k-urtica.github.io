@@ -42,7 +42,7 @@ useHead({
           <h2 class="mb-3 text-2xl font-bold text-primary-200">Skills</h2>
           <p class="text-zinc-300/80">
             Note: 😅It may seem a bit silly to describe one's own skills in this way.
-            <br />
+            <br>
             And, of course, there are things not written here!
           </p>
 

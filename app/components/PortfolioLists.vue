@@ -5,7 +5,7 @@ const portfolios = [
   {
     image: 'p_webtoolbox.webp',
     title: 'Web ToolBox',
-    text: "Web tools for developers that can be used in the browser. This is what I'm most focused on right now😆",
+    text: 'Web tools for developers that can be used in the browser. This is what I\'m most focused on right now😆',
     stack: 'Made with: Nuxt, NuxtUI, Python etc',
     to: 'https://web-toolbox.dev',
   },
@@ -59,7 +59,7 @@ const portfolios = [
         <article
           class="flex h-full flex-col overflow-hidden rounded-xl border border-muted/20 bg-default/40 transition-[background-color,filter] duration-200 hover:bg-default/60 hover:brightness-110"
         >
-          <img :alt="title" :src="`/images/${image}`" class="aspect-video" />
+          <img :alt="title" :src="`/images/${image}`" class="aspect-video">
           <section class="flex h-full flex-col p-4 pt-2">
             <h3 class="text-center text-lg font-bold text-primary-200">
               {{ title }}

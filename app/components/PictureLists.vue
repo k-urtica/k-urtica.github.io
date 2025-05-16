@@ -57,7 +57,7 @@ const pics = [
       <div
         class="aspect-video overflow-hidden rounded-xl transition-[scale,filter] duration-200 hover:scale-105 hover:brightness-105"
       >
-        <img :alt="title" :src="`/images/${image}`" />
+        <img :alt="title" :src="`/images/${image}`">
       </div>
     </li>
   </ul>

@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <div class="bg-black">
-    <img src="/ogbackground.jpg" class="absolute inset-0 size-full object-cover" />
+    <img src="/ogbackground.jpg" class="absolute inset-0 size-full object-cover">
 
     <div class="flex h-full items-center justify-center">
       <div class="flex items-center rounded-lg bg-black/40 px-8 py-12">
