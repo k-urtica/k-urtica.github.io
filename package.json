@@ -13,8 +13,7 @@
     "analyze": "nuxt analyze",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "postinstall": "nuxt prepare",
-    "prepare": "husky"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@nuxt/ui": "3.1.1",
@@ -35,8 +34,11 @@
     "eslint": "^9.26.0",
     "eslint-plugin-format": "^1.0.1",
     "eslint-plugin-readable-tailwind": "^2.1.1",
-    "husky": "^9.1.7",
     "lint-staged": "^16.0.0",
+    "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   }
 }
