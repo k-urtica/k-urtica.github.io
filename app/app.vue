@@ -22,17 +22,17 @@ const bgSrc = ref('/bg_dark.webp');
 const controlButtons = [
   {
     icon: 'i-lucide-layers-2',
-    ariaLabel: 'Toggle content',
+    ariaLabel: 'Visible content',
     onClick: () => (hideContent.value = !hideContent.value),
   },
   {
     label: '1',
-    ariaLabel: 'Light background',
+    ariaLabel: 'Sunrise',
     onClick: () => (bgSrc.value = '/bg_light.webp'),
   },
   {
     label: '2',
-    ariaLabel: 'Dark background',
+    ariaLabel: 'Sunset',
     onClick: () => (bgSrc.value = '/bg_dark.webp'),
   },
 ];
