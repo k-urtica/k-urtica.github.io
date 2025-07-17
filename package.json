@@ -32,8 +32,8 @@
     "@iconify-json/mdi": "^1.2.3",
     "@nuxt/eslint": "^1.5.2",
     "eslint": "^9.31.0",
+    "eslint-plugin-better-tailwindcss": "^3.6.2",
     "eslint-plugin-format": "^1.0.1",
-    "eslint-plugin-readable-tailwind": "^2.1.2",
     "lint-staged": "^16.1.2",
     "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3"

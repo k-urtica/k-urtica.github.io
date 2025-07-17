@@ -1,6 +1,6 @@
 // @ts-check
 import antfu from '@antfu/eslint-config';
-import eslintPluginReadableTailwind from 'eslint-plugin-readable-tailwind';
+import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss';
 
 import withNuxt from './.nuxt/eslint.config.mjs';
 
@@ -45,20 +45,23 @@ export default withNuxt(
       'vue/singleline-html-element-content-newline': 'off',
     },
   })
-).append({
-  name: 'eslint-plugin-readable-tailwind',
-  settings: {
-    'readable-tailwind': {
-      entryPoint: 'app/assets/main.css',
+)
+  .append({
+    name: 'eslint-plugin-better-tailwindcss',
+    settings: {
+      'better-tailwindcss': {
+        entryPoint: 'app/assets/main.css',
+      },
     },
-  },
-  plugins: {
-    'readable-tailwind': eslintPluginReadableTailwind,
-  },
-  rules: {
-    'readable-tailwind/multiline': 'off',
-    'readable-tailwind/no-duplicate-classes': 'error',
-    'readable-tailwind/no-unnecessary-whitespace': 'error',
-    'readable-tailwind/sort-classes': 'error',
-  },
-});
+    plugins: {
+      'better-tailwindcss': eslintPluginBetterTailwindcss,
+    },
+    rules: {
+      'better-tailwindcss/enforce-consistent-class-order': 'error',
+      'better-tailwindcss/enforce-consistent-line-wrapping': 'off',
+      'better-tailwindcss/enforce-consistent-variable-syntax': ['error', { syntax: 'parentheses' }],
+      'better-tailwindcss/enforce-shorthand-classes': 'error',
+      'better-tailwindcss/no-duplicate-classes': 'error',
+      'better-tailwindcss/no-unnecessary-whitespace': 'error',
+    },
+  });
