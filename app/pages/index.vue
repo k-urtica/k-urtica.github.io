@@ -74,7 +74,7 @@ const menus = [
           <ULink
             to="https://github.com/k-urtica/k-urtica.github.io"
             target="_blank"
-            class="flex items-center gap-1 text-sm"
+            class="flex items-center gap-1 text-sm text-toned"
           >
             GitHub
             <UIcon name="i-lucide-github" />

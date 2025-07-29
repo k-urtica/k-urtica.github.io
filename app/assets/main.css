@@ -17,7 +17,7 @@
 }
 
 :root {
-  --font-family: 'Exo 2', '-apple-system', BlinkMacSystemFont, Helvetica, Arial, Meiryo, sans-serif;
+  --font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans JP', Meiryo, sans-serif;
 }
 
 body {
