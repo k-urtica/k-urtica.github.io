@@ -1,51 +1,51 @@
 <script setup lang="ts">
 const pics = [
   {
-    image: 't1.jpg',
+    image: 't1.webp',
     title: 'airplane',
   },
   {
-    image: 't2.jpg',
+    image: 't2.webp',
     title: 'pyramid',
   },
   {
-    image: 't3.jpg',
+    image: 't3.webp',
     title: 'cookie',
   },
   {
-    image: 't4.jpg',
+    image: 't4.webp',
     title: 'castle',
   },
   {
-    image: 't5.jpg',
+    image: 't5.webp',
     title: 'angkor thom',
   },
   {
-    image: 't6.jpg',
+    image: 't6.webp',
     title: 'monk',
   },
   {
-    image: 't7.jpg',
+    image: 't7.webp',
     title: 'stonehenge',
   },
   {
-    image: 't8.jpg',
+    image: 't8.webp',
     title: 'sphinx',
   },
   {
-    image: 't9.jpg',
+    image: 't9.webp',
     title: 'christmas market',
   },
   {
-    image: 't10.jpg',
+    image: 't10.webp',
     title: 'pub street',
   },
   {
-    image: 't11.jpg',
+    image: 't11.webp',
     title: 'autumn leaves',
   },
   {
-    image: 't12.jpg',
+    image: 't12.webp',
     title: 'dogs and cats',
   },
 ];
