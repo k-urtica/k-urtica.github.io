@@ -35,6 +35,7 @@ export default withNuxt(
             ],
           },
         ],
+        'vue/max-attributes-per-line': ['error', { multiline: { max: 1 }, singleline: { max: 3 } }],
       },
     },
     rules: {
@@ -59,7 +60,7 @@ export default withNuxt(
     rules: {
       'better-tailwindcss/enforce-consistent-class-order': 'error',
       'better-tailwindcss/enforce-consistent-line-wrapping': 'off',
-      'better-tailwindcss/enforce-consistent-variable-syntax': ['error', { syntax: 'parentheses' }],
+      'better-tailwindcss/enforce-consistent-variable-syntax': ['error', { syntax: 'shorthand' }],
       'better-tailwindcss/enforce-shorthand-classes': 'error',
       'better-tailwindcss/no-duplicate-classes': 'error',
       'better-tailwindcss/no-unnecessary-whitespace': 'error',
