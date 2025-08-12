@@ -1,21 +1,6 @@
 <script setup lang="ts">
 import { motion } from 'motion-v';
 
-defineOgImageComponent('OgDefault');
-
-const route = useRoute();
-const siteConfig = useSiteConfig();
-
-useHead({
-  titleTemplate: '%s - ' + 'K',
-  meta: () => [
-    {
-      property: 'og:url',
-      content: `${siteConfig.url}${route.path}`,
-    },
-  ],
-});
-
 const hideContent = ref(false);
 const bgSrc = ref('/bg_dark.webp');
 

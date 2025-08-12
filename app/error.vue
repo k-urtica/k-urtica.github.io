@@ -5,9 +5,8 @@ const title = computed(() =>
   error.value?.statusCode === 404 ? '404 Not Found' : 'Unknown Error'
 );
 
-useHead({
-  title: title.value,
-  titleTemplate: '%s | ' + 'K - Web Developer',
+useSeoMeta({
+  title
 });
 </script>
 

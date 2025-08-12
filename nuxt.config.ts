@@ -1,16 +1,14 @@
 const SITE_URL = 'https://k-urtica.github.io';
 const SITE_NAME = 'K - Web Developer';
-const DESCRIPTION =
+const SITE_DESCRIPTION =
   'Hi, I\'m K. Front-end developer based in Tokyo. Building web experiences with code and creativity.';
 
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
+    '@nuxtjs/seo',
     '@nuxt/eslint',
     '@nuxt/ui',
     'motion-v/nuxt',
-    'nuxt-og-image',
   ],
 
   components: [
@@ -24,20 +22,6 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: {
-        lang: 'en',
-        prefix: 'og: http://ogp.me/ns#',
-      },
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: DESCRIPTION },
-        { property: 'og:site_name', content: SITE_NAME },
-        { property: 'og:description', content: DESCRIPTION },
-        { property: 'og:type', content: 'website' },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:site', content: '@k_urtica' },
-      ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
@@ -47,6 +31,8 @@ export default defineNuxtConfig({
   site: {
     name: SITE_NAME,
     url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    defaultLocale: 'en',
   },
 
   colorMode: {
@@ -86,10 +72,21 @@ export default defineNuxtConfig({
     },
   },
 
+  linkChecker: {
+    enabled: false,
+  },
+
   ogImage: {
-    enabled: true,
-    fonts: ['Exo+2:400', 'Exo+2:700'],
-    zeroRuntime: true,
+    enabled: false,
+  },
+
+  seo: {
+    meta: {
+      author: 'K',
+      twitterCard: 'summary_large_image',
+      ogType: 'website',
+    },
+    metaDataFiles: true,
   },
 
   sitemap: {

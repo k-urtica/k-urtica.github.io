@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { motion } from 'motion-v';
 
-useHead({
+useSeoMeta({
   title: 'About',
 });
 </script>

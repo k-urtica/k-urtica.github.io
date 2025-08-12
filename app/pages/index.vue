@@ -1,7 +1,7 @@
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'K',
-  titleTemplate: '%s - ' + 'Web Developer',
+  titleTemplate: '%s | ' + 'Web Developer',
 });
 
 const menus = [
