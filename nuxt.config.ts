@@ -42,13 +42,17 @@ export default defineNuxtConfig({
   ui: {
     colorMode: true,
     fonts: true,
+    experimental: {
+      componentDetection: true
+    }
   },
 
   experimental: {
+    headNext: true,
     typedPages: true,
   },
 
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: '2026-01-10',
 
   eslint: {
     config: {
@@ -61,7 +65,7 @@ export default defineNuxtConfig({
 
   fonts: {
     defaults: {
-      weights: ['400', '700'],
+      weights: [400, 500, 600, 700, 900],
     },
   },
 
