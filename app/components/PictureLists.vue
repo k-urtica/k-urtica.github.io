@@ -55,7 +55,7 @@ const pics = [
   <ul class="grid grid-cols-2 gap-4 md:grid-cols-3">
     <li v-for="{ image, title } in pics" :key="title">
       <div
-        class="aspect-square overflow-hidden rounded-lg bg-zinc-900 ring-1 ring-zinc-800/50"
+        class="aspect-square overflow-hidden rounded-lg bg-muted ring-1 ring-default"
       >
         <img
           :alt="title"
