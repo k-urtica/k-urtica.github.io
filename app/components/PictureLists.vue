@@ -52,12 +52,16 @@ const pics = [
 </script>
 
 <template>
-  <ul class="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3">
+  <ul class="grid grid-cols-2 gap-4 md:grid-cols-3">
     <li v-for="{ image, title } in pics" :key="title">
       <div
-        class="aspect-video overflow-hidden rounded-xl transition-[scale,filter] duration-200 hover:scale-105 hover:brightness-105"
+        class="aspect-square overflow-hidden rounded-lg bg-zinc-900 ring-1 ring-zinc-800/50"
       >
-        <img :alt="title" :src="`/images/${image}`">
+        <img
+          :alt="title"
+          :src="`/images/${image}`"
+          class="size-full object-cover grayscale transition-all duration-700 hover:scale-105 hover:grayscale-0"
+        >
       </div>
     </li>
   </ul>

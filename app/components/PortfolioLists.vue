@@ -57,15 +57,15 @@ const portfolios = [
     <li v-for="{ image, title, text, stack, to } in portfolios" :key="title">
       <component :is="to ? NuxtLink : 'div'" :to :target="to && '_blank'">
         <article
-          class="flex h-full flex-col overflow-hidden rounded-xl border border-muted/20 bg-default/40 transition-[background-color,filter] duration-200 hover:bg-default/60 hover:brightness-110"
+          class="flex h-full flex-col overflow-hidden rounded-lg border border-zinc-800 bg-zinc-900/50 transition-all duration-300 hover:border-zinc-700 hover:bg-zinc-800/80"
         >
-          <img :alt="title" :src="`/images/${image}`" class="aspect-video">
-          <section class="flex h-full flex-col p-4 pt-2">
-            <h3 class="text-center text-lg font-bold text-primary-200">
+          <img :alt="title" :src="`/images/${image}`" class="aspect-video object-cover grayscale transition-all duration-500 hover:grayscale-0">
+          <section class="flex h-full flex-col p-5">
+            <h3 class="text-base font-semibold text-zinc-100">
               {{ title }}
             </h3>
-            <p class="my-1.5 text-sm text-zinc-200/90">{{ text }}</p>
-            <p class="mt-auto text-xs font-semibold">{{ stack }}</p>
+            <p class="my-2 text-sm leading-relaxed text-zinc-400">{{ text }}</p>
+            <p class="mt-auto font-mono text-[11px] tracking-wider text-zinc-500">{{ stack }}</p>
           </section>
         </article>
       </component>

@@ -1,84 +1,102 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'K',
-  titleTemplate: '%s | ' + 'Web Developer',
+  description: 'Front-end developer crafting web experiences in Tokyo.',
 });
 
 const menus = [
   {
-    title: 'About',
-    to: '/about',
-    caption: 'About me.',
-  },
-  {
-    title: 'Portfolio',
-    to: '/portfolio',
-    caption: 'Personal projects.',
-  },
-  {
-    title: 'Picture',
-    to: '/picture',
-    caption: 'Travel photography highlights.',
-  },
-  {
-    title: 'Blog',
-    to: 'https://knote.dev',
-    caption: 'My personal Blog.',
-  },
-  {
-    title: 'X',
+    title: '@k_urtica',
     to: 'https://x.com/k_urtica',
-    caption: 'Connect with me online.',
+    icon: 'i-simple-icons-x',
+  },
+  {
+    title: 'GitHub',
+    to: 'https://github.com/k-urtica',
+    icon: 'i-lucide-github',
   },
 ];
+
+// Intersection Observer for fade-in animations on scroll
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-reveal');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+    observer.observe(el);
+  });
+});
 </script>
 
 <template>
-  <div class="flex min-h-dvh items-center p-5">
-    <GlassCard class="mx-auto w-full p-8 sm:w-[520px]">
-      <header>
-        <h1 class="mb-3 text-4xl font-bold text-highlighted">K</h1>
-        <p class="text-sm">Front-end developer crafting web experiences in Tokyo.</p>
-        <p class="text-sm">
-          Passionate about clean code, UX design, and exploring new places.
-        </p>
-      </header>
+  <main class="min-h-dvh bg-[#09090b] text-zinc-300 antialiased selection:bg-zinc-800 selection:text-white">
+    <div class="mx-auto max-w-3xl space-y-32 px-6 py-24 md:py-32">
+      <!-- Intro Section -->
+      <section class="reveal-on-scroll translate-y-4 opacity-0 transition-all duration-1000 ease-out">
+        <h1 class="mb-6 text-4xl font-semibold tracking-tight text-white">
+          K
+        </h1>
+        <div class="max-w-xl space-y-4 text-base leading-relaxed text-zinc-400">
+          <p>
+            Front-end developer crafting web experiences in Tokyo.
+            Passionate about clean code, UX design, and exploring new places.
+          </p>
+          <p>
+            Building tools and interfaces that focus on simplicity, performance, and aesthetic details.
+          </p>
+        </div>
 
-      <section class="mt-6 mb-4 border-t border-muted/30">
-        <ul class="mt-4 space-y-3 md:space-y-4">
-          <li v-for="{ title, to, caption } in menus" :key="title">
-            <NuxtLink
-              :to
-              class="group flex items-center justify-between gap-2 text-primary-200"
-            >
-              <h2 class="text-xl font-bold underline-offset-2 group-hover:underline">
-                {{ title }}
-              </h2>
-              <UIcon
-                :name="
-                  to.startsWith('http')
-                    ? 'i-lucide-external-link'
-                    : 'i-lucide-arrow-right'
-                "
-              />
-            </NuxtLink>
-            <p class="mt-1 text-sm text-toned">
-              {{ caption }}
-            </p>
-          </li>
-        </ul>
+        <div class="mt-8 flex items-center gap-6">
+          <NuxtLink
+            v-for="menu in menus"
+            :key="menu.title"
+            :to="menu.to"
+            target="_blank"
+            class="group flex items-center gap-2 text-sm text-zinc-500 transition-colors hover:text-white"
+          >
+            <UIcon :name="menu.icon" class="size-4" />
+            <span>{{ menu.title }}</span>
+          </NuxtLink>
+        </div>
       </section>
 
-      <footer class="absolute bottom-1 left-1/2 -translate-x-1/2">
-        <ULink
-          to="https://github.com/k-urtica/k-urtica.github.io"
-          target="_blank"
-          class="flex items-center gap-1 text-sm text-toned"
-        >
-          GitHub
-          <UIcon name="i-lucide-github" />
-        </ULink>
+      <!-- Projects Section -->
+      <section class="reveal-on-scroll translate-y-4 opacity-0 transition-all delay-[200ms] duration-1000 ease-out">
+        <div class="mb-8 flex items-center gap-4">
+          <h2 class="text-xl font-medium text-white">Projects</h2>
+          <div class="h-px w-full flex-1 bg-zinc-800/50" />
+        </div>
+        <PortfolioLists />
+      </section>
+
+      <!-- Photography Section -->
+      <section class="reveal-on-scroll translate-y-4 opacity-0 transition-all delay-[400ms] duration-1000 ease-out">
+        <div class="mb-8 flex items-center gap-4">
+          <h2 class="text-xl font-medium text-white">Photography</h2>
+          <div class="h-px w-full flex-1 bg-zinc-800/50" />
+        </div>
+        <PictureLists />
+      </section>
+
+      <!-- Footer -->
+      <footer class="reveal-on-scroll pb-12 text-center text-sm text-zinc-600 opacity-0 transition-all delay-[600ms] duration-1000 ease-out">
+        <p>© {{ new Date().getFullYear() }} K. All rights reserved.</p>
       </footer>
-    </GlassCard>
-  </div>
+    </div>
+  </main>
 </template>
+
+<style scoped>
+.animate-reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+</style>

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <UApp :tooltip="{ delayDuration: 100, skipDelayDuration: 150 }">
+  <UApp :tooltip="{ delayDuration: 100, skipDelayDuration: 150 }" class="cover">
     <NuxtPage />
   </UApp>
 </template>
