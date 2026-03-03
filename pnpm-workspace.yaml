@@ -1,3 +1,6 @@
+shamefullyHoist: true
+shellEmulator: true
+
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - '@tailwindcss/oxide'

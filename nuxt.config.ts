@@ -1,7 +1,5 @@
 const SITE_URL = 'https://k-urtica.github.io';
-const SITE_NAME = 'K - Web Developer';
-const SITE_DESCRIPTION =
-  'Hi, I\'m K. Front-end developer based in Tokyo. Building web experiences with code and creativity.';
+const SITE_NAME = 'K — Frontend Engineer';
 
 export default defineNuxtConfig({
   modules: [
@@ -31,7 +29,6 @@ export default defineNuxtConfig({
   site: {
     name: SITE_NAME,
     url: SITE_URL,
-    description: SITE_DESCRIPTION,
     defaultLocale: 'en',
   },
 
@@ -42,13 +39,17 @@ export default defineNuxtConfig({
   ui: {
     colorMode: true,
     fonts: true,
+    experimental: {
+      componentDetection: true
+    }
   },
 
   experimental: {
+    headNext: true,
     typedPages: true,
   },
 
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: '2026-01-10',
 
   eslint: {
     config: {
@@ -61,7 +62,7 @@ export default defineNuxtConfig({
 
   fonts: {
     defaults: {
-      weights: ['400', '700'],
+      weights: [400, 500, 600, 700, 900],
     },
   },
 
@@ -77,7 +78,8 @@ export default defineNuxtConfig({
   },
 
   ogImage: {
-    enabled: false,
+    enabled: true,
+    zeroRuntime: true,
   },
 
   seo: {

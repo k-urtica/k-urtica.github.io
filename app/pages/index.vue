@@ -1,86 +1,91 @@
 <script setup lang="ts">
-useSeoMeta({
-  title: 'K',
-  titleTemplate: '%s | ' + 'Web Developer',
-});
-
 const menus = [
   {
-    title: 'About',
-    to: '/about',
-    caption: 'About me.',
-  },
-  {
-    title: 'Portfolio',
-    to: '/portfolio',
-    caption: 'Personal projects.',
-  },
-  {
-    title: 'Picture',
-    to: '/picture',
-    caption: 'Travel photography highlights.',
-  },
-  {
-    title: 'Blog',
-    to: 'https://knote.dev',
-    caption: 'My personal Blog.',
-  },
-  {
-    title: 'X',
+    title: 'X (formerly Twitter)',
     to: 'https://x.com/k_urtica',
-    caption: 'Connect with me online.',
+    icon: 'i-simple-icons-x',
+  },
+  {
+    title: 'GitHub Profile',
+    to: 'https://github.com/k-urtica',
+    icon: 'i-lucide-github',
   },
 ];
 </script>
 
 <template>
-  <div class="flex min-h-dvh items-center p-5">
-    <Motion as-child v-bind="fade()">
-      <GlassCard class="mx-auto w-full p-8 sm:w-[520px]">
-        <header>
-          <h1 class="mb-3 text-4xl font-bold text-highlighted">K</h1>
-          <p class="text-sm">Front-end developer crafting web experiences in Tokyo.</p>
-          <p class="text-sm">
+  <main class="selection:bg-zinc-800 selection:text-white">
+    <UContainer class="max-w-3xl space-y-32 py-24 md:py-32">
+      <Motion
+        as="section"
+        :initial="{ opacity: 0, y: 12 }"
+        :animate="{ opacity: 1, y: 0 }"
+        :transition="{ duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }"
+      >
+        <h1 class="mb-6 text-4xl font-semibold tracking-tight text-highlighted">
+          K
+        </h1>
+        <div class="max-w-xl space-y-4 text-base leading-relaxed text-muted">
+          <p>
+            Front-end developer crafting web experiences in Tokyo.
             Passionate about clean code, UX design, and exploring new places.
           </p>
-        </header>
+          <p>
+            Building tools and interfaces that focus on simplicity, performance, and aesthetic details.
+          </p>
+        </div>
 
-        <section class="mt-6 mb-4 border-t border-muted/30">
-          <ul class="mt-4 space-y-3 md:space-y-4">
-            <li v-for="{ title, to, caption } in menus" :key="title">
-              <NuxtLink
-                :to
-                class="group flex items-center justify-between gap-2 text-primary-200"
-              >
-                <h2 class="text-xl font-bold underline-offset-2 group-hover:underline">
-                  {{ title }}
-                </h2>
-                <UIcon
-                  :name="
-                    to.startsWith('http')
-                      ? 'i-lucide-external-link'
-                      : 'i-lucide-arrow-right'
-                  "
-                />
-              </NuxtLink>
-              <p class="mt-1 text-sm text-toned">
-                {{ caption }}
-              </p>
-            </li>
-          </ul>
-        </section>
-
-        <footer class="absolute bottom-1 left-1/2 -translate-x-1/2">
+        <div class="mt-8 flex items-center gap-5">
           <ULink
-            to="https://github.com/k-urtica/k-urtica.github.io"
+            v-for="menu in menus"
+            :key="menu.title"
+            :to="menu.to"
+            :aria-label="menu.title"
             target="_blank"
-            class="flex items-center gap-1 text-sm text-toned"
           >
-            GitHub
-            <UIcon name="i-lucide-github" />
+            <UIcon :name="menu.icon" class="size-5" />
           </ULink>
-        </footer>
-      </GlassCard>
-    </Motion>
-  </div>
+        </div>
+      </Motion>
+
+      <Motion
+        as="section"
+        :initial="{ opacity: 0, y: 12 }"
+        :while-in-view="{ opacity: 1, y: 0 }"
+        :viewport="{ once: true, margin: '-10% 0px' }"
+        :transition="{ duration: 0.8, delay: 0.1, ease: [0.21, 0.47, 0.32, 0.98] }"
+      >
+        <div class="mb-8 flex items-center gap-4">
+          <h2 class="text-xl font-medium text-highlighted">Projects</h2>
+          <div class="bg-border-muted h-px w-full flex-1" />
+        </div>
+        <PortfolioGallery />
+      </Motion>
+
+      <Motion
+        as="section"
+        :initial="{ opacity: 0, y: 12 }"
+        :while-in-view="{ opacity: 1, y: 0 }"
+        :viewport="{ once: true, margin: '-10% 0px' }"
+        :transition="{ duration: 0.8, delay: 0.1, ease: [0.21, 0.47, 0.32, 0.98] }"
+      >
+        <div class="mb-8 flex items-center gap-4">
+          <h2 class="text-xl font-medium text-highlighted">Photography</h2>
+          <div class="bg-border-muted h-px w-full flex-1" />
+        </div>
+        <PhotoGallery />
+      </Motion>
+
+      <Motion
+        as="footer"
+        :initial="{ opacity: 0 }"
+        :while-in-view="{ opacity: 1 }"
+        :viewport="{ once: true }"
+        :transition="{ duration: 1, delay: 0.2, ease: 'linear' }"
+        class="pb-12 text-center text-sm text-dimmed"
+      >
+        <p>© {{ new Date().getFullYear() }} K. All rights reserved.</p>
+      </Motion>
+    </UContainer>
+  </main>
 </template>

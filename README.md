@@ -2,13 +2,13 @@
 
 ## ⭐️ My Personal site
 
-Hey there! I'm K and this is the repo for my personal website.
+Hey! I’m K — this is the repo for my personal website.
 
-After several makeovers, my site is now built with Nuxt and NuxtUI.
+After a few redesigns, it’s now built with Nuxt.
 
 🚀Running on GithubPages
 
-![""](https://github.com/user-attachments/assets/96f051ec-24ce-41b5-a77a-89c9cacf22ff)
+![""](https://github.com/user-attachments/assets/9d86802f-ff73-4f51-a7a6-989d70d46051)
 
 ## 🔗 URL
 

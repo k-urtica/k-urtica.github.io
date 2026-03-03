@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.30.2",
   "description": "K portfolio site.",
   "author": "K",
   "scripts": {
@@ -17,27 +17,31 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/ui": "3.3.0",
-    "@nuxtjs/seo": "^3.1.0",
-    "@unhead/vue": "^2.0.14",
-    "motion-v": "^1.7.0",
-    "nuxt": "^4.0.3",
-    "vue": "^3.5.18",
-    "vue-router": "^4.5.1"
+    "@nuxt/ui": "4.5.0",
+    "@nuxtjs/seo": "3.4.0",
+    "@unhead/vue": "2.1.9",
+    "motion-v": "2.0.0",
+    "nuxt": "4.3.1",
+    "tailwindcss": "4.2.1",
+    "vue": "3.5.29",
+    "vue-router": "5.0.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.2.1",
-    "@iconify-json/lucide": "^1.2.62",
-    "@iconify-json/mdi": "^1.2.3",
-    "@nuxt/eslint": "^1.8.0",
-    "eslint": "^9.33.0",
-    "eslint-plugin-better-tailwindcss": "^3.7.4",
-    "eslint-plugin-format": "^1.0.1",
-    "lint-staged": "^16.1.5",
-    "simple-git-hooks": "^2.13.1",
-    "typescript": "^5.9.2"
+    "@antfu/eslint-config": "7.6.1",
+    "@iconify-json/lucide": "1.2.95",
+    "@iconify-json/mdi": "1.2.3",
+    "@nuxt/eslint": "1.15.2",
+    "eslint": "10.0.2",
+    "eslint-plugin-better-tailwindcss": "4.3.1",
+    "eslint-plugin-format": "2.0.1",
+    "lint-staged": "16.3.1",
+    "simple-git-hooks": "2.13.1",
+    "typescript": "5.9.3"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
