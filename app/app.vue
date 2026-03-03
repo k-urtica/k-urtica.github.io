@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useSeoMeta({
+  description: 'Front-end developer based in Tokyo, crafting high-performance web experiences with Nuxt and modern web technologies.',
+});
 </script>
 
 <template>

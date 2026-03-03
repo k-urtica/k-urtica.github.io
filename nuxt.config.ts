@@ -1,7 +1,5 @@
 const SITE_URL = 'https://k-urtica.github.io';
 const SITE_NAME = 'K - Web Developer';
-const SITE_DESCRIPTION =
-  'Hi, I\'m K. Front-end developer based in Tokyo. Building web experiences with code and creativity.';
 
 export default defineNuxtConfig({
   modules: [
@@ -31,7 +29,6 @@ export default defineNuxtConfig({
   site: {
     name: SITE_NAME,
     url: SITE_URL,
-    description: SITE_DESCRIPTION,
     defaultLocale: 'en',
   },
 

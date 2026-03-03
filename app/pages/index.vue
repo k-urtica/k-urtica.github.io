@@ -1,16 +1,12 @@
 <script setup lang="ts">
-useSeoMeta({
-  description: 'Front-end developer crafting web experiences in Tokyo.',
-});
-
 const menus = [
   {
-    title: '@k_urtica',
+    title: 'X (formerly Twitter)',
     to: 'https://x.com/k_urtica',
     icon: 'i-simple-icons-x',
   },
   {
-    title: 'GitHub',
+    title: 'GitHub Profile',
     to: 'https://github.com/k-urtica',
     icon: 'i-lucide-github',
   },
@@ -39,17 +35,16 @@ const menus = [
           </p>
         </div>
 
-        <div class="mt-8 flex items-center gap-6">
-          <NuxtLink
+        <div class="mt-8 flex items-center gap-5">
+          <ULink
             v-for="menu in menus"
             :key="menu.title"
             :to="menu.to"
+            :aria-label="menu.title"
             target="_blank"
-            class="group flex items-center gap-2 text-sm text-dimmed transition-colors hover:text-highlighted"
           >
-            <UIcon :name="menu.icon" class="size-4" />
-            <span>{{ menu.title }}</span>
-          </NuxtLink>
+            <UIcon :name="menu.icon" class="size-5" />
+          </ULink>
         </div>
       </Motion>
 
