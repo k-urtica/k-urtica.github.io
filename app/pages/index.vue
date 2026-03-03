@@ -59,7 +59,7 @@ const menus = [
           <h2 class="text-xl font-medium text-highlighted">Projects</h2>
           <div class="bg-border-muted h-px w-full flex-1" />
         </div>
-        <PortfolioLists />
+        <PortfolioGallery />
       </Motion>
 
       <Motion
@@ -73,7 +73,7 @@ const menus = [
           <h2 class="text-xl font-medium text-highlighted">Photography</h2>
           <div class="bg-border-muted h-px w-full flex-1" />
         </div>
-        <PictureLists />
+        <PhotoGallery />
       </Motion>
 
       <Motion
