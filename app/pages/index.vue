@@ -14,7 +14,7 @@ const menus = [
 </script>
 
 <template>
-  <main class="min-h-dvh bg-default antialiased selection:bg-zinc-800 selection:text-white">
+  <main class="selection:bg-zinc-800 selection:text-white">
     <UContainer class="max-w-3xl space-y-32 py-24 md:py-32">
       <Motion
         as="section"

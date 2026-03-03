@@ -1,5 +1,5 @@
 const SITE_URL = 'https://k-urtica.github.io';
-const SITE_NAME = 'K - Web Developer';
+const SITE_NAME = 'K — Frontend Engineer';
 
 export default defineNuxtConfig({
   modules: [
@@ -78,7 +78,8 @@ export default defineNuxtConfig({
   },
 
   ogImage: {
-    enabled: false,
+    enabled: true,
+    zeroRuntime: true,
   },
 
   seo: {
