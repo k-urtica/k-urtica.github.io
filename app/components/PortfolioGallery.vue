@@ -12,6 +12,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    image: 'picdiff.webp',
+    title: 'PicDiff',
+    description: 'A high-precision image comparison tool that helps you catch even subtle changes across edits and AI-generated variations.',
+    stack: 'Nuxt, NuxtUI, Better-Auth',
+    url: 'https://picdiff.dev',
+  },
+  {
     image: 'web-toolbox.webp',
     title: 'Web ToolBox',
     description: 'A comprehensive collection of lightweight, browser-based utilities designed to streamline daily developer workflows.',
@@ -77,7 +84,7 @@ const projects: Project[] = [
           <img
             :alt="title"
             :src="`/images/portfolio/${image}`"
-            class="aspect-video object-cover grayscale transition-all duration-500"
+            class="aspect-video origin-bottom scale-100 object-cover grayscale transition-all duration-500 group-hover:scale-105"
             :class="sunset ? 'opacity-70' : 'group-hover:grayscale-0'"
           >
 
