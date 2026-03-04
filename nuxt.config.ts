@@ -44,6 +44,22 @@ export default defineNuxtConfig({
     }
   },
 
+  routeRules: {
+    '/**': {
+      headers: {
+        'X-Frame-Options': 'DENY',
+        'X-Content-Type-Options': 'nosniff',
+        'X-XSS-Protection': '1; mode=block',
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
+      }
+    },
+    '/images/**': {
+      headers: {
+        'Cache-Control': 'public, max-age=86400, immutable',
+      }
+    }
+  },
+
   experimental: {
     headNext: true,
     typedPages: true,
