@@ -94,6 +94,7 @@ const menus = [
           size="sm"
           color="neutral"
           variant="ghost"
+          aria-label="GitHub repository"
           class="rounded-full"
         />
       </Motion>
