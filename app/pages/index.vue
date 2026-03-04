@@ -35,16 +35,18 @@ const menus = [
           </p>
         </div>
 
-        <div class="mt-8 flex items-center gap-5">
-          <ULink
+        <div class="mt-8 flex items-center gap-3">
+          <UButton
             v-for="menu in menus"
             :key="menu.title"
             :to="menu.to"
             :aria-label="menu.title"
             target="_blank"
-          >
-            <UIcon :name="menu.icon" class="size-5" />
-          </ULink>
+            :icon="menu.icon"
+            variant="link"
+            color="neutral"
+            square
+          />
         </div>
       </Motion>
 
@@ -82,9 +84,18 @@ const menus = [
         :while-in-view="{ opacity: 1 }"
         :viewport="{ once: true }"
         :transition="{ duration: 1, delay: 0.2, ease: 'linear' }"
-        class="pb-12 text-center text-sm text-dimmed"
+        class="space-y-4 pb-12 text-center text-sm text-dimmed"
       >
         <p>© {{ new Date().getFullYear() }} K. All rights reserved.</p>
+
+        <UButton
+          to="https://github.com/k-urtica/k-urtica.github.io"
+          icon="i-lucide-github"
+          size="sm"
+          color="neutral"
+          variant="ghost"
+          class="rounded-full"
+        />
       </Motion>
     </UContainer>
   </main>
