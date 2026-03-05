@@ -13,7 +13,10 @@ useSeoMeta({
 <template>
   <UApp :tooltip="{ delayDuration: 100, skipDelayDuration: 150 }">
     <div class="noise-layer pointer-events-none fixed inset-[-50%] z-50" />
-    <NuxtPage />
+
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </UApp>
 </template>
 
