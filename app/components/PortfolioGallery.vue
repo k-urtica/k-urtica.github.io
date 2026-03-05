@@ -77,6 +77,7 @@ const projects: Project[] = [
         :is="url ? NuxtLink : 'div'"
         :to="url"
         :target="url && '_blank'"
+        class="h-full"
       >
         <article
           class="group flex h-full flex-col overflow-hidden rounded-lg border bg-muted/50 transition-colors duration-500 hover:border-accented hover:bg-muted"
@@ -84,8 +85,8 @@ const projects: Project[] = [
           <img
             :alt="title"
             :src="`/images/portfolio/${image}`"
-            class="aspect-video origin-bottom scale-100 object-cover grayscale transition-all duration-500 group-hover:scale-105"
-            :class="sunset ? 'opacity-70' : 'group-hover:grayscale-0'"
+            class="aspect-video origin-bottom scale-100 object-cover brightness-75 transition-all duration-500 will-change-transform group-hover:scale-105"
+            :class="sunset ? 'opacity-70' : 'group-hover:brightness-100'"
           >
 
           <section class="flex h-full flex-col p-5">
