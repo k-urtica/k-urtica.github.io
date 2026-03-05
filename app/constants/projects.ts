@@ -33,6 +33,34 @@ export const SELECTED_WORKS: Project[] = [
 
 export const ARCHIVED_WORKS: Project[] = [
   {
+    image: 'gradient-text-pro.webp',
+    title: 'Gradient Text Pro',
+    description: 'A professional CSS gradient text generator that makes it easy to create beautiful linear and radial gradients with real-time preview and image export.',
+    stack: 'Nuxt, NuxtUI',
+    url: 'https://gradient-text-pro.web-toolbox.dev/',
+  },
+  {
+    image: 'border-radius-pro.webp',
+    title: 'Border Radius Pro',
+    description: 'An intuitive visual tool for generating complex CSS border-radius shapes, supporting 8-point values for organic and unique professional designs.',
+    stack: 'Nuxt, NuxtUI',
+    url: 'https://border-radius-pro.web-toolbox.dev/',
+  },
+  {
+    image: 'glitch-text-generator.webp',
+    title: 'Glitch Text Effect Generator',
+    description: 'A specialized CSS generator for creating customizable glitch animations and text effects with pure CSS output for modern web design.',
+    stack: 'Nuxt, NuxtUI',
+    url: 'https://glitch-text-effect.web-toolbox.dev/',
+  },
+  {
+    image: 'superb-shot.webp',
+    title: 'Superb Shot',
+    description: 'A browser-based screenshot beautifier that turns raw captures into professional social media-ready images with beautiful backgrounds and shadows.',
+    stack: 'Next.js, daisyUI',
+    url: 'https://superbshot.vercel.app/',
+  },
+  {
     image: 'portfolio-site.webp',
     title: 'Portfolio site',
     description: 'A personal showcase crafted with a focus on typography, motion, and clean UI to present my latest work and photography.',
