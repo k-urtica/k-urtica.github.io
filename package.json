@@ -17,7 +17,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/ui": "4.5.1",
+    "@nuxt/ui": "4.6.0",
     "@nuxtjs/seo": "3.4.0",
     "@unhead/vue": "2.1.12",
     "motion-v": "2.0.0",
