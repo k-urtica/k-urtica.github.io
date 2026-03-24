@@ -20,21 +20,21 @@
     "@nuxt/ui": "4.6.0",
     "@nuxtjs/seo": "3.4.0",
     "@unhead/vue": "2.1.12",
-    "motion-v": "2.0.0",
+    "motion-v": "2.2.0",
     "nuxt": "4.4.2",
-    "tailwindcss": "4.2.1",
+    "tailwindcss": "4.2.2",
     "vue": "3.5.30",
-    "vue-router": "5.0.3"
+    "vue-router": "5.0.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "7.6.1",
-    "@iconify-json/lucide": "1.2.97",
+    "@iconify-json/lucide": "1.2.98",
     "@iconify-json/mdi": "1.2.3",
     "@nuxt/eslint": "1.15.2",
-    "eslint": "10.0.3",
+    "eslint": "10.1.0",
     "eslint-plugin-better-tailwindcss": "4.3.2",
     "eslint-plugin-format": "2.0.1",
-    "lint-staged": "16.3.3",
+    "lint-staged": "16.4.0",
     "simple-git-hooks": "2.13.1",
     "typescript": "5.9.3"
   },
