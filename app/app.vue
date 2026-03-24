@@ -1,12 +1,7 @@
 <script setup lang="ts">
-defineOgImage({
-  url: '/og-image.png',
-  width: 1200,
-  height: 600,
-});
-
 useSeoMeta({
   description: 'Front-end engineer based in Tokyo, crafting high-performance web experiences with Nuxt and modern web technologies.',
+  ogImage: '/og-image.png',
 });
 </script>
 
