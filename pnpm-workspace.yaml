@@ -1,11 +1,12 @@
 minimumReleaseAge: 720
+
 shamefullyHoist: true
 shellEmulator: true
-
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - '@tailwindcss/oxide'
   - esbuild
+  - sharp
   - simple-git-hooks
   - unrs-resolver
   - vue-demi
