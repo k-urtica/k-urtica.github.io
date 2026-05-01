@@ -14,6 +14,7 @@
     "analyze": "nuxt analyze",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
+    "type-check": "nuxt typecheck",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -36,7 +37,8 @@
     "eslint-plugin-format": "2.0.1",
     "lint-staged": "16.4.0",
     "simple-git-hooks": "2.13.1",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vue-tsc": "3.2.7"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
