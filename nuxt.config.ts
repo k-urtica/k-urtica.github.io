@@ -67,6 +67,16 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2026-01-10',
 
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@unhead/schema-org/vue',
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+      ]
+    }
+  },
+
   eslint: {
     config: {
       standalone: false,
