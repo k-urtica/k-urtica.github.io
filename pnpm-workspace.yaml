@@ -2,6 +2,10 @@ minimumReleaseAge: 720
 
 shamefullyHoist: true
 shellEmulator: true
+
+overrides:
+  vite: 8.0.16
+
 allowBuilds:
   '@parcel/watcher': true
   '@tailwindcss/oxide': true
