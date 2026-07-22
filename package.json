@@ -29,7 +29,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "9.1.0",
     "@iconify-json/lucide": "1.2.116",
-    "@iconify-json/mdi": "1.2.3",
     "@nuxt/eslint": "1.16.0",
     "eslint": "10.6.0",
     "eslint-plugin-better-tailwindcss": "4.6.1",
